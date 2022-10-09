@@ -1,0 +1,310 @@
+<!-- Esto es un archivo que uso para crear una nueva pantalla con la configuración y elementos básicos del UI -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- START import output css -->
+    <link rel="stylesheet" href="/css/output.css">
+    <!-- END import output css -->
+    <!-- START import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- END import fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anke - Home</title>
+</head>
+
+<body>
+    <!-- START navbar -->
+    <nav class="relative z-5 bg-azul-100 mb-5" style="z-index: 10">
+        <div class="container mx-auto">
+            <div class="relative w-full flex py-5 items-center justify-between">
+                <!-- logo -->
+                <img src="/media/svgs/logo-dark.svg" alt="ANKE" class="w-[80px] h-auto">
+
+                <!-- START menu items -->
+                <div class="flex items-center justify-center relative left-[40px]">
+                    <!-- active menu item -->
+                    <a href="#"
+                        class="bg-azul-80 text-white px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center"
+                        aria-current="page">
+                        <div class="inline-block w-[18px]">
+                            <img src="/media/svgs/home-white.svg" alt="home">
+                        </div>
+                        <span class="ml-4">Home</span>
+                    </a>
+                    <!-- menu item -->
+                    <a href="#"
+                        class="text-white hover:bg-azul-80 px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center">
+                        <div class="inline-block w-[18px]">
+                            <img src="/media/svgs/coffee-white.svg" alt="servicios">
+                        </div>
+                        <span class="ml-4">Servicios</span>
+                    </a>
+                    <!-- menu item -->
+                    <a href="#"
+                        class="text-white hover:bg-azul-80 px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center">
+                        <div class="inline-block w-[14px]">
+                            <img src="/media/svgs/document-white.svg" alt="servicios">
+                        </div>
+                        <span class="ml-4">Pólizas</span>
+                    </a>
+                    <!-- menu item -->
+                    <a href="#"
+                        class="text-white hover:bg-azul-80 px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center">
+                        <div class="inline-block w-[18px]">
+                            <img src="/media/svgs/calendar-white.svg" alt="servicios">
+                        </div>
+                        <span class="ml-4">Calendario</span>
+                    </a>
+                    <!-- menu item -->
+                    <label for="siniestro-trigger"
+                        class="text-white hover:bg-azul-80 px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center cursor-pointer">
+                        <div class="inline-block w-[20px]">
+                            <img src="/media/svgs/plus-circle-white.svg" alt="servicios">
+                        </div>
+                        <span class="ml-4">Nuevo Siniestro</span>
+                    </label>
+                </div>
+                <!-- END menu items -->
+
+                <!-- START extra items -->
+                <div class="flex items-center">
+                    <button type="button" class="mx-2 p-1">
+                        <img class="w-[16px]" src="/media/svgs/bell.svg" alt="notifications">
+                    </button>
+                    <button type="button" class="mx-2 p-1">
+                        <img class="w-[16px]" src="/media/svgs/phone.svg" alt="notifications">
+                    </button>
+                    <!-- profile picture -->
+                    <div class="mx-2 relative ml-3">
+                        <div>
+                            <label for="user-menu-trigger" type="button"
+                                class="flex rounded-full text-sm cursor-pointer" id="user-menu-button"
+                                aria-expanded="false" aria-haspopup="true">
+                                <img class="h-[50px] w-[50px] rounded-full"
+                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    alt="">
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END extra items -->
+            </div>
+        </div>
+
+    </nav>
+    <!-- END navbar -->
+    <!-- START user menu -->
+    <input type="checkbox" name="user-menu-trigger" id="user-menu-trigger" class="css-trigger">
+    <div class="backdrop overlay-container css-trigger-target bg-white">
+        <div
+            class="w-[415px] h-[100vh] px-[30px] pt-[40px] pb-[20px] flex-col justify-between items-between bg-white right-[0px] absolute flex">
+            <div>
+                <label for="user-menu-trigger" class="cursor-pointer">
+                    <img src="/media/svgs/x.svg" alt="x" class="close">
+                </label>
+                <!-- header -->
+                <div class="grid grid-cols-[80px_1fr] gap-x-[30px] items-center mb-8">
+                    <img class="h-[80px] w-[80px] rounded-full"
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt="">
+
+                    <div class="title">Andres Rodriguez</div>
+                </div>
+                <!-- contact info -->
+                <div class="grid grid-cols-[32px_1fr] gap-x-[8px] my-5">
+                    <div class="w-[32px] h-[32px] bg-rosa-10 rounded-md flex items-center justify-center">
+                        <img src="/media/svgs/email-at-rosa-60.svg" alt="email-at-rosa-60" class="w-[20px]">
+                    </div>
+                    <div class="text-sm font-semibold">andres_rodriguez@correo.com</div>
+                </div>
+                <div class="grid grid-cols-[32px_1fr] gap-x-[8px] my-5">
+                    <div class="w-[32px] h-[32px] bg-rosa-10 rounded-md flex items-center justify-center">
+                        <img src="/media/svgs/phone-rosa-60.svg" alt="phone-rosa-60" class="w-[20px]">
+                    </div>
+                    <div class="text-sm font-semibold">+34 427 65 39 12</div>
+                </div>
+                <div class="grid grid-cols-[32px_1fr] gap-x-[8px] my-5">
+                    <div class="w-[32px] h-[32px] bg-rosa-10 rounded-md flex items-center justify-center">
+                        <img src="/media/svgs/whatsapp-rosa-60.svg" alt="whatsapp-rosa-60" class="w-[24px]">
+                    </div>
+                    <div class="text-sm font-semibold">+54 617 65 39 12</div>
+                </div>
+                <button class="button-secondary text-center w-full my-5">
+                    Editar datos del perfil
+                </button>
+                <!-- START user options -->
+                <!-- user option -->
+                <div class="option">
+                    <div class="text-xs font-semibold">Ver repositorio de documentación</div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg" alt="chevron-right-neutral-80" class="w-[7px]">
+                </div>
+                <!-- user option -->
+                <div class="option">
+                    <div class="text-xs font-semibold">Cambiar idioma</div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg" alt="chevron-right-neutral-80" class="w-[7px]">
+                </div>
+                <!-- user option -->
+                <div class="option">
+                    <div class="text-xs font-semibold">Cambiar contraseña</div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg" alt="chevron-right-neutral-80" class="w-[7px]">
+                </div>
+                <!-- user option -->
+                <div class="option">
+                    <div class="text-xs font-semibold">Comunicaciones</div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg" alt="chevron-right-neutral-80" class="w-[7px]">
+                </div>
+                <!-- user option -->
+                <div class="option">
+                    <div class="text-xs font-semibold">Requisitos legales</div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg" alt="chevron-right-neutral-80" class="w-[7px]">
+                </div>
+                <!-- user option -->
+                <div class="option">
+                    <div class="text-xs font-semibold">Eventos</div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg" alt="chevron-right-neutral-80" class="w-[7px]">
+                </div>
+                <!-- END user options -->
+                <div class="hr"></div>
+            </div>
+            <div class="flex-col flex justify-end">
+                <!-- user option -->
+                <div class="option">
+                    <div class="text-xs font-semibold">Cerrar sesión</div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg" alt="chevron-right-neutral-80" class="w-[7px]">
+                </div>
+                <!-- user option -->
+                <div class="option">
+                    <div class="text-xs font-semibold">Privacidad y condiciones</div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg" alt="chevron-right-neutral-80" class="w-[7px]">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END user menu -->
+    <!-- START nuevo siniestro modal -->
+    <input type="checkbox" name="siniestro-trigger" id="siniestro-trigger" class="css-trigger">
+    <div class="backdrop overlay-container css-trigger-target flex items-center justify-center">
+        <div class="rounded-[10px] p-[30px] absolute w-[640px] h-fit bg-white max-h-[800px]">
+            <label for="siniestro-trigger">
+                <img src="/media/svgs/x.svg" alt="x" class="close">
+            </label>
+            <div class="title">Nuevo siniestro</div>
+            <form class="mt-5">
+                <div class="form-group w-[335px]">
+                    <label for="">Nombre Completo</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Describa su parte *</label>
+                    <textarea class="w-full form-control max-h-[500px] min-h-[200px]" name="description"
+                        id="description" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+            <div class="flex justify-end mt-[50px]">
+                <div class="h-fit w-fit flex justify-end">
+                    <button class="button-secondary">
+                        Cancelar
+                    </button>
+                    <button class="button-primary ml-5">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END nuevo siniestro modal -->
+    <!-- START chat -->
+    <label id="chat-button">
+        <img class="w-[30px]" src="/media/svgs/chat-red.svg" alt="chat-red">
+        <span class="text-lg text-red ml-[15px] font-semibold">Chat</span>
+        <input type="checkbox" name="chat-trigger" id="chat-trigger" class="css-trigger">
+        <div id="chat-container" class="css-trigger-target">
+            <div class="flex justify-between items-center px-5 py-[17.5px]">
+                <span class="text-xs text-color-title font-semibold">
+                    Chat
+                </span>
+                <label for="chat-trigger">
+                    <img class="w-[24px]" src="/media/svgs/x.svg" alt="x">
+                </label>
+            </div>
+            <!-- START chat messages -->
+            <div class="flex flex-col p-5">
+                <!-- incoming message -->
+                <div class="flex justify-start">
+                    <div class="p-2.5 bg-rosa-10 my-2.5 rounded-[10px] max-w-[363px]">
+                        <div class="text-neutral-80 w-full text-xs leading-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo, sapien sed
+                            condimentum ultrices, urna erat convallis magna, vel maximus nunc ante at lorem. Duis auctor
+                            condimentum lorem
+                        </div>
+                        <div class="text-right text-2xs text-rosa-100 mt-2.5">
+                            01 - Nov-21 15:00 hrs
+                        </div>
+                    </div>
+                </div>
+                <!-- incoming message -->
+                <div class="flex justify-start">
+                    <div class="p-2.5 bg-rosa-10 my-2.5 rounded-[10px] max-w-[363px]">
+                        <div class="text-neutral-80 w-full text-xs leading-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                        <div class="text-right text-2xs text-rosa-100 mt-2.5">
+                            01 - Nov-21 15:00 hrs
+                        </div>
+                    </div>
+                </div>
+                <!-- outgoing message -->
+                <div class="flex justify-end">
+                    <div class="p-2.5 bg-neutral-30 my-2.5 rounded-[10px] max-w-[363px]">
+                        <div class="text-neutral-80 w-full text-xs leading-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                        <div class="text-right text-2xs text-neutral-50 mt-2.5">
+                            01 - Nov-21 15:00 hrs
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END chat messages -->
+            <div
+                class="bg-neutral-20 py-2.5 px-5 rounded-[10px] grid-cols-[1fr_16px_17px] grid items-center gap-x-[20px]">
+                <input type="text" name="chat-message" placeholder="Escribe un mensaje" class="form-control w-full"
+                    style="border: none !important; border-radius: 10px; box-shadow: none;">
+                <img class="cursor-pointer w-[16px]" src="/media/svgs/paper-clip-azul-100.svg"
+                    alt="paper-clip-azul-100">
+                <img class="cursor-pointer w-[17px]" src="/media/svgs/send-black-azul-100.svg"
+                    alt="send-black-azul-100">
+            </div>
+        </div>
+    </label>
+    <!-- END chat -->
+    <!-- START content -->
+    <!-- START modal -->
+    <div class="backdrop flex-center">
+        <div class="rounded-[10px] p-[30px] absolute w-[419px] h-fit bg-white h-[470px]">
+            <label>
+                <img src="/media/svgs/x.svg" alt="x" class="close">
+            </label>
+            <div class="flex-center flex-col w-[305px] mx-auto">
+                <img src="/media/svgs/check-grey-60.svg" alt="check">
+                <div class="title text-center title-center mt-5">Cita creada  y agregada a la agenda con exito.</div>
+            </div>
+            <div class="flex flex-center mt-7">
+                <button class="button-primary w-[157px]">Aceptar</button>
+            </div>
+        </div>
+    </div>
+    <!-- END modal -->
+    <!-- END content -->
+</body>
+
+</html> 

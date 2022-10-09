@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- START import output css -->
+    <link rel="stylesheet" href="/css/output.css">
+    <!-- END import output css -->
+    <!-- START import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- END import fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anke - Home</title>
+</head>
+
+<body class="h-full bg-neutral-10">
+    <!-- START navbar -->
+    <nav class="relative z-5 bg-azul-100 mb-5" style="z-index: 10">
+        <div class="container mx-auto">
+            <div class="relative w-full flex py-5 items-center justify-between">
+                <!-- logo -->
+                <img src="/media/svgs/logo-dark.svg" alt="ANKE" class="w-[80px] h-auto">
+
+                <!-- START menu items -->
+                <div class="flex items-center justify-center relative left-[40px]">
+                    <!-- active menu item -->
+                    <a href="#"
+                        class="bg-azul-80 text-white px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center"
+                        aria-current="page">
+                        <div class="inline-block w-[18px]">
+                            <img src="/media/svgs/home-white.svg" alt="home">
+                        </div>
+                        <span class="ml-4">Home</span>
+                    </a>
+                    <!-- menu item -->
+                    <a href="#"
+                        class="text-white hover:bg-azul-80 px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center">
+                        <div class="inline-block w-[18px]">
+                            <img src="/media/svgs/coffee-white.svg" alt="servicios">
+                        </div>
+                        <span class="ml-4">Servicios</span>
+                    </a>
+                    <!-- menu item -->
+                    <a href="#"
+                        class="text-white hover:bg-azul-80 px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center">
+                        <div class="inline-block w-[14px]">
+                            <img src="/media/svgs/document-white.svg" alt="servicios">
+                        </div>
+                        <span class="ml-4">Pólizas</span>
+                    </a>
+                    <!-- menu item -->
+                    <a href="#"
+                        class="text-white hover:bg-azul-80 px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center">
+                        <div class="inline-block w-[18px]">
+                            <img src="/media/svgs/calendar-white.svg" alt="servicios">
+                        </div>
+                        <span class="ml-4">Calendario</span>
+                    </a>
+                    <!-- menu item -->
+                    <a href="#"
+                        class="text-white hover:bg-azul-80 px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center">
+                        <div class="inline-block w-[20px]">
+                            <img src="/media/svgs/plus-circle-white.svg" alt="servicios">
+                        </div>
+                        <span class="ml-4">Nuevo Siniestro</span>
+                    </a>
+                </div>
+                <!-- END menu items -->
+
+                <!-- START extra items -->
+                <div class="flex items-center">
+                    <button type="button" class="mx-2 p-1">
+                        <img class="w-[16px]" src="/media/svgs/bell.svg" alt="notifications">
+                    </button>
+                    <button type="button" class="mx-2 p-1">
+                        <img class="w-[16px]" src="/media/svgs/phone.svg" alt="notifications">
+                    </button>
+                    <!-- profile picture -->
+                    <div class="mx-2 relative ml-3">
+                        <div>
+                            <button type="button" class="flex rounded-full text-sm" id="user-menu-button"
+                                aria-expanded="false" aria-haspopup="true">
+                                <span class="sr-only">Open user menu</span>
+                                <img class="h-[50px] w-[50px] rounded-full"
+                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    alt="">
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END extra items -->
+            </div>
+        </div>
+
+    </nav>
+    <!-- END navbar -->
+    <!-- right bg extension -->
+    <div class="bg-white" style="position: fixed; right: 0; top: 0; height: 100vh; width: 50vw; z-index: 0;"></div>
+    <!-- START home -->
+    <div class="container flex mx-auto">
+        <!-- START home side widgets -->
+        <div class="flex flex-col pr-11 w-[442px] space-y-5 mt-2.5">
+            <!-- calendar mock -->
+            <div class="bg-white rounded-lg px-4 py-2.5">
+                <img src="/media/pngs/calendar-mock.png" alt="mock">
+            </div>
+            <!-- START citas pendientes -->
+            <div class="bg-white rounded-lg px-4 py-2.5">
+                <div class="text-xs text-azul-60 font-bold"> 
+                    Citas pendientes
+                </div>
+                <!-- cita -->
+                <div class="flex h-fit border-b border-b-neutral-20 py-2.5">
+                    <div class="bg-verde-20 rounded-lg p-1.5 w-[45px] flex flex-col justify-between items-center">
+                        <div class="text-center text-2xs text-verde-60">Jun</div>
+                        <div class="text-center text-sm mt-[-5px] font-bold text-verde-60">30</div>
+                    </div>
+                    <div class="h-[53px] flex-col flex justify-between ml-2.5">
+                        <div class="font-bold text-2xs h-2/4 flex items-center">Otorrinolaringologo</div>
+                        <div class="text-neutral-60 text-2xs h-2/4 flex items-center">14:05 - Dr. Alfredo García
+                            Fernández </div>
+                    </div>
+                </div>
+                <!-- cita bg amarillo -->
+                <div class="flex h-fit border-b border-b-neutral-20 py-2.5">
+                    <div class="bg-amarillo-20 rounded-lg p-1.5 w-[45px] flex flex-col justify-between items-center">
+                        <div class="text-center text-2xs text-amarillo-60">Jul</div>
+                        <div class="text-center text-sm mt-[-5px] font-bold text-amarillo-60">29</div>
+                    </div>
+                    <div class="h-[53px] flex-col flex justify-between ml-2.5">
+                        <div class="font-bold text-2xs h-2/4 flex items-center">Revisión Coche</div>
+                        <div class="text-neutral-60 text-2xs h-2/4 flex items-center">14:05 - Talleres Pedro Baños</div>
+                    </div>
+                </div>
+                <!-- cita -->
+                <div class="flex h-fit border-b border-b-neutral-20 py-2.5">
+                    <div class="bg-verde-20 rounded-lg p-1.5 w-[45px] flex flex-col justify-between items-center">
+                        <div class="text-center text-2xs text-verde-60">Nov</div>
+                        <div class="text-center text-sm mt-[-5px] font-bold text-verde-60">28</div>
+                    </div>
+                    <div class="h-[53px] flex-col flex justify-between ml-2.5">
+                        <div class="font-bold text-2xs h-2/4 flex items-center">Dermatología</div>
+                        <div class="text-neutral-60 text-2xs h-2/4 flex items-center">14:05 - Dra. Agustina Aguilar
+                        </div>
+                    </div>
+                </div>
+                <!-- cita -->
+                <div class="flex h-fit border-b-neutral-20 py-2.5">
+                    <div class="bg-verde-20 rounded-lg p-1.5 w-[45px] flex flex-col justify-between items-center">
+                        <div class="text-center text-2xs text-verde-60">Dic</div>
+                        <div class="text-center text-sm mt-[-5px] font-bold text-verde-60">30</div>
+                    </div>
+                    <div class="h-[53px] flex-col flex justify-between ml-2.5">
+                        <div class="font-bold text-2xs h-2/4 flex items-center">Otorrinolaringologo</div>
+                        <div class="text-neutral-60 text-2xs h-2/4 flex items-center">14:05 - Dr. Alfredo García
+                            Fernández </div>
+                    </div>
+                </div>
+
+                <button class="button-secondary w-full">
+                    Ver todas mis citas
+                </button>
+
+            </div>
+            <!-- END citas pendientes -->
+        </div>
+        <!-- END home side widgets -->
+        <!-- START home main -->
+        <div class="w-full home-main flex justify-end bg-white mt-[-20px] pl-9 py-8 relative">
+            <!-- START mian left column -->
+            <div class="flex flex-col w-full max-w-[640px]">
+                <div class="w-full relative h-[254px]">
+                    <img src="/media/pngs/doctor-banner-1.png" alt="doctor-banner-1"
+                        class="absolute top-0 left-0 h-full w-full z-0">
+                    <div class="absolute left-0 bottom-0 p-[24px]">
+                        <div class="text-lg w-full max-w-[483px] text-white font-bold">Ainim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. </div>
+                        <div class="h-[2px] w-[141px] bg-white mt-[10px] mb-[16px]"></div>
+                        <button class="button-secondary">
+                            Contratar seguro AXA
+                        </button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[253px_1fr] mt-[60px]">
+                    <div>
+                        <img src="/media/pngs/smartphone-app-1.png" alt="smartphone-app-1">
+                    </div>
+                    <div class="pl-[24px]">
+                        <div class="table text-md text-color-title font-bold mb-[4px]">¿Aún no tienes la app?</div>
+                        <div class="h-0 border-t border-t-azul-60 w-[100px]"></div>
+                        <div class="mb-[30px]"></div>
+                        <!-- START app specs -->
+                        <div class="grid grid-rows-[1fr] gap-y-[30px] mb-[65px]">
+                            <!-- spec -->
+                            <div class="grid grid-cols-[50px_1fr]">
+                                <div
+                                    class="w-[50px] h-[50px] flex justify-center items-center rounded-lg bg-naranja-20">
+                                    <img src="/media/svgs/car-naranja-60.svg" alt="car-naranja-60" class="w-[25px]">
+                                </div>
+                                <div class="h-[53px] flex-col flex justify-between ml-5">
+                                    <div class="font-bold text-xs h-2/4 flex items-center">Lorem ipsum dolor sit amet
+                                    </div>
+                                    <div class="text-neutral-60 mt-2.5 w-[300px] text-2xs h-2/4 flex items-center">
+                                        Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- spec -->
+                            <div class="grid grid-cols-[50px_1fr]">
+                                <div class="w-[50px] h-[50px] flex justify-center items-center rounded-lg bg-azul-5">
+                                    <img src="/media/svgs/paper-azul-60.svg" alt="paper-azul-60" class="w-[30px]">
+                                </div>
+                                <div class="h-[53px] flex-col flex justify-between ml-5">
+                                    <div class="font-bold text-xs h-2/4 flex items-center">Lorem ipsum dolor sit amet
+                                    </div>
+                                    <div class="text-neutral-60 mt-2.5 w-[300px] text-2xs h-2/4 flex items-center">
+                                        Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- spec -->
+                            <div class="grid grid-cols-[50px_1fr]">
+                                <div
+                                    class="w-[50px] h-[50px] flex justify-center items-center rounded-lg bg-amarillo-20">
+                                    <img src="/media/svgs/home-amarillo-60.svg" alt="home-amarillo-60" class="w-[22px]">
+                                </div>
+                                <div class="h-[53px] flex-col flex justify-between ml-5">
+                                    <div class="font-bold text-xs h-2/4 flex items-center">Lorem ipsum dolor sit amet
+                                    </div>
+                                    <div class="text-neutral-60 mt-2.5 w-[300px] text-2xs h-2/4 flex items-center">
+                                        Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END app specs -->
+                        <!-- START get apps links -->
+                        <div class="flex justify-between w-full mt-6 w-[333px]">
+                            <a href="#" class="cursor-pointer"><img class="w-[156px]" src="/media/pngs/get-android.png"
+                                    alt="get android app"></a>
+                            <a href="#" class="cursor-pointer"><img class="w-[156px]" src="/media/pngs/get-ios.png"
+                                    alt="get ios app"></a>
+                        </div>
+                        <!-- END get apps links -->
+                    </div>
+                </div>
+
+            </div>
+            <!-- END mian left column -->
+            <!-- START mian right column -->
+            <div class="flex flex-col w-[500px] pl-[35px]">
+                <div
+                    class="grid grid-cols-[20px_1fr_15px] p-[13px] gap-x-[12px] w-full rounded-md bg-naranja-20 mb-[25px]">
+                    <img class="w-[20px]" src="/media/svgs/briefcase-naranja-60.svg" alt="briefcase-naranja-60">
+                    <div class="text-xs text-naranja-60 font-semibold">Buscador de Talleres</div>
+                    <img src="/media/svgs/chevron-right-naranja-60.svg" alt="chevron-right-naranja-60">
+                </div>
+                <div
+                    class="grid grid-cols-[20px_1fr_15px] p-[13px] gap-x-[12px] w-full rounded-md bg-salud-20 mb-[25px]">
+                    <img class="w-[20px]" src="/media/svgs/medkit-salud-60.svg" alt="medkit-salud-60">
+                    <div class="text-xs text-salud-60 font-semibold">Buscador de Talleres</div>
+                    <img src="/media/svgs/chevron-right-salud-60.svg" alt="chevron-right-salud-60">
+                </div>
+                <div class="table text-md text-color-title font-bold mb-[4px]">Noticias destacadas</div>
+                <div class="h-0 border-t border-t-azul-60 w-[100px]"></div>
+                <div class="mb-[20px]"></div>
+                <!-- START noticias -->
+                <div class="grid grid-rows-[repeat(155px)] gap-y-[15px]">
+                    <!-- noticia item -->
+                    <div class="grid grid-cols-[153px_1fr] gap-x-[20px]">
+                        <div class="overflow-hidden rounded-lg">
+                            <img class="w-full" src="/media/pngs/img-noticia (5).png" alt="img-noticia">
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-2xs font-bold">Nueva sucursal en Maria de la Salud</div>
+                            <div class="text-2xs font-light mt-1 leading-4">
+                                Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus neque,
+                                elementum ullamcorper hendrerit eget, tincidunt et nisi.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- noticia item -->
+                    <div class="grid grid-cols-[153px_1fr] gap-x-[20px]">
+                        <div class="overflow-hidden rounded-lg">
+                            <img class="w-full" src="/media/pngs/img-noticia (4).png" alt="img-noticia">
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-2xs font-bold">Nueva sucursal en Maria de la Salud</div>
+                            <div class="text-2xs font-light mt-1 leading-4">
+                                Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus neque,
+                                elementum ullamcorper hendrerit eget, tincidunt et nisi.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- noticia item -->
+                    <div class="grid grid-cols-[153px_1fr] gap-x-[20px]">
+                        <div class="overflow-hidden rounded-lg">
+                            <img class="w-full" src="/media/pngs/img-noticia (3).png" alt="img-noticia">
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-2xs font-bold">Nueva sucursal en Maria de la Salud</div>
+                            <div class="text-2xs font-light mt-1 leading-4">
+                                Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus neque,
+                                elementum ullamcorper hendrerit eget, tincidunt et nisi.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- noticia item -->
+                    <div class="grid grid-cols-[153px_1fr] gap-x-[20px]">
+                        <div class="overflow-hidden rounded-lg">
+                            <img class="w-full" src="/media/pngs/img-noticia (2).png" alt="img-noticia">
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-2xs font-bold">Nueva sucursal en Maria de la Salud</div>
+                            <div class="text-2xs font-light mt-1 leading-4">
+                                Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus neque,
+                                elementum ullamcorper hendrerit eget, tincidunt et nisi.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- noticia item -->
+                    <div class="grid grid-cols-[153px_1fr] gap-x-[20px]">
+                        <div class="overflow-hidden rounded-lg">
+                            <img class="w-full" src="/media/pngs/img-noticia (1).png" alt="img-noticia">
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-2xs font-bold">Nueva sucursal en Maria de la Salud</div>
+                            <div class="text-2xs font-light mt-1 leading-4">
+                                Aliquam porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus neque,
+                                elementum ullamcorper hendrerit eget, tincidunt et nisi.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END noticias -->
+            </div>
+            <!-- END mian right column -->
+        </div>
+        <!-- END home main -->
+    </div>
+    
+    <!-- END home -->
+</body>
+
+</html>

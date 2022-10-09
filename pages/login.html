@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- START import output css -->
+    <link rel="stylesheet" href="/css/output.css">
+    <!-- END import output css -->
+    <!-- START import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- END import fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anke - Login</title>
+</head>
+
+<body class="h-full bg-neutral-10">
+    
+    <div class="flex h-full justify-center py-12 sm:px-6 lg:px-8">
+
+        <div class="mt-8 w-4/5 flex justify-evenly">
+            <!-- START login info -->
+            <div class="flex items-start flex-col justify-start ">
+                <img src="/media/svgs/logo.svg" alt="ANKE" class="w-[80px] h-auto">
+                <div class="text-[32px] border-l-2 border-l-azul-80 font-bold text-azul-80 pl-5 mt-8 mb-[50px]">
+                    ¿Por qué Anke Sevenster?
+                </div>
+                <div class="flex justify-start mb-5 items-center">
+                    <div class="bg-naranja-20 flex justify-center items-center px-[7px] py-[9px] rounded-md">
+                        <img src="/media/svgs/check-anaranja-60.svg" alt="check" class="w-[17px]">
+                    </div>
+                    <span class="text-md ml-3">Morbi metus neque, elementum ullamcorper</span>
+                </div>
+                <div class="flex justify-start mb-5 items-center">
+                    <div class="bg-verde-20 flex justify-center items-center px-[7px] py-[9px] rounded-md">
+                        <img src="/media/svgs/check-verde-60.svg" alt="check" class="w-[17px]">
+                    </div>
+                    <span class="text-md ml-3">Ainim mollit non deserunt</span>
+                </div>
+                <div class="flex justify-start mb-5 items-center">
+                    <div class="bg-morado-20 flex justify-center items-center px-[7px] py-[9px] rounded-md">
+                        <img src="/media/svgs/check-morado-60.svg" alt="check" class="w-[17px]">
+                    </div>
+                    <span class="text-md ml-3">Morbi metus neque, elementum ullamcorper</span>
+                </div>
+                <div class="mt-[50px] flex justify-end items-center w-full">
+                    <img src="/media/pngs/finances1.png" alt="finances" class="w-[520px]">
+                </div>
+            </div>
+            <!-- END login info -->
+            <div class="flex-col flex items-center ">
+                <!-- START login card -->
+                <div class="bg-white p-16 shadow rounded-xl h-fit">
+                    <div class="text-md font-bold text-center text-azul-80 mb-[50px]">
+                        ¡Bienvenido de nuevo!
+                        <span class="block w-[83px] border-b-azul-80 border-b-2 mx-auto"></span>
+                    </div>
+                    <form class="w-[360px]" action="#" method="POST">
+                        <div class="my-5">
+                            <label for="email" class="block text-2xs font-medium text-gray-700">DNI/Pasaporte/NIE</label>
+                            <div class="mt-1">
+                                <input id="email" name="email" type="email" autocomplete="email" required
+                                    class="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                            </div>
+                        </div>
+    
+                        <div class="my-5 mb-0 relative">
+                            <label for="password" class="block text-2xs font-medium text-gray-700">Contraseña</label>
+                            <div class="mt-1">
+                                <div class="absolute w-[17px] right-[20px] bottom-[13px] cursor-pointer"><img src="/media/svgs/eye-off.svg" alt="hide"></div>
+                                <input id="password" name="password" type="password" autocomplete="current-password"
+                                    required
+                                    class="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                            </div>
+                        </div>
+    
+                        <div class="flex justify-start flex-col">
+                            <div class="flex my-2.5">
+                                <input id="accept-personal-info" name="accept-personal-info" type="checkbox"
+                                    class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                <label for="accept-personal-info" class="ml-2 block cursor-pointer text-2xs text-gray-900">Mediante el envío de mis datos personales confirmo que he leído y acepto las Condiones de uso y la Política de Privacidad.</label>
+                            </div>
+                            <div class="flex my-2.5 mt-0">
+                                <input id="remember-password" name="remember-password" type="checkbox"
+                                    class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                <label for="remember-password" class="ml-2 block cursor-pointer text-2xs text-gray-900">Recordar contraseña</label>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <button type="submit"
+                                class="button-primary mt-[60px]">Sign
+                                in</button>
+                        </div>
+                    </form>
+    
+                    <div class="mt-6">
+                        <div class="mt-6 flex flex-col">
+                            <div class="text-2xs text-center">
+                                <span>No estas registrado?&nbsp;</span><a class="text-azul-60" href="javascript:void(0)">Crea un cuenta</a>
+                            </div>
+                            <div class="mt-2.5 text-center text-2xs">
+                                <a href="javascript:void(0)">Olvidaste tu contraseña?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END login card -->
+                
+                <div class="w-fit min-w-[327px] mt-[70px]">
+                    <div class="text-md text-gris-80">
+                        Descargate la app Anke with us
+                    </div>
+                    <!-- START get apps links -->
+                    <div class="flex justify-between w-full mt-6 w-[333px]">
+                        <a href="#" class="cursor-pointer"><img class="w-[156px]" src="/media/pngs/get-android.png" alt="get android app"></a>
+                        <a href="#" class="cursor-pointer"><img class="w-[156px]" src="/media/pngs/get-ios.png" alt="get ios app"></a>
+                    </div>
+                    <!-- END get apps links -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
