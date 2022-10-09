@@ -1,3 +1,5 @@
+<!-- Esto es un archivo que uso para crear una nueva pantalla con la configuración y elementos básicos del UI -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,14 +17,14 @@
         rel="stylesheet">
     <!-- END import fonts -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador de Talleres - Cita</title>
+    <title>Anke - Home</title>
 </head>
 
 <body>
     <!-- START navbar -->
     <nav class="relative z-5 bg-azul-100 mb-5" style="z-index: 10">
         <div class="container mx-auto">
-            <div class="relative w-full flex px-5 xl:px-0 py-5 items-center justify-between">
+            <div class="relative w-full flex py-5 items-center justify-between">
                 <!-- logo -->
                 <img src="/media/svgs/logo-dark.svg" alt="ANKE" class="w-[80px] h-auto">
 
@@ -30,44 +32,44 @@
                 <div class="flex items-center justify-center relative left-[40px]">
                     <!-- active menu item -->
                     <a href="#"
-                        class="bg-azul-80 text-white px-3 py-2 xl:mx-5 text-xs rounded-md font-medium inline-flex items-center"
+                        class="bg-azul-80 text-white px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center"
                         aria-current="page">
                         <div class="inline-block w-[18px]">
                             <img src="/media/svgs/home-white.svg" alt="home">
                         </div>
-                        <span class="ml-4 text-2xs xl:text-xs">Home</span>
+                        <span class="ml-4">Home</span>
                     </a>
                     <!-- menu item -->
                     <a href="#"
-                        class="text-white hover:bg-azul-80 px-3 py-2 xl:mx-5 text-xs rounded-md font-medium inline-flex items-center">
+                        class="text-white hover:bg-azul-80 px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center">
                         <div class="inline-block w-[18px]">
                             <img src="/media/svgs/coffee-white.svg" alt="servicios">
                         </div>
-                        <span class="ml-4 text-2xs xl:text-xs">Servicios</span>
+                        <span class="ml-4">Servicios</span>
                     </a>
                     <!-- menu item -->
                     <a href="#"
-                        class="text-white hover:bg-azul-80 px-3 py-2 xl:mx-5 text-xs rounded-md font-medium inline-flex items-center">
+                        class="text-white hover:bg-azul-80 px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center">
                         <div class="inline-block w-[14px]">
                             <img src="/media/svgs/document-white.svg" alt="servicios">
                         </div>
-                        <span class="ml-4 text-2xs xl:text-xs">Pólizas</span>
+                        <span class="ml-4">Pólizas</span>
                     </a>
                     <!-- menu item -->
                     <a href="#"
-                        class="text-white hover:bg-azul-80 px-3 py-2 xl:mx-5 text-xs rounded-md font-medium inline-flex items-center">
+                        class="text-white hover:bg-azul-80 px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center">
                         <div class="inline-block w-[18px]">
                             <img src="/media/svgs/calendar-white.svg" alt="servicios">
                         </div>
-                        <span class="ml-4 text-2xs xl:text-xs">Calendario</span>
+                        <span class="ml-4">Calendario</span>
                     </a>
                     <!-- menu item -->
                     <label for="siniestro-trigger"
-                        class="text-white hover:bg-azul-80 px-3 py-2 xl:mx-5 text-xs rounded-md font-medium inline-flex items-center cursor-pointer">
+                        class="text-white hover:bg-azul-80 px-3 py-2 mx-5 text-xs rounded-md text-sm font-medium inline-flex items-center cursor-pointer">
                         <div class="inline-block w-[20px]">
                             <img src="/media/svgs/plus-circle-white.svg" alt="servicios">
                         </div>
-                        <span class="ml-4 text-2xs xl:text-xs">Nuevo Siniestro</span>
+                        <span class="ml-4">Nuevo Siniestro</span>
                     </label>
                 </div>
                 <!-- END menu items -->
@@ -286,172 +288,66 @@
     </label>
     <!-- END chat -->
     <!-- START content -->
-    <div class="container bg-white rounded-[10px] p-[30px]">
-        <div class="title">
-            Buscador de talleres
-        </div>
-        <!-- START tabs -->
-        <div class="mt-2">
-            <div class="border-b border-neutral-40">
-                <nav class="-mb-px flex space-x-16" aria-label="Tabs">
-                    <a href="#"
-                        class="border-red text-azul-60 group inline-flex items-center pt-4 pb-1.5 px-1 border-b-2 font-medium text-xs">
-                        <img src="/media/svgs/car-spark-azul-60.svg" alt="car-spark-azul-60" class="mr-5 w-[20px]">
-                        <span>He tenido un golpe</span>
-                    </a>
-
-                    <a href="#"
-                        class="border-transparent text-neutral-60 hover:text-gray-700 hover:border-neutral-40 group inline-flex items-center pt-4 pb-1.5 px-1 border-b-2 font-medium text-xs">
-                        <img src="/media/svgs/screw-neutral-80.svg" alt="screw-neutral-40" class="mr-5 w-[20px]">
-                        <span>He tenido una avería</span>
-                    </a>
-
-                    <a href="#"
-                        class="border-transparent text-neutral-60 hover:text-gray-700 hover:border-neutral-40 group inline-flex items-center pt-4 pb-1.5 px-1 border-b-2 font-medium text-xs"
-                        aria-current="page">
-                        <img src="/media/svgs/broken-glass-neutral-80.svg" alt="broken-glass-neutral-40"
-                            class="mr-5 w-[20px]">
-                        <span>Tengo una luna rota</span>
-                    </a>
-                </nav>
+    <!-- START modal -->
+    <div class="backdrop flex-center">
+        <div class="rounded-[10px] p-[30px] absolute w-[419px] h-fit bg-white h-[470px]">
+            <label>
+                <img src="/media/svgs/x.svg" alt="x" class="close">
+            </label>
+            <div class="title">Cambiar idioma</div>
+            <!-- START radio options -->
+            <div class="flex flex-col space-y-5">
+                <!-- radio option -->
+                <input type="radio" name="c-idioma" id="c-idioma-0" class="css-trigger">
+                <label class="radio-option" for="c-idioma-0">
+                    <img src="/media/pngs/españa.png">
+                    Español
+                    <div class="check">
+                        <img src="/media/svgs/check-azul.svg" class="i-2">
+                        <img src="/media/svgs/check-neutral-60.svg" class="i-1">
+                    </div>
+                </label>
+                <!-- radio option -->
+                <input type="radio" name="c-idioma" id="c-idioma-1" class="css-trigger">
+                <label class="radio-option" for="c-idioma-1">
+                    <img src="/media/pngs/UK.png">
+                    Ingles
+                    <div class="check">
+                        <img src="/media/svgs/check-azul.svg" class="i-2">
+                        <img src="/media/svgs/check-neutral-60.svg" class="i-1">
+                    </div>
+                </label>
+                <!-- radio option -->
+                <input type="radio" name="c-idioma" id="c-idioma-2" class="css-trigger">
+                <label class="radio-option" for="c-idioma-2">
+                    <img src="/media/pngs/alemania.png">
+                    Alemán
+                    <div class="check">
+                        <img src="/media/svgs/check-azul.svg" class="i-2">
+                        <img src="/media/svgs/check-neutral-60.svg" class="i-1">
+                    </div>
+                </label>
+                <!-- radio option -->
+                <input type="radio" name="c-idioma" id="c-idioma-3" class="css-trigger">
+                <label class="radio-option" for="c-idioma-3">
+                    <img src="/media/pngs/Catalan.png">
+                    Catalán
+                    <div class="check">
+                        <img src="/media/svgs/check-azul.svg" class="i-2">
+                        <img src="/media/svgs/check-neutral-60.svg" class="i-1">
+                    </div>
+                </label>
+            </div>
+            <!-- END radio options -->
+            <div class="flex-center mt-10">
+                <button class="button-primary">
+                    Cambiar y continuar
+                </button>
             </div>
         </div>
-        <!-- END tabs -->
-        <!-- START search row -->
-        <div class="flex mt-5 justify-between items-center">
-
-            <div class="flex justify-between items-center space-x-4 mr-5 xl:mr-0">
-                <input type="text" class="form-control w-[204px] xl:w-[290px]" placeholder="Dirección, provincia o localidad">
-                <div class="w-[204px] xl:w-[290px]">
-                    <select class="form-control ">
-                        <option selected>Especialidad</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </div>
-                <div>
-                    <select class="form-control w-[159px]">
-                        <option selected>Idioma</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </div>
-                <div class="flex justify-between items-center">
-                    <span class="font-medium text-2xs xl:text-xs">Solo resultados con citación online</span>
-                    <div class="flex justify-center items-center xl:ml-[20px]">
-                        <input id="toggle1" type="checkbox" class="css-trigger">
-                        <label for="toggle1" class="toggle" role="switch" aria-checked="false">
-                        </label>
-                    </div>
-                </div>
-                <div class="flex justify-between items-center pl-[10px]">
-                    <span class="font-medium text-2xs xl:text-xs">Videoconsultas</span>
-                    <div class="flex justify-center items-center ml-[20px]">
-                        <input id="toggle2" type="checkbox" class="css-trigger">
-                        <label for="toggle2" class="toggle" role="switch" aria-checked="false">
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <button class="button-primary w-[90px] xl:min-w-[139px]">Buscar</button>
-        </div>
-        <!-- END search row -->
-        <!-- START results container -->
-        <div class="w-full flex-center flex-wrap" style="height: calc(100vh - 350px);">
-            <!-- START results -->
-            <div class="w-full grid grid-cols-[485px_1fr] h-full py-5">
-                <div class="table h-full pr-5">
-                    <!-- START detalles -->
-                    <div class="w-full pb-[15px] pr-2.5">
-                        <div class="flex-between">
-                            <div class="grid grid-cols-[35px_40px_1fr] w-fit items-center">
-                                <img src="/media/svgs/chevron-left-neutral-80.svg" alt="">
-                                <div class="w-[40px] h-[40px] flex justify-center items-center rounded-lg bg-morado-20">
-                                    <img src="/media/svgs/tool-rosa-60.svg" alt="tool-rosa-60.svg" class="w-[20px]">
-                                </div>
-                                <div
-                                    class="flex-col flex justify-between ml-[15px] text-xs font-semibold text-color-default">
-                                    <span>Lorem ipsum dolor sit amet</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-[30px_1fr]">
-                        <img src="/media/svgs/landmark-neutral-80.svg" alt="" width="17">
-                        <div class="text-xs font-medium">Carrer del Mestre Chapí, 3, local derecha, 07008 Palma, Illes
-                            Balears</div>
-                    </div>
-                    <div class="grid grid-cols-[30px_1fr] mt-[15px]">
-                        <img src="/media/svgs/at-neutral-80.svg" alt="" width="19">
-                        <div class="text-xs font-medium">correo@correo.com</div>
-                    </div>
-                    <div class="grid grid-cols-[30px_1fr] mt-[15px]">
-                        <img src="/media/svgs/phone-neutral-80.svg" alt="" width="20">
-                        <div class="text-xs font-medium">618964589</div>
-                    </div>
-                    <div class="grid grid-cols-[30px_1fr] mt-[15px]">
-                        <img src="/media/svgs/clock-neutral-80.svg" alt="" width="20">
-                        <div class="text-xs font-medium">L-V:  08:30h - 14h y de 15h - 19h <br> S: 08:30h - 15h</div>
-                    </div>
-                    <div class="mx-[-10px]">
-                        <div class="option no-px">
-                            <span class="text-xs text-color-light font-medium">Servicios</span>
-                            <img src="/media/svgs/chevron-down-neutral-80.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-[1fr_1fr] grid-rows-[repeat(1fr_1fr)] gap-x-[15px] gap-y-[15px] mt-[15px]">
-                        <div class="grid grid-cols-[15px_1fr] items-center gap-x-[15px]">
-                            <img src="/media/svgs/check-neutral-60.svg" alt="">
-                            <div class="text-color-light text-xs leading-5 font-medium">Recogida y entrega a domicilio</div>
-                        </div>
-                        <div class="grid grid-cols-[15px_1fr] items-center gap-x-[15px]">
-                            <img src="/media/svgs/check-neutral-60.svg" alt="">
-                            <div class="text-color-light text-xs leading-5 font-medium">Pre-itv</div>
-                        </div>
-                        <div class="grid grid-cols-[15px_1fr] items-center gap-x-[15px]">
-                            <img src="/media/svgs/check-neutral-60.svg" alt="">
-                            <div class="text-color-light text-xs leading-5 font-medium">Limpieza exterior</div>
-                        </div>
-                        <div class="grid grid-cols-[15px_1fr] items-center gap-x-[15px]">
-                            <img src="/media/svgs/check-neutral-60.svg" alt="">
-                            <div class="text-color-light text-xs leading-5 font-medium">Itv en golpes fuertes o particulares (traslado)</div>
-                        </div>
-                        <div class="grid grid-cols-[15px_1fr] items-center gap-x-[15px]">
-                            <img src="/media/svgs/check-neutral-60.svg" alt="">
-                            <div class="text-color-light text-xs leading-5 font-medium">Limpieza exterior+interior</div>
-                        </div>
-                        <div class="grid grid-cols-[15px_1fr] items-center gap-x-[15px]">
-                            <img src="/media/svgs/check-neutral-60.svg" alt="">
-                            <div class="text-color-light text-xs leading-5 font-medium">Reparación rápida</div>
-                        </div>
-                        <div class="grid grid-cols-[15px_1fr] items-center gap-x-[15px]">
-                            <img src="/media/svgs/check-neutral-60.svg" alt="">
-                            <div class="text-color-light text-xs leading-5 font-medium">Sala de espera</div>
-                        </div>
-                        <div class="grid grid-cols-[15px_1fr] items-center gap-x-[15px]">
-                            <img src="/media/svgs/check-neutral-60.svg" alt="">
-                            <div class="text-color-light text-xs leading-5 font-medium">Reparación rápida</div>
-                        </div>
-                        <div class="grid grid-cols-[15px_1fr] items-center gap-x-[15px]">
-                            <img src="/media/svgs/check-neutral-60.svg" alt="">
-                            <div class="text-color-light text-xs leading-5 font-medium">Revisión anual gratuita</div>
-                        </div>
-                    </div>
-                    <!-- END detalles -->
-
-                </div>
-                <div class="px-2.5">
-                    <img class="h-full w-full" src="/media/pngs/maps-mock.png" alt="maps">
-                </div>
-            </div>
-            <!-- END results -->
-        </div>
-        <!-- END results container -->
     </div>
+    <!-- END modal -->
     <!-- END content -->
 </body>
 
-</html>
+</html> 
