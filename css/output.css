@@ -1442,6 +1442,14 @@ select {
   width: 60%;
 }
 
+.w-\[204px\] {
+  width: 204px;
+}
+
+.w-\[90px\] {
+  width: 90px;
+}
+
 .min-w-\[139px\] {
   min-width: 139px;
 }
@@ -3303,7 +3311,37 @@ label.toggle::after{
 }
 
 @media (min-width: 1280px) {
+  .xl\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .xl\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .xl\:ml-\[20px\] {
+    margin-left: 20px;
+  }
+
   .xl\:block {
     display: block;
+  }
+
+  .xl\:w-\[290px\] {
+    width: 290px;
+  }
+
+  .xl\:min-w-\[139px\] {
+    min-width: 139px;
+  }
+
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .xl\:text-xs {
+    font-size: 16px;
   }
 }
