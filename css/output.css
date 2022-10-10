@@ -1634,14 +1634,6 @@ select {
   grid-template-columns: 25% 1fr;
 }
 
-.grid-cols-\[12vw\%_1fr\] {
-  grid-template-columns: 12vw% 1fr;
-}
-
-.grid-cols-\[5vw\%_1fr\] {
-  grid-template-columns: 5vw% 1fr;
-}
-
 .grid-cols-\[5vw_1fr\] {
   grid-template-columns: 5vw 1fr;
 }
@@ -2501,6 +2493,10 @@ select {
 
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.pl-\[30px\] {
+  padding-left: 30px;
 }
 
 .text-left {
@@ -3505,6 +3501,10 @@ label.toggle::after{
 
   .\32xl\:ml-0 {
     margin-left: 0px;
+  }
+
+  .\32xl\:ml-\[60px\] {
+    margin-left: 60px;
   }
 
   .\32xl\:block {
