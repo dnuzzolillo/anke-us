@@ -854,6 +854,11 @@ select {
   margin-bottom: 0.5rem;
 }
 
+.mx-\[-10px\] {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
 .-mx-0\.5 {
   margin-left: -0.125rem;
   margin-right: -0.125rem;
@@ -874,6 +879,11 @@ select {
   margin-right: 0px;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .-my-2 {
   margin-top: -0.5rem;
   margin-bottom: -0.5rem;
@@ -882,16 +892,6 @@ select {
 .-mx-4 {
   margin-left: -1rem;
   margin-right: -1rem;
-}
-
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
-.mx-\[-10px\] {
-  margin-left: -10px;
-  margin-right: -10px;
 }
 
 .mb-5 {
@@ -1050,6 +1050,10 @@ select {
   margin-top: 70px;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-7 {
   margin-top: 1.75rem;
 }
@@ -1084,10 +1088,6 @@ select {
 
 .mt-\[13px\] {
   margin-top: 13px;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .block {
@@ -1200,12 +1200,12 @@ select {
   height: 1rem;
 }
 
-.h-\[5px\] {
-  height: 5px;
-}
-
 .h-\[470px\] {
   height: 470px;
+}
+
+.h-\[5px\] {
+  height: 5px;
 }
 
 .h-\[88px\] {
@@ -1342,8 +1342,8 @@ select {
   width: 1.25rem;
 }
 
-.w-\[442px\] {
-  width: 442px;
+.w-\[290px\] {
+  width: 290px;
 }
 
 .w-\[141px\] {
@@ -1398,6 +1398,10 @@ select {
   width: 1rem;
 }
 
+.w-\[419px\] {
+  width: 419px;
+}
+
 .w-\[476px\] {
   width: 476px;
 }
@@ -1408,10 +1412,6 @@ select {
 
 .w-\[157px\] {
   width: 157px;
-}
-
-.w-\[419px\] {
-  width: 419px;
 }
 
 .w-\[305px\] {
@@ -1438,8 +1438,16 @@ select {
   width: 10px;
 }
 
+.w-\[442px\] {
+  width: 442px;
+}
+
 .w-\[40\%\] {
   width: 40%;
+}
+
+.w-\[350px\] {
+  width: 350px;
 }
 
 .w-\[1150px\] {
@@ -1450,12 +1458,12 @@ select {
   width: 60%;
 }
 
-.w-\[350px\] {
-  width: 350px;
+.w-\[380px\] {
+  width: 380px;
 }
 
-.w-\[290px\] {
-  width: 290px;
+.min-w-\[139px\] {
+  min-width: 139px;
 }
 
 .min-w-\[327px\] {
@@ -1472,10 +1480,6 @@ select {
 
 .min-w-\[190px\] {
   min-width: 190px;
-}
-
-.min-w-\[139px\] {
-  min-width: 139px;
 }
 
 .max-w-\[363px\] {
@@ -1500,6 +1504,10 @@ select {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[495px\] {
+  max-width: 495px;
 }
 
 .flex-auto {
@@ -2371,10 +2379,6 @@ select {
 
 .pl-2 {
   padding-left: 0.5rem;
-}
-
-.pr-11 {
-  padding-right: 2.75rem;
 }
 
 .pl-\[24px\] {
@@ -3363,6 +3367,10 @@ label.toggle::after{
 
   .xl\:min-w-\[139px\] {
     min-width: 139px;
+  }
+
+  .xl\:max-w-\[565px\] {
+    max-width: 565px;
   }
 
   .xl\:flex-row {
