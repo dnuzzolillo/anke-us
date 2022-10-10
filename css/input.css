@@ -78,7 +78,7 @@ html {
     width: calc(100% - 442px);
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1280px) {
     .home-sm {
         width: 100%;
         margin-top: 30px;
