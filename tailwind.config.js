@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./pages/**/*.{html,js}"],
+  content: ["./pages/**/*.{html,js}", "./pages-gestion/**/*.{html,js}"],
   theme: {
     fontFamily: {
       sans: ['Montserrat', 'sans-serif']
@@ -122,6 +122,7 @@ module.exports = {
   plugins: [
     require('@tailwindcss/forms'),
   ],
+  prefix: 'tw-',
 }
 
 

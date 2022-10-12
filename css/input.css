@@ -5,81 +5,81 @@
 /* GLOBALS --> */
 
 html {
-    @apply text-neutral-80 h-full bg-neutral-10;
+    @apply tw-text-neutral-80 tw-h-full tw-bg-neutral-10;
 }
 
-.button-primary {
-    @apply flex justify-center rounded-md items-center border border-transparent bg-azul-60 py-2 px-4 text-sm font-medium text-white shadow-sm text-2xs
+.tw-button-primary {
+    @apply tw-flex tw-justify-center tw-rounded-md tw-items-center tw-border tw-border-transparent tw-bg-azul-60 tw-py-2 tw-px-4 tw-text-sm tw-font-medium tw-text-white tw-shadow-sm tw-text-2xs
 }
 
-.button-secondary {
-    @apply flex justify-center rounded-md border border items-center border-neutral-30 py-2 px-4 text-sm font-medium text-neutral-80 shadow-sm text-2xs bg-white
+.tw-button-secondary {
+    @apply tw-flex tw-justify-center tw-rounded-md tw-border tw-border tw-items-center tw-border-neutral-30 tw-py-2 tw-px-4 tw-text-sm tw-font-medium tw-text-neutral-80 tw-shadow-sm tw-text-2xs tw-bg-white
 }
 
-.option {
-    @apply grid rounded-md grid-cols-[1fr_15px] gap-x-[15px] items-center px-[8px] cursor-pointer py-[9px] my-2.5;
+.tw-option {
+    @apply tw-grid tw-rounded-md tw-grid-cols-[1fr_15px] tw-gap-x-[15px] tw-items-center tw-px-[8px] tw-cursor-pointer tw-py-[9px] tw-my-2.5;
 }
 
-.option.rect {
+.tw-option.tw-rect {
     border-radius: 0;
-    @apply my-0;
+    @apply tw-my-0;
 }
 
-.option:hover {
-    @apply bg-neutral-20;
+.tw-option:hover {
+    @apply tw-bg-neutral-20;
 }
  
-.container {
-    @apply w-[1600px] max-w-[100%] mx-auto;
+.tw-container {
+    @apply tw-w-[1600px] tw-max-w-[100%] tw-mx-auto;
     z-index: 10;
 }
 
-.flex-center {
+.tw-flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.flex-between {
+.tw-flex-between {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.text-color-default {
-    @apply text-neutral-80;
+.tw-text-color-default {
+    @apply tw-text-neutral-80;
 }
 
-.text-color-title {
-    @apply text-azul-60;
+.tw-text-color-title {
+    @apply tw-text-azul-60;
 }
 
-.text-color-light {
-    @apply text-neutral-60;
+.tw-text-color-light {
+    @apply tw-text-neutral-60;
 }
 
-.title {
-    @apply text-azul-60 text-md text-color-title font-bold;
+.tw-title {
+    @apply tw-text-azul-60 tw-text-md tw-text-color-title tw-font-bold;
 }
 
-.title::after {
+.tw-title::after {
     content: '';
     display: table;
-    @apply h-0 border-t-[2px] border-t-azul-60 w-[100px] mt-1;
+    @apply tw-h-0 tw-border-t-[2px] tw-border-t-azul-60 tw-w-[100px] tw-mt-1;
 }
-.title-center::after {
+.tw-title-center::after {
     content: '';
     display: table;
-    @apply h-0 border-t border-t-azul-60 w-[100px] mt-1 mx-auto;
+    @apply tw-h-0 tw-border-t tw-border-t-azul-60 tw-w-[100px] tw-mt-1 tw-mx-auto;
 }
 
-.home-main {
+.tw-home-main {
     min-height: calc(100vh - 90px);
     width: calc(100% - 442px);
 }
 
-@media (max-width: 1280px) {
-    .home-sm {
+@media (max-width: 1140px) {
+    .tw-home-sm {
         width: 100%;
         margin-top: 30px;
         padding-right: 20px;
@@ -88,13 +88,13 @@ html {
     
 }
 
-.hr {
+.tw-hr {
     width: 100%;
     height: 0px;
-    @apply border-neutral-40 border-b;
+    @apply tw-border-neutral-40 tw-border-b;
 }
 
-.close {
+.tw-close {
     position: absolute;
     right: 26px;
     top: 26px;
@@ -102,23 +102,23 @@ html {
     cursor: pointer;
 }
 
-.composed-button {
-    @apply flex justify-between items-center;
+.tw-composed-button {
+    @apply tw-flex tw-justify-between tw-items-center;
 }
 
-.border-light {
+.tw-border-light {
     border: 1px solid #D1D5DB;
 }
 
-.border-b-light {
+.tw-border-b-light {
     border-bottom: 1px solid #D1D5DB;
 }
 
-.bg-azul-8 {
+.tw-bg-azul-8 {
     background-color: #EFEFF9;
 }
 
-.index-list {
+.tw-index-list {
     display: block;
     -moz-column-count: 3;
     -moz-column-gap: 20px;
@@ -129,24 +129,24 @@ html {
     column-fill: balance;
 }
 
-.radio-option {
+.tw-radio-option {
     height: 50px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.tw-05);
     border-radius: 5px;
     align-items: center;
     padding: 10px;
-    @apply grid grid-cols-[30px_1fr_25px] gap-x-[20px] border-2 border-transparent cursor-pointer;
+    @apply tw-grid tw-grid-cols-[30px_1fr_25px] tw-gap-x-[20px] tw-border-2 tw-border-transparent tw-cursor-pointer;
 }
 
-.radio-option:hover {
-    @apply border-2 border-azul-60;
+.tw-radio-option:hover {
+    @apply tw-border-2 tw-border-azul-60;
 }
 
-.radio-option .check img {
+.tw-radio-option .tw-check img {
     width: 13px;
 }
-.radio-option .check {
+.tw-radio-option .tw-check {
     border-radius: 50%;
     border: 2px solid #000000;
     display: flex;
@@ -156,98 +156,98 @@ html {
     height: 25px;
 }
 
-.css-trigger:checked + .radio-option .check {
+.tw-css-trigger:checked + .tw-radio-option .tw-check {
     border: 2px solid #00008F;
 }
-.css-trigger + .radio-option .check .i-2 {
+.tw-css-trigger + .tw-radio-option .tw-check .tw-i-2 {
     display: none;
 }
-.css-trigger:checked + .radio-option .check .i-1 {
+.tw-css-trigger:checked + .tw-radio-option .tw-check .tw-i-1 {
     display: none;
 }
-.css-trigger:checked + .radio-option .check .i-2 {
+.tw-css-trigger:checked + .tw-radio-option .tw-check .tw-i-2 {
     display: block;
 }
 
 /* <-- GLOBALS */
 /* CSS TRIGGER --> */
 
-.css-trigger {
+.tw-css-trigger {
     position: absolute;
     width: 0;
     height: 0;
     visibility: hidden;
 }
 
-.css-trigger-label {
+.tw-css-trigger-label {
     display: inherit;
 }
 
-.css-trigger:not(:checked) + .css-trigger-target {
+.tw-css-trigger:not(:checked) + .tw-css-trigger-target {
     display: none !important;
 }
-.css-trigger:not(:checked) + .css-trigger-target-radio {
+.tw-css-trigger:not(:checked) + .tw-css-trigger-target-radio {
     display: none !important;
 }
-.css-trigger:checked + .css-trigger-target-radio + .css-trigger-target-radio {
+.tw-css-trigger:checked + .tw-css-trigger-target-radio + .tw-css-trigger-target-radio {
     display: none !important;
 }
 
 /* <-- CSS TRIGGER */
 /* FORM CONTROLS --> */
 
-.form-group {
+.tw-form-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 9px;
 }
 
-input.form-control, textarea.form-control {
+input.tw-form-control, textarea.tw-form-control {
     border: 1px solid #D1D5DB;
-    @apply  py-2 pl-3 text-2xs text-neutral-80 rounded-[6px];
+    @apply tw-py-2 tw-pl-3 tw-text-2xs tw-text-neutral-80 tw-rounded-[6px];
 }
 
-select.form-control {
-    @apply block w-full rounded-md border-neutral-40 py-2 pl-3 pr-10 text-2xs;
+select.tw-form-control {
+    @apply tw-block tw-w-full tw-rounded-md tw-border-neutral-40 tw-py-2 tw-pl-3 tw-pr-10 tw-text-2xs;
 }
 
-.form-control:focus {
-    @apply border-azul-60 outline-none;
+.tw-form-control:focus {
+    @apply tw-border-azul-60 tw-outline-none;
 }
 
-label.toggle {
-    transform: scale(1.4);
-    @apply bg-neutral-30 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out;
+label.tw-toggle {
+    transform: scale(1.tw-4);
+    @apply tw-bg-neutral-30 tw-relative tw-inline-flex tw-h-6 tw-w-11 tw-flex-shrink-0 tw-cursor-pointer tw-rounded-full tw-border-2 tw-border-transparent tw-transition-colors tw-duration-200 tw-ease-in-out;
 }
 
-label.toggle::after{
+label.tw-toggle::after{
     display: inline-block;
     content: '';
-    @apply translate-x-0 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out;
+    @apply tw-translate-x-0 tw-pointer-events-none tw-inline-block tw-h-5 tw-w-5 tw-transform tw-rounded-full tw-bg-white tw-shadow tw-ring-0 tw-transition tw-duration-200 tw-ease-in-out;
 }
 
-.css-trigger:checked + label.toggle {
-    @apply bg-azul-60;
+.tw-css-trigger:checked + label.tw-toggle {
+    @apply tw-bg-azul-60;
 }
-.css-trigger:checked + label.toggle::after {
-    @apply translate-x-5;
-}
-
-.label.toggle:focus {
-    @apply outline-none ring-2 ring-azul-60 ring-offset-2
+.tw-css-trigger:checked + label.tw-toggle::after {
+    @apply tw-translate-x-5;
 }
 
-.input-group {
+.tw-label.tw-toggle:focus {
+    @apply tw-outline-none tw-ring-2 tw-ring-azul-60 tw-ring-offset-2
+}
+
+.tw-input-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #D1D5DB;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    @apply px-[13px] py-[9px] text-2xs text-neutral-80 rounded-[6px];
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.tw-05);
+    @apply tw-px-[13px] tw-py-[9px] tw-text-2xs tw-text-neutral-80 tw-rounded-[6px];
     background-color: white;
 }
 
-.input-group .form-control {
+.tw-input-group .tw-form-control, .tw-form-control.tw-no-border {
     border: none;
     box-shadow: none;
     border-radius: 0;
@@ -259,28 +259,47 @@ label.toggle::after{
 /* CHAT --> */
 
 #chat-button {
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.22);
-    @apply rounded-[10px] bg-rosa-10 p-[15px] flex justify-between items-center w-fit fixed right-[50px] bottom-[50px] cursor-pointer shadow-black/50;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.tw-22);
+    @apply tw-rounded-[10px] tw-bg-rosa-10 tw-p-[15px] tw-flex tw-justify-between tw-items-center tw-w-fit tw-fixed tw-right-[50px] tw-bottom-[50px] tw-cursor-pointer tw-shadow-black/50;
     z-index: 500;
 }
 
 #chat-container {
     transform: translateY(-100%);
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
-    @apply absolute top-[-20px] right-[0px] w-[536px] h-[629px] rounded-lg bg-white grid grid-rows-[54px_1fr_60px];
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.tw-25);
+    @apply tw-absolute tw-top-[-20px] tw-right-[0px] tw-w-[536px] tw-h-[629px] tw-rounded-lg tw-bg-white tw-grid tw-grid-rows-[54px_1fr_60px];
 }
 
 /* <-- CHAT */
 
 /* USER MENU --> */
-.backdrop {
+.tw-backdrop {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.tw-3);
     top: 0;
     left: 0;
     z-index: 600;
 }
 
 /* <-- USER MENU */
+/* USER MENU --> */
+
+.tw-gestion-main-wrapper {
+    background-color: #E5E5E5;
+}
+
+/* <-- USER MENU */
+
+
+
+/* MAIN GESTION--> */
+
+.tw-main-top {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.tw-11);
+}
+
+/* <-- MAIN GESTION */
+/* EMPTY--> */
+/* <-- EMPTY */
