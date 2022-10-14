@@ -59,6 +59,7 @@ module.exports = {
         60: '#00B050'
       },
       morado: {
+        10: '#FFF0FE',
         20: '#ECBFEA',
         60: '#A832A2'
       },

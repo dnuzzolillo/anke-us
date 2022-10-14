@@ -58,6 +58,11 @@ html {
     @apply tw-text-neutral-60;
 }
 
+.tw-expand-item:not(:last-child)::after {
+    content: '';
+    display: table;
+    @apply tw-h-0 tw-border-t-[2px] tw-border-t-white tw-w-[40px] tw-mt-1;
+}
 .tw-title {
     @apply tw-text-azul-60 tw-text-md tw-text-color-title tw-font-bold;
 }
@@ -301,5 +306,25 @@ label.tw-toggle::after{
 }
 
 /* <-- MAIN GESTION */
+/* CUSTOM--> */
+.t1 {
+    @apply tw-font-normal tw-text-2xs;
+}
+.t1s {
+    @apply tw-font-semibold tw-text-2xs;
+}
+.t1b {
+    @apply tw-font-bold tw-text-2xs;
+}
+.t1l {
+    @apply  tw-text-xs  tw-text-neutral-60;
+}
+.t2 {
+    @apply tw-font-normal tw-text-xs;
+}
+.t2b {
+    @apply tw-font-normal tw-text-xs tw-text-azul-60;
+}
+/* <-- CUSTOM */
 /* EMPTY--> */
 /* <-- EMPTY */

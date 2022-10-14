@@ -1,0 +1,314 @@
+<!-- Esto es un archivo que uso para crear una nueva pantalla con la configuración y elementos básicos del UI -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- START import output css -->
+    <link rel="stylesheet" href="/css/output.css">
+    <!-- END import output css -->
+    <!-- START import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- END import fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadro Médico con Citas</title>
+</head>
+
+<body>
+    <!-- START notifications -->
+    <input type="checkbox" name="user-menu-trigger" id="user-menu-trigger" class="tw-css-trigger">
+    <div class="tw-backdrop tw-overlay-container tw-css-trigger-target tw-bg-white">
+        <div
+            class="tw-w-[415px] tw-h-[100vh] tw-px-[30px] tw-pt-[40px] tw-pb-[20px] tw-flex-col tw-justify-between tw-items-between tw-bg-white tw-right-[0px] tw-absolute tw-flex">
+
+        </div>
+    </div>
+    <!-- END notifications -->
+    <div class="tw-gestion-main-wrapper tw-flex tw-h-[100vh] tw-w-[100vw] tw-overflow-hidden">
+        <!-- START left panel -->
+        <div
+            class="tw-h-screen tw-w-[220px] tw-bg-azul-100 tw-h-[100vh] tw-flex tw-flex-col tw-items-center tw-px-[8px] tw-py-[16px]">
+            <img src="/media/svgs/logo-dark.svg" alt="logo" class="tw-w-[100px]">
+            <div class="tw-flex tw-flex-col tw-space-y-2.5 tw-mt-[30px]">
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs tw-bg-azul-60">
+                    <img src="/media/svgs/stack-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Dashboard
+                </div>
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/file-error-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Incidencias
+                </div>
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/search-white.svg" class="tw-mr-[14px] tw-w-[20px]">
+                    Consultas Rápidas
+                </div>
+                <!-- menu item -->
+                <label for="trigger-operativos"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/briefcase-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Operativos
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-operativos">
+
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/document-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Navegador
+                </div>
+                <!-- menu item -->
+                <label for="trigger-comunicación"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/chat-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Comunicación
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-comunicación">
+
+                <!-- menu item -->
+                <label for="trigger-marketing"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/megafono-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Marketing
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-marketing">
+
+                <!-- menu item -->
+                <label for="trigger-financieros"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/book-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Financieros
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" checked class="tw-css-trigger" id="trigger-financieros">
+                <div class="tw-pl-7 tw-space-y-1.5 tw-css-trigger-target">
+                    <div class="tw-expand-item tw-text-white tw-font-semibold tw-text-2xs">Recibos</div>
+                    <div class="tw-expand-item tw-text-white tw-font-semibold tw-text-2xs">Sepa</div>
+                </div>
+                <!-- menu item -->
+                <label for="trigger-notificaciones"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/doc-warning-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Notificaciones
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-notificaciones">
+
+                <!-- menu item -->
+                <label for="trigger-facturación"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/bill-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Facturación
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-facturación">
+
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/import-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Importación
+                </div>
+            </div>
+            <!-- configuracion -->
+            <div
+                class="tw-absolute tw-bottom-[30px] tw-mx-auto tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                <img src="/media/svgs/gear-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                Configuración
+            </div>
+        </div>
+        <!-- END left panel -->
+        <!-- START main section -->
+        <div class="tw-main-section tw-h-[100vh] tw-overflow-auto tw-w-full">
+            <div class="tw-sticky tw-top-0 tw-bg-white tw-w-full tw-px-[25px] tw-py-[30px] tw-main-top tw-flex-between">
+                <div class="tw-flex tw-w-fit tw-items-center">
+                    <img src="/media/svgs/search-neutral-80.svg" class="tw-w-[22px]">
+                    <input type="text"
+                        class="tw-form-control tw-no-border tw-ml-[22px] tw-text-color-light tw-font-medium !tw-text-md"
+                        placeholder="Buscar">
+                </div>
+                <img src="/media/svgs/bell-neutral-60.svg" class="tw-w-[23px]">
+            </div>
+            <!-- START main section body -->
+            <div class="tw-px-[40px] tw-px-[25px]">
+                <!-- START content -->
+                <!-- START inbox container -->
+                <div class="tw-w-full tw-flex-center tw-flex-wrap" style="height: calc(100vh - 90px);">
+                    <!-- START rinbox -->
+                    <div class="tw-w-full tw-grid tw-grid-cols-[minmax(300px,_30%)_1fr] tw-h-full tw-py-5 tw-gap-x-[20px]">
+                        <div class="tw-table tw-h-full tw-bg-white tw-rounded-[10px] tw-pt-5">
+
+                            <div class="tw-px-[30px]">
+                                <div class="tw-flex tw-items-center">
+                                    <img src="/media/svgs/chevron-left-azul-60.svg" class="tw-mr-5">
+                                    <div class="tw-title !tw-font-extrabold !tw-text-lg">Inbox</div>
+                                </div>
+
+                                <div class="  2xl:tw-flex-between tw-mt-5 tw-mb-4 tw-flex tw-flex-col 2xl:tw-flex-row tw-space-y-2 2xl:tw-space-y-0 2xl:tw-space-x-2">
+                                    <select class="tw-form-control !tw-w-[40%] !tw-w-full 2xl:tw-w-fit">
+                                        <option>ver (Todos)</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                    <div class="tw-relative tw-rounded-md tw-shadow-sm tw-w-[60%] !tw-w-full 2xl:tw-w-fit">
+                                        <div
+                                            class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-left-0 tw-flex tw-items-center tw-pl-3">
+                                            <img src="/media/svgs/search-neutral-80.svg" alt="search-neutral-80">
+                                        </div>
+                                        <input type="text" name="search" id="search"
+                                            class="tw-block tw-w-full tw-rounded-md tw-border-neutral-40 tw-pl-10 tw-focus:border-azul-80 tw-focus:ring-azul-80 tw-sm:text-sm"
+                                            placeholder="Buscar">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tw-px-[30px] tw-text-color-light tw-text-2xs">
+                                362 emails sin leer
+                            </div>
+                            <!-- START result list -->
+                            <div class="tw-flex tw-flex-col tw-overflow-y-auto tw-mt-4" style="height: calc(100% - 169px);">
+                                <!-- result list item [active] -->
+                                <div class="tw-py-2.5 tw-w-full tw-pb-[20px] tw-border-b tw-space-y-[15px] tw-border-b-neutral-40 tw-bg-neutral-10 tw-px-[30px]">
+                                    <div class="tw-flex 2xl:tw-justify-between tw-flex-col 2xl:tw-flex-row tw-space-y-2 2xl:tw-space-y-0 2xl:tw-space-x-2">
+                                        <div class="tw-text-xs tw-font-semibold"> Kellan Lutz</div>
+                                        <div class="tw-text-color-title tw-text-xs tw-font-semibold">Asociar número</div>
+                                    </div>
+                                    <div class="t0l">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit...
+                                    </div>
+                                    <div class="2xl:tw-flex-between tw-flex-col 2xl:tw-flex-row tw-space-y-2 2xl:tw-space-y-0 2xl:tw-space-x-2">
+                                        <div class="tw-rounded-md tw-flex-between tw-w-fit tw-bg-amarillo-20 tw-p-0.5 tw-px-2 tw-text-amarillo-60 t1s">
+                                            <img src="/media/svgs/clip-amarillo-60.svg" class="tw-w-[10px] tw-mr-1">
+                                            20 archivos adjuntos
+                                        </div>
+                                        <div class="t1l !tw-font-medium">
+                                            14:35 • 28/08/2022
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- result list item [non readed] -->
+                                <div class="tw-py-2.5 tw-w-full tw-pb-[20px] tw-border-b tw-space-y-[15px] tw-border-b-neutral-40 tw-px-[30px]">
+                                    <div class="tw-flex 2xl:tw-justify-between tw-flex-col 2xl:tw-flex-row tw-space-y-2 2xl:tw-space-y-0 2xl:tw-space-x-2">
+                                        <div class="tw-text-xs tw-font-semibold"> Kellan Lutz</div>
+                                        <div class="tw-text-color-title tw-text-xs tw-font-semibold">Asociar número</div>
+                                    </div>
+                                    <div class="t0l">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit...
+                                    </div>
+                                    <div class="2xl:tw-flex-between tw-flex-col 2xl:tw-flex-row tw-space-y-2 2xl:tw-space-y-0 2xl:tw-space-x-2">
+                                        <div class="tw-rounded-md tw-flex-between tw-w-fit tw-bg-amarillo-20 tw-p-0.5 tw-px-2 tw-text-amarillo-60 t1s">
+                                            <img src="/media/svgs/clip-amarillo-60.svg" class="tw-w-[10px] tw-mr-1">
+                                            20 archivos adjuntos
+                                        </div>
+                                        <div class="t1l !tw-font-medium">
+                                            14:35 • 28/08/2022
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- result list item [readed] -->
+                                <div class="tw-py-2.5 tw-w-full tw-pb-[20px] tw-border-b tw-space-y-[15px] tw-border-b-neutral-40 tw-px-[30px]">
+                                    <div class="tw-flex 2xl:tw-justify-between tw-flex-col 2xl:tw-flex-row tw-space-y-2 2xl:tw-space-y-0 2xl:tw-space-x-2">
+                                        <div class="tw-text-xs tw-font-medium"> Kellan Lutz</div>
+                                        <div class="tw-text-color-title tw-text-xs tw-font-medium">Asociar número</div>
+                                    </div>
+                                    <div class="t0l">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit...
+                                    </div>
+                                    <div class="2xl:tw-flex-between tw-flex-col 2xl:tw-flex-row tw-space-y-2 2xl:tw-space-y-0 2xl:tw-space-x-2">
+                                        <div class="tw-rounded-md tw-flex-between tw-w-fit tw-bg-amarillo-20 tw-p-0.5 tw-px-2 tw-text-amarillo-60 t1s">
+                                            <img src="/media/svgs/clip-amarillo-60.svg" class="tw-w-[10px] tw-mr-1">
+                                            20 archivos adjuntos
+                                        </div>
+                                        <div class="t1l !tw-font-medium">
+                                            14:35 • 28/08/2022
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- result list item [readed] -->
+                                <div class="tw-py-2.5 tw-w-full tw-pb-[20px] tw-border-b tw-space-y-[15px] tw-border-b-neutral-40 tw-px-[30px]">
+                                    <div class="tw-flex 2xl:tw-justify-between tw-flex-col 2xl:tw-flex-row tw-space-y-2 2xl:tw-space-y-0 2xl:tw-space-x-2">
+                                        <div class="tw-text-xs tw-font-medium"> Kellan Lutz</div>
+                                        <div class="tw-text-color-title tw-text-xs tw-font-medium">Asociar número</div>
+                                    </div>
+                                    <div class="t0l">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit...
+                                    </div>
+                                    <div class="2xl:tw-flex-between tw-flex-col 2xl:tw-flex-row tw-space-y-2 2xl:tw-space-y-0 2xl:tw-space-x-2">
+                                        <div class="tw-rounded-md tw-flex-between tw-w-fit tw-bg-amarillo-20 tw-p-0.5 tw-px-2 tw-text-amarillo-60 t1s">
+                                            <img src="/media/svgs/clip-amarillo-60.svg" class="tw-w-[10px] tw-mr-1">
+                                            20 archivos adjuntos
+                                        </div>
+                                        <div class="t1l !tw-font-medium">
+                                            14:35 • 28/08/2022
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- result list item [readed] -->
+                                <div class="tw-py-2.5 tw-w-full tw-pb-[20px] tw-border-b tw-space-y-[15px] tw-border-b-neutral-40 tw-px-[30px]">
+                                    <div class="tw-flex 2xl:tw-justify-between tw-flex-col 2xl:tw-flex-row tw-space-y-2 2xl:tw-space-y-0 2xl:tw-space-x-2">
+                                        <div class="tw-text-xs tw-font-medium"> Kellan Lutz</div>
+                                        <div class="tw-text-color-title tw-text-xs tw-font-medium">Asociar número</div>
+                                    </div>
+                                    <div class="t0l">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit...
+                                    </div>
+                                    <div class="2xl:tw-flex-between tw-flex-col 2xl:tw-flex-row tw-space-y-2 2xl:tw-space-y-0 2xl:tw-space-x-2">
+                                        <div class="tw-rounded-md tw-flex-between tw-w-fit tw-bg-amarillo-20 tw-p-0.5 tw-px-2 tw-text-amarillo-60 t1s">
+                                            <img src="/media/svgs/clip-amarillo-60.svg" class="tw-w-[10px] tw-mr-1">
+                                            20 archivos adjuntos
+                                        </div>
+                                        <div class="t1l !tw-font-medium">
+                                            14:35 • 28/08/2022
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- END result list -->
+
+                        </div>
+                        <div class="tw-px-[30px] tw-py-5 tw-bg-white tw-rounded-lg">
+                            <div class="tw-flex 2xl:justify-between 2xl:tw-space-x-[40px] 2xl:tw-items-center">
+                                <div class="tw-bg-morado-10 tw-flex-center tw-max-w-[800px] t1s tw-text-morado-60 tw-grid tw-grid-cols-[23px_1fr_8px] tw-gap-x-[22px] tw-p-[8px] tw-rounded-lg tw-px-[12px]">
+                                    <img src="/media/svgs/warning-morado.svg">
+                                    Este email no tiene número de referencia, es importante asociarle uno para poder guardarlo en la documentacion del módulo correspondiente
+                                    <img src="/media/svgs/x-morado.svg" class="">
+                                </div>
+                                <button class="tw-button-primary tw-h-fit">Asociar numero de ref</button>
+                            </div>
+                            <div class="tw-hr tw-my-5"></div>
+                        </div>
+                    </div>
+                    <!-- END rinbox -->
+                </div>
+                <!-- END inboxcontainer -->
+
+                <!-- END content -->
+            </div>
+            <!-- END main section body -->
+        </div>
+        <!-- END main section -->
+
+</body>
+
+</html>
