@@ -64,13 +64,14 @@ html {
     @apply tw-h-0 tw-border-t-[2px] tw-border-t-white tw-w-[40px] tw-mt-1;
 }
 .tw-title {
-    @apply tw-text-azul-60 tw-text-md tw-text-color-title tw-font-bold;
+    @apply tw-text-azul-60 tw-text-md tw-text-color-title tw-font-bold tw-w-fit;
 }
 
 .tw-title::after {
     content: '';
     display: table;
     @apply tw-h-0 tw-border-t-[2px] tw-border-t-azul-60 tw-w-[100px] tw-mt-1;
+    max-width: 50%;
 }
 .tw-title-center::after {
     content: '';
@@ -260,6 +261,22 @@ label.tw-toggle::after{
     padding: 0;
 }
 
+.tw-form-control[type="checkbox"] {
+    @apply tw-h-4 tw-w-4 tw-rounded tw-border-gray-300 tw-text-azul-60 !tw-p-0;
+}
+
+.tw-form-control[type="checkbox"]:focus {
+    @apply tw-ring-azul-60;
+}
+
+.tw-link {
+    @apply tw-text-azul-60 tw-cursor-pointer;
+}
+
+.tw-link:hover {
+    text-decoration: underline;
+}
+
 /* <-- FORM CONTROLS */
 /* CHAT --> */
 
@@ -282,7 +299,7 @@ label.tw-toggle::after{
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.tw-3);
+    background-color: rgba(0, 0, 0, 0.3);
     top: 0;
     left: 0;
     z-index: 600;
@@ -310,6 +327,9 @@ label.tw-toggle::after{
 .t1 {
     @apply tw-font-normal tw-text-2xs;
 }
+.t1m {
+    @apply tw-font-medium tw-text-2xs;
+}
 .t1s {
     @apply tw-font-semibold tw-text-2xs;
 }
@@ -322,8 +342,11 @@ label.tw-toggle::after{
 .t2 {
     @apply tw-font-normal tw-text-xs;
 }
-.t2b {
-    @apply tw-font-normal tw-text-xs tw-text-azul-60;
+.t2s {
+    @apply tw-font-semibold tw-text-xs;
+}
+.t2blue {
+    @apply tw-font-bold tw-text-xs tw-text-azul-60;
 }
 /* <-- CUSTOM */
 /* EMPTY--> */
