@@ -2382,19 +2382,14 @@ select {
   padding-bottom: 2.5rem;
 }
 
-.tw-px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .tw-py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
 
-.tw-py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.tw-px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .tw-px-\[7px\] {
@@ -2591,12 +2586,12 @@ select {
   padding-right: 0.75rem;
 }
 
-.tw-pr-4 {
-  padding-right: 1rem;
-}
-
 .tw-pl-6 {
   padding-left: 1.5rem;
+}
+
+.tw-pr-4 {
+  padding-right: 1rem;
 }
 
 .tw-pr-\[60px\] {
