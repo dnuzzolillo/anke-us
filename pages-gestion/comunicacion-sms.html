@@ -152,16 +152,17 @@
                 <!-- START content -->
                 <div class=" tw-py-[25px] tw-px-[30px] tw-bg-white tw-rounded-[10px] tw-mt-8">
                     <!-- table header -->
-                    <div class="tw-flex tw-justify-between tw-items-center">
+                    <div class="tw-flex tw-justify-between 2xl:tw-items-center 2xl:tw-flex-row tw-flex-col">
 
                         <div class="tw-title !tw-font-extrabold">
                             Sms
                         </div>
 
-                        <div class="tw-flex tw-space-x-[18px]">
-
-
-                            <div>
+                        <div class="tw-flex tw-space-y-4 2xl:tw-space-y-0 2xl:tw-space-x-3 2xl:tw-space-x-[18px] 2xl:tw-flex-row tw-flex-col ">
+                            <select class="tw-form-control !tw-w-[200px]">
+                                <option>Ver (Todos)</option>
+                            </select>
+                            <div class="tw-w-[300px]">
                                 <!-- search input -->
                                 <div class="tw-relative tw-rounded-md tw-shadow-sm">
                                     <div
@@ -172,7 +173,7 @@
                                         class="tw-block tw-w-full tw-rounded-md tw-border-neutral-40 tw-pl-10 tw-focus:border-azul-80 tw-focus:ring-azul-80 tw-text-xs">
                                 </div>
                             </div>
-                            <button class="tw-button-primary">Nuevo siniestro</button>
+                            <button class="tw-button-primary tw-wpre">Nuevo siniestro</button>
                         </div>
                     </div>
                     <div class="tw-hr tw-my-5"></div>
@@ -336,26 +337,17 @@
                                             </tbody>
                                         </table>
                                         <div
-                                            class="tw-flex tw-items-center tw-justify-between tw-border-t tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-3sm:tw-px-6">
-                                            <div class="tw-flex tw-flex-1 tw-justify-betweensm:tw-hidden">
-                                                <a href="#"
-                                                    class="tw-relative tw-inline-flex tw-items-center tw-rounded-md tw-border tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-neutral-60 hover:tw-bg-gray-50">Previous</a>
-                                                <a href="#"
-                                                    class="tw-relative tw-ml-3 tw-inline-flex tw-items-center tw-rounded-md tw-border tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-neutral-60 hover:tw-bg-gray-50">Next</a>
+                                            class="tw-flex tw-items-center tw-justify-between tw-border-t tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-3sm:tw-px-6 tw-pt-5">
+                                            <div class="tw-flex tw-flex-1 tw-justify-between">
+                                                <div>
+                                                    <p class="t1">
+                                                        Mostrando 10 de 60 resultados
+                                                    </p>
+                                                </div>
                                             </div>
                                             <div
                                                 class="tw-hiddensm:tw-flexsm:tw-flex-1sm:tw-items-centersm:tw-justify-between">
-                                                <div>
-                                                    <p class="tw-text-sm tw-text-neutral-60">
-                                                        Showing
-                                                        <span class="tw-font-medium">1</span>
-                                                        to
-                                                        <span class="tw-font-medium">10</span>
-                                                        of
-                                                        <span class="tw-font-medium">97</span>
-                                                        results
-                                                    </p>
-                                                </div>
+                                                
                                                 <div>
                                                     <nav class="tw-isolate tw-inline-flex tw--space-x-px tw-rounded-md tw-shadow-sm"
                                                         aria-label="Pagination">

@@ -157,7 +157,7 @@
     <!-- <input type="checkbox" name="modal-asociar-modulo" id="modal-asociar-modulo" class="tw-css-trigger"> -->
     <div class="tw-backdrop tw-overlay-container tw-flex tw-items-center tw-justify-center tw-css-trigger-target">
         <div
-            class="tw-rounded-[10px] tw-p-[30px] tw-absolute tw-w-[1150px] tw-max-w-full tw-h-fit tw-bg-white tw-max-h-[800px]">
+            class="tw-rounded-[10px] tw-p-[30px] tw-absolute tw-w-[1440px] tw-max-w-full tw-h-fit tw-bg-white tw-max-h-[800px]">
             <div class="tw-flex-between">
                 <div class="tw-title">Asociar número de referencia</div>
 
@@ -169,34 +169,88 @@
             <!-- START check list -->
             <div class="tw-flex tw-flex-col tw-mt-[30px]">
                  <!-- user option -->
-                 <div class="tw-option !tw-my-[5px]">
-                    <div class="tw-text-xs tw-font-semibold">Ver repositorio de documentación</div>
+                 <div class="tw-flex tw-flex-col">
+                    <label class="tw-option !tw-my-[5px]" for="option-0">
+                        <div class="tw-text-xs tw-font-semibold">Asociar cliente</div>
+                        <img src="/media/svgs/plus.svg" alt="plus" class="tw-w-[25px]">
+                    </label>
+                    <input type="checkbox" class="tw-css-trigger" id="option-0">
+                    <div class="tw-flex tw-space-x-4 tw-items-center tw-css-trigger-target tw-px-2.5">
+                        <img src="/media/svgs/search-neutral-80.svg">
+                        <input type="text" class="tw-form-control tw-w-[60px]">
+                        <input type="text" class="tw-form-control tw-w-[159px]">
+                        <input type="text" class="tw-form-control tw-w-[260px]">
+                        <input type="text" class="tw-form-control tw-w-[260px]" placeholder="Email">
+                        <input type="text" class="tw-form-control tw-w-[260px]">
+                    </div>
+                 </div>
+                <!-- user option -->
+                <label class="tw-option !tw-my-[5px]" for="option-1">
+                    <div class="tw-text-xs tw-font-semibold">Asociar contrato</div>
                     <img src="/media/svgs/plus.svg" alt="plus" class="tw-w-[25px]">
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="option-1">
+                <div class="tw-flex tw-space-x-4 tw-items-center tw-css-trigger-target tw-px-2.5">
+                    <img src="/media/svgs/search-neutral-80.svg">
+                    <input type="text" class="tw-form-control tw-w-[60px]">
+                    <input type="text" class="tw-form-control tw-w-[159px]">
+                    <input type="text" class="tw-form-control tw-w-[260px]">
+                    <input type="text" class="tw-form-control tw-w-[260px]">
+                    <input type="text" class="tw-form-control tw-w-[260px]">
+                    <button class="tw-button-secondary tw-flex-between">
+                        Ver contrato
+                        <img src="/media/svgs/expand.svg" class="tw-ml-4">
+                    </button>
                 </div>
                 <!-- user option -->
-                <div class="tw-option !tw-my-[5px]">
-                    <div class="tw-text-xs tw-font-semibold">Cambiar idioma</div>
+                <label class="tw-option !tw-my-[5px]" for="option-2">
+                    <div class="tw-text-xs tw-font-semibold">Asociar siniestro</div>
                     <img src="/media/svgs/plus.svg" alt="plus" class="tw-w-[25px]">
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="option-2">
+                <div class="tw-flex tw-space-x-4 tw-items-center tw-css-trigger-target tw-px-2.5">
+                    <img src="/media/svgs/search-neutral-80.svg">
+                    <input type="text" class="tw-form-control tw-w-[60px]">
+                    <input type="text" class="tw-form-control tw-w-[159px]">
+                    <input type="text" class="tw-form-control tw-w-[260px]">
+                    <input type="text" class="tw-form-control tw-w-[260px]">
+                    <input type="text" class="tw-form-control tw-w-[260px]">
+                    <button class="tw-button-secondary tw-flex-between">
+                        Ver ficha siniestro
+                        <img src="/media/svgs/expand.svg" class="tw-ml-4">
+                    </button>
                 </div>
                 <!-- user option -->
-                <div class="tw-option !tw-my-[5px]">
-                    <div class="tw-text-xs tw-font-semibold">Cambiar contraseña</div>
+                <label class="tw-option !tw-my-[5px]" for="option-3">
+                    <div class="tw-text-xs tw-font-semibold">Asociar recibo</div>
                     <img src="/media/svgs/plus.svg" alt="plus" class="tw-w-[25px]">
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="option-3">
+                <div class="tw-flex tw-space-x-4 tw-items-center tw-css-trigger-target tw-px-2.5">
+                    <img src="/media/svgs/search-neutral-80.svg">
+                    <input type="text" class="tw-form-control tw-w-[60px]">
+                    <input type="text" class="tw-form-control tw-w-[159px]">
+                    <input type="text" class="tw-form-control tw-w-[260px]">
+                    <input type="text" class="tw-form-control tw-w-[260px]">
+                    <input type="text" class="tw-form-control tw-w-[260px]">
+                    <button class="tw-button-secondary tw-flex-between">
+                        Ver ficha recibo
+                        <img src="/media/svgs/expand.svg" class="tw-ml-4">
+                    </button>
                 </div>
                 <!-- user option -->
-                <div class="tw-option !tw-my-[5px]">
-                    <div class="tw-text-xs tw-font-semibold">Comunicaciones</div>
+                <label class="tw-option !tw-my-[5px]" for="option-4">
+                    <div class="tw-text-xs tw-font-semibold">Asociar a un suplemento</div>
                     <img src="/media/svgs/plus.svg" alt="plus" class="tw-w-[25px]">
-                </div>
-                <!-- user option -->
-                <div class="tw-option !tw-my-[5px]">
-                    <div class="tw-text-xs tw-font-semibold">Requisitos legales</div>
-                    <img src="/media/svgs/plus.svg" alt="plus" class="tw-w-[25px]">
-                </div>
-                <!-- user option -->
-                <div class="tw-option !tw-my-[5px]">
-                    <div class="tw-text-xs tw-font-semibold">Eventos</div>
-                    <img src="/media/svgs/plus.svg" alt="plus" class="tw-w-[25px]">
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="option-4">
+                <div class="tw-flex tw-space-x-4 tw-items-center tw-css-trigger-target tw-px-2.5">
+                    <img src="/media/svgs/search-neutral-80.svg">
+                    <input type="text" class="tw-form-control tw-w-[60px]">
+                    <input type="text" class="tw-form-control tw-w-[159px]">
+                    <input type="text" class="tw-form-control tw-w-[260px]">
+                    <input type="text" class="tw-form-control tw-w-[260px]">
+                    <input type="text" class="tw-form-control tw-w-[260px]">
                 </div>
             </div>
             <!-- END check list -->
@@ -210,6 +264,7 @@
         </div>
     </div>
     <!-- END modal -->
+
 </body>
 
 </html>
