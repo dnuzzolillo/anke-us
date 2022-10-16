@@ -1537,6 +1537,14 @@ select {
   width: 23px;
 }
 
+.tw-w-\[60px\] {
+  width: 60px;
+}
+
+.\!tw-w-\[200px\] {
+  width: 200px !important;
+}
+
 .\!tw-w-\[40\%\] {
   width: 40% !important;
 }
@@ -1547,6 +1555,18 @@ select {
 
 .tw-w-\[200px\] {
   width: 200px;
+}
+
+.tw-w-\[313px\] {
+  width: 313px;
+}
+
+.tw-w-\[1440px\] {
+  width: 1440px;
+}
+
+.tw-w-\[260px\] {
+  width: 260px;
 }
 
 .tw-min-w-\[327px\] {
@@ -1960,6 +1980,12 @@ select {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.tw-space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .tw-divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -2382,19 +2408,14 @@ select {
   padding-bottom: 2.5rem;
 }
 
-.tw-px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .tw-py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
 
-.tw-py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.tw-px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .tw-px-\[7px\] {
@@ -2591,12 +2612,12 @@ select {
   padding-right: 0.75rem;
 }
 
-.tw-pr-4 {
-  padding-right: 1rem;
-}
-
 .tw-pl-6 {
   padding-left: 1.5rem;
+}
+
+.tw-pr-4 {
+  padding-right: 1rem;
 }
 
 .tw-pr-\[60px\] {
@@ -3025,6 +3046,10 @@ html {
   width: calc(100% - 442px);
 }
 
+.tw-wpre {
+  white-space: nowrap;
+}
+
 @media (max-width: 1140px) {
   .tw-home-sm {
     width: 100%;
@@ -3182,6 +3207,9 @@ input.tw-form-control, textarea.tw-form-control {
 
 select.tw-form-control {
   display: block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
   border-radius: 0.375rem;
   --tw-border-opacity: 1;
@@ -3511,6 +3539,18 @@ label.tw-toggle::after{
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .\32xl\:tw-space-x-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .\32xl\:tw-space-x-\[18px\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(18px * var(--tw-space-x-reverse));
+    margin-left: calc(18px * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .\32xl\:tw-space-x-2 > :not([hidden]) ~ :not([hidden]) {
