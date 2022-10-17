@@ -218,7 +218,7 @@ input.tw-form-control, textarea.tw-form-control {
 }
 
 select.tw-form-control {
-    @apply tw-block tw-w-full tw-rounded-md tw-border-neutral-40 tw-py-2 tw-pl-3 tw-pr-10 tw-text-2xs tw-h-fit;
+    @apply tw-block tw-rounded-md tw-border-neutral-40 tw-py-2 tw-pl-3 tw-pr-10 tw-text-2xs tw-h-fit;
 }
 
 .tw-form-control:focus {
@@ -313,7 +313,7 @@ label.tw-toggle::after{
 /* USER MENU --> */
 
 .tw-gestion-main-wrapper {
-    background-color: #E5E5E5;
+    background-color: #F3F4F6;
 }
 
 /* <-- USER MENU */
