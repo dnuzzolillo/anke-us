@@ -370,5 +370,9 @@ label.tw-toggle::after{
 }
 
 /* <-- CUSTOM */
+
+.green-text {
+    color: #00B050 !important;
+}
 /* EMPTY--> */
 /* <-- EMPTY */
