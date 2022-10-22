@@ -12,7 +12,7 @@ html {
     @apply tw-flex tw-justify-center tw-rounded-md tw-items-center tw-border tw-border-transparent tw-bg-azul-60 tw-py-2 tw-px-4 tw-text-sm tw-font-medium tw-text-white tw-shadow-sm tw-text-2xs
 }
 
-.tw-button-secondary {
+.tw-button-secondary, button.secondary {
     @apply tw-flex tw-justify-center tw-rounded-md tw-border tw-border tw-items-center tw-border-neutral-30 tw-py-2 tw-px-4 tw-text-sm tw-font-medium tw-text-neutral-80 tw-shadow-sm tw-text-2xs tw-bg-white
 }
 
@@ -326,6 +326,11 @@ label.tw-toggle::after{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.tw-11);
 }
 
+.tw-main-section-h {
+    min-height: calc(100vh - 128px);
+    height: fit-content;
+}
+
 /* <-- MAIN GESTION */
 /* CUSTOM--> */
 .t1 {
@@ -349,9 +354,21 @@ label.tw-toggle::after{
 .t2s {
     @apply tw-font-semibold tw-text-xs;
 }
+.t2b {
+    @apply tw-font-bold tw-text-xs;
+}
 .t2blue {
     @apply tw-font-bold tw-text-xs tw-text-azul-60;
 }
+
+
+/* ============== */
+
+
+.bs-barra {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+}
+
 /* <-- CUSTOM */
 /* EMPTY--> */
 /* <-- EMPTY */

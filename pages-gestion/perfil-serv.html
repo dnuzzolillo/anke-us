@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1920px, initial-scale=1.0">
     <!-- START import output css -->
     <link rel="stylesheet" href="/css/output.css">
     <!-- END import output css -->
@@ -20,10 +20,10 @@
 
 <body>
     <!-- START notifications -->
-    <input type="checkbox" name="user-menu-trigger" id="user-menu-trigger" class="tw-css-trigger" checked>
+    <input type="checkbox" name="user-menu-trigger" id="user-menu-trigger" class="tw-css-trigger">
     <div class="tw-backdrop tw-overlay-container tw-css-trigger-target tw-bg-white">
         <div
-            class="tw-w-[415px] tw-h-[100vh] tw-pt-[20px] tw-pb-[20px] tw-flex-col tw-items-between tw-bg-white tw-right-[0px] tw-absolute tw-flex">
+            class="tw-w-[415px] tw-main-section-h tw-pt-[20px] tw-pb-[20px] tw-flex-col tw-items-between tw-bg-white tw-right-[0px] tw-absolute tw-flex">
             <div class="tw-text-color-title tw-font-bold tw-px-[20px] tw-flex-between">
                 Benachrichtigungen
                 <label for="user-menu-trigger" class="tw-cursor-pointer">
@@ -231,7 +231,7 @@
         </div>
         <!-- END left panel -->
         <!-- START main section -->
-        <div class="tw-main-section tw-h-[100vh] tw-overflow-auto tw-w-full">
+        <div class=" tw-overflow-auto tw-w-full">
             <div class="tw-sticky tw-top-0 tw-bg-white tw-w-full tw-px-[25px] tw-py-[30px] tw-main-top tw-flex-between">
                 <div class="tw-flex tw-w-fit tw-items-center">
                     <img src="/media/svgs/search-neutral-80.svg" class="tw-w-[22px]">
@@ -242,94 +242,423 @@
                 <img src="/media/svgs/bell-neutral-60.svg" class="tw-w-[23px]">
             </div>
             <!-- START main section body -->
-            <div class="tw-px-[40px] tw-px-[25px]">
+            <div class="tw-px-[40px] tw-px-[25px] tw-py-[20px]">
                 <!-- START content -->
-                <div class="tw-container tw-bg-white tw-rounded-[10px] tw-p-[30px] tw-h-screen tw-2xl:h-auto">
-                    <div class="tw-title">
-                        Buscador de talleres
+                <div class="tw-main-section-h tw-bg-white tw-rounded-[10px] tw-p-[30px] tw-2xl:h-auto">
+                    <div class="tw-flex-between">
+                        <div class="tw-flex tw-items-center">
+                            <img src="/media/svgs/chevron-left-azul-60.svg" class="tw-mr-5">
+                            <div class="tw-title !tw-font-extrabold !tw-text-lg">Cameron Williamson</div>
+                        </div>
+                        <div class="tw-flex tw-space-x-4">
+                            <button class="tw-button-secondary tw-space-x-3 tw-composed-button">
+                                <span class="tw-mr-1">Crear Notificación</span>
+                                <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/plus-cricle-neutral-80.svg"
+                                    alt="pdf">
+                            </button>
+                            <button class="tw-button-secondary tw-space-x-3 tw-composed-button">
+                                <span class="tw-mr-1">Crear Notificación</span>
+                                <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/sms.svg" alt="pdf">
+                            </button>
+                            <button class="tw-button-secondary tw-space-x-3 tw-composed-button">
+                                <span class="tw-mr-1">Enviar por email</span>
+                                <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/email_basico.svg" alt="pdf">
+                            </button>
+                            <button class="tw-button-secondary tw-space-x-3 tw-composed-button">
+                                <span class="tw-mr-1">Imprimir ficha</span>
+                                <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/print.svg" alt="pdf">
+                            </button>
+                            <button class="tw-button-secondary tw-space-x-3 tw-composed-button">
+                                <span class="tw-mr-1">Exportar a Word</span>
+                                <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/export.svg" alt="pdf">
+                            </button>
+                        </div>
                     </div>
                     <!-- START tabs -->
                     <div class="tw-mt-2">
                         <div class="tw-border-b tw-border-neutral-40">
-                            <nav class="tw--mb-px tw-flex tw-space-x-16" aria-label="Tabs">
-
-                                <a href="#"
-                                    class="tw-border-red tw-text-azul-60 tw-group tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-px-1 tw-border-b-2 tw-font-medium tw-text-xs">
-                                    <img src="/media/svgs/car-spark-azul-60.svg" alt="car-spark-azul-60"
-                                        class="tw-mr-5 tw-w-[20px]">
-                                    <span>He tenido un golpe</span>
-                                </a>
+                            <nav class="tw--mb-px tw-flex tw-space-x-4 tw-flex-wrap tw-overflo-x-auto"
+                                aria-label="Tabs">
 
                                 <a href="#"
                                     class="tw-border-transparent tw-text-neutral-60 hover:tw-text-gray-700 hover:tw-border-neutral-40 tw-group tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-px-1 tw-border-b-2 tw-font-medium tw-text-xs">
-                                    <img src="/media/svgs/screw-neutral-80.svg" alt="screw-neutral-40"
-                                        class="tw-mr-5 tw-w-[20px]">
-                                    <span>He tenido una avería</span>
+                                    <img src="/media/svgs/user-neutral-60.svg" class="tw-mr-3">
+                                    <span>Datos generales</span>
+                                </a>
+
+                                <a href="#"
+                                    class="tw-border-red tw-text-azul-60 tw-group tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-px-1 tw-border-b-2 tw-font-medium tw-text-xs">
+                                    <img src="/media/svgs/coffee-azul-60.svg" class="tw-mr-3">
+                                    <span>Anke Services +</span>
                                 </a>
 
                                 <a href="#"
                                     class="tw-border-transparent tw-text-neutral-60 hover:tw-text-gray-700 hover:tw-border-neutral-40 tw-group tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-px-1 tw-border-b-2 tw-font-medium tw-text-xs"
                                     aria-current="page">
-                                    <img src="/media/svgs/broken-glass-neutral-80.svg" alt="broken-glass-neutral-40"
-                                        class="tw-mr-5 tw-w-[20px]">
-                                    <span>Tengo una luna rota</span>
+                                    <img src="/media/svgs/doc-neutral-60.svg" class="tw-mr-3 ">
+                                    <span>Polizas</span>
+                                </a>
+                                <a href="#"
+                                    class="tw-border-transparent tw-text-neutral-60 hover:tw-text-gray-700 hover:tw-border-neutral-40 tw-group tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-px-1 tw-border-b-2 tw-font-medium tw-text-xs"
+                                    aria-current="page">
+                                    <img src="/media/svgs/search-doc-neutral-60.svg" class="tw-mr-3 ">
+                                    <span>Historial de siniestros</span>
+                                </a>
+                                <a href="#"
+                                    class="tw-border-transparent tw-text-neutral-60 hover:tw-text-gray-700 hover:tw-border-neutral-40 tw-group tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-px-1 tw-border-b-2 tw-font-medium tw-text-xs"
+                                    aria-current="page">
+                                    <img src="/media/svgs/folder-neutral-60.svg" class="tw-mr-3 ">
+                                    <span>Documentos</span>
+                                </a>
+                                <a href="#"
+                                    class="tw-border-transparent tw-text-neutral-60 hover:tw-text-gray-700 hover:tw-border-neutral-40 tw-group tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-px-1 tw-border-b-2 tw-font-medium tw-text-xs"
+                                    aria-current="page">
+                                    <img src="/media/svgs/doc-check-neutral-60.svg" class="tw-mr-3 ">
+                                    <span>Contratos activos</span>
+                                </a>
+                                <a href="#"
+                                    class="tw-border-transparent tw-text-neutral-60 hover:tw-text-gray-700 hover:tw-border-neutral-40 tw-group tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-px-1 tw-border-b-2 tw-font-medium tw-text-xs"
+                                    aria-current="page">
+                                    <img src="/media/svgs/user-plus-neutral-60.svg" class="tw-mr-3 ">
+                                    <span>Clientes Relacionados</span>
+                                </a>
+                                <a href="#"
+                                    class="tw-border-transparent tw-text-neutral-60 hover:tw-text-gray-700 hover:tw-border-neutral-40 tw-group tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-px-1 tw-border-b-2 tw-font-medium tw-text-xs"
+                                    aria-current="page">
+                                    <img src="/media/svgs/building-neutral-60.svg" class="tw-mr-3 ">
+                                    <span>Red empresarial</span>
                                 </a>
                             </nav>
                         </div>
                     </div>
                     <!-- END tabs -->
                     <!-- START search row -->
+                    <div class="t2s tw-my-5">
+                        Tramites en curso
+                    </div>
                     <div class="tw-flex tw-mt-5 tw-justify-between tw-items-center">
-
                         <div class="tw-flex tw-justify-between tw-items-center tw-space-x-4 tw-mr-5 tw-2xl:mr-0">
-                            <input type="text" class="tw-form-control tw-w-[204px] tw-xl:w-[290px]"
-                                placeholder="Dirección, provincia o localidad">
-                            <div class="tw-w-[204px] tw-2xl:w-[290px]">
-                                <select class="tw-form-control">
-                                    <option selected="">Especialidad</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
-                            <div>
-                                <select class="tw-form-control tw-w-[159px]">
-                                    <option selected="">Idioma</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
-                            </div>
-                            <div class="tw-flex tw-justify-between tw-items-center">
-                                <span class="tw-font-medium tw-text-2xs tw-2xl:text-xs">Solo resultados con citación
-                                    online</span>
-                                <div class="tw-flex tw-justify-center tw-items-center tw-2xl:ml-[20px]">
-                                    <input id="toggle1" type="checkbox" class="tw-css-trigger">
-                                    <label for="toggle1" class="tw-toggle" role="switch" aria-checked="false">
-                                    </label>
+                            <div class="tw-w-[300px]">
+                                <!-- search input -->
+                                <div class="tw-relative tw-rounded-md tw-shadow-sm">
+                                    <div
+                                        class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-left-0 tw-flex tw-items-center tw-pl-3">
+                                        <img src="/media/svgs/search-neutral-80.svg" alt="search-neutral-80">
+                                    </div>
+                                    <input type="text" name="search" id="search" placeholder="Buscar"
+                                        class="tw-block tw-w-full tw-rounded-md tw-border-neutral-40 tw-pl-10 tw-focus:border-azul-80 tw-focus:ring-azul-80 tw-text-xs">
                                 </div>
                             </div>
-                            <div class="tw-flex tw-justify-between tw-items-center tw-pl-[10px]">
-                                <span class="tw-font-medium tw-text-2xs tw-2xl:text-xs">Videoconsultas</span>
-                                <div class="tw-flex tw-justify-center tw-items-center tw-ml-[20px]">
-                                    <input id="toggle2" type="checkbox" class="tw-css-trigger">
-                                    <label for="toggle2" class="tw-toggle" role="switch" aria-checked="false">
-                                    </label>
-                                </div>
-                            </div>
+                            <select class="tw-form-control !tw-w-[220px]">
+                                <option selected="">Tipo de tramite</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                            <select class="tw-form-control !tw-w-[220px]">
+                                <option selected="">Estado</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                            <button class="secondary tw-flex-between tw-space-x-3">
+                                <span>Buscar fecha</span>
+                                <img src="/media/svgs/calendar-neutral-80.svg" alt="">
+                            </button>
                         </div>
                         <button class="tw-button-primary tw-w-[90px] tw-2xl:min-w-[139px]">Buscar</button>
                     </div>
                     <!-- END search row -->
                     <!-- START results container -->
-                    <div class="tw-w-full tw-flex-center" style="height: calc(100vh - 400px);">
-                        <!-- START empty results -->
-                        <div class="tw-flex-center tw-flex-col">
-                            <div class="tw-font-medium tw-text-neutral-60 tw-mb-5 tw-text-md">Aún no se han encontrado
-                                resultados.</div>
-                            <img src="/media/pngs/empty-talleres.png" alt="empty-talleres.png">
+                    <div class="tw-w-full">
+                        <!-- START table -->
+                        <div class="tw-overflow-hidden tw-rounded-lg tw-mt-6">
+                            <table class="tw-min-w-full tw-divide-y tw-divide-neutral-40">
+                                <thead class="tw-bg-neutral-10">
+                                    <tr>
+
+                                        <th scope="col"
+                                            class="tw-min-w-[190px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
+                                            Nº tRÁMITE</th>
+                                        <th scope="col"
+                                            class="tw-min-w-[190px]  tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
+                                            fECHA</th>
+                                        <th scope="col"
+                                            class="tw-min-w-[190px] tw-w-[30%]  tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
+                                            Nombre del trámite</th>
+                                        <th scope="col"
+                                            class="tw-min-w-[190px] tw-w-[20%] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
+                                            pROGRESO
+                                        </th>
+                                        <th scope="col"
+                                            class="tw-min-w-[190px]  tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
+                                            Estado
+                                        </th>
+                                        <th scope="col"
+                                            class="tw-min-w-[90px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
+                                            dOCUMENTACIÓN
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tw-divide-y tw-divide-neutral-40 tw-bg-white">
+                                    <tr>
+                                        <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
+                                            235892146
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            26/05/2022
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1b">
+                                            Impuestos complejos IRPF
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1 tw-pr-[45px]">
+                                            <div class="tw-w-full tw-bg-azul-10 tw-rounded-full tw-h-2.5">
+                                                <div class="tw-bg-azul-40 tw-h-2.5 tw-rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            <div class="tw-px-[10px] tw-py-[2px] font-me tw-bg-rosa-10 tw-text-red tw-rounded-md tw-w-fit">
+                                                En curso
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1"><a href="#" class="tw-text-color-title"><img src="/media/svgs/download-azul-60.svg" alt="download-azul-60" class="tw-w-[20px] tw-inline-block tw-mr-2.5"> Descargar</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
+                                            235892146
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            26/05/2022
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1b">
+                                            Impuestos complejos IRPF
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1 tw-pr-[45px]">
+                                            <div class="tw-w-full tw-bg-naranja-20 tw-rounded-full tw-h-2.5">
+                                                <div class="tw-bg-naranja-60 tw-h-2.5 tw-rounded-full" style="width: 75%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            <div class="tw-px-[10px] tw-py-[2px] font-me tw-bg-rosa-10 tw-text-red tw-rounded-md tw-w-fit">
+                                                En curso
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1"><a href="#" class="tw-text-color-title"><img src="/media/svgs/download-azul-60.svg" alt="download-azul-60" class="tw-w-[20px] tw-inline-block tw-mr-2.5"> Descargar</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
+                                            235892146
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            26/05/2022
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1b">
+                                            Impuestos complejos IRPF
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1 tw-pr-[45px]">
+                                            <div class="tw-w-full tw-bg-amarillo-20 tw-rounded-full tw-h-2.5">
+                                                <div class="tw-bg-amarillo-60 tw-h-2.5 tw-rounded-full" style="width: 100%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            <div class="tw-px-[10px] tw-py-[2px] font-me tw-bg-verde-20 tw-text-verde-60 tw-rounded-md tw-w-fit">
+                                                En curso
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1"><a href="#" class="tw-text-color-title"><img src="/media/svgs/download-azul-60.svg" alt="download-azul-60" class="tw-w-[20px] tw-inline-block tw-mr-2.5"> Descargar</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
+                                            235892146
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            26/05/2022
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1b">
+                                            Impuestos complejos IRPF
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1 tw-pr-[45px]">
+                                            <div class="tw-w-full tw-bg-azul-10 tw-rounded-full tw-h-2.5">
+                                                <div class="tw-bg-azul-40 tw-h-2.5 tw-rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            <div class="tw-px-[10px] tw-py-[2px] font-me tw-bg-rosa-10 tw-text-red tw-rounded-md tw-w-fit">
+                                                En curso
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1"><a href="#" class="tw-text-color-title"><img src="/media/svgs/download-azul-60.svg" alt="download-azul-60" class="tw-w-[20px] tw-inline-block tw-mr-2.5"> Descargar</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
+                                            235892146
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            26/05/2022
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1b">
+                                            Impuestos complejos IRPF
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1 tw-pr-[45px]">
+                                            <div class="tw-w-full tw-bg-naranja-20 tw-rounded-full tw-h-2.5">
+                                                <div class="tw-bg-naranja-60 tw-h-2.5 tw-rounded-full" style="width: 75%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            <div class="tw-px-[10px] tw-py-[2px] font-me tw-bg-rosa-10 tw-text-red tw-rounded-md tw-w-fit">
+                                                En curso
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1"><a href="#" class="tw-text-color-title"><img src="/media/svgs/download-azul-60.svg" alt="download-azul-60" class="tw-w-[20px] tw-inline-block tw-mr-2.5"> Descargar</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
+                                            235892146
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            26/05/2022
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1b">
+                                            Impuestos complejos IRPF
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1 tw-pr-[45px]">
+                                            <div class="tw-w-full tw-bg-amarillo-20 tw-rounded-full tw-h-2.5">
+                                                <div class="tw-bg-amarillo-60 tw-h-2.5 tw-rounded-full" style="width: 100%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            <div class="tw-px-[10px] tw-py-[2px] font-me tw-bg-verde-20 tw-text-verde-60 tw-rounded-md tw-w-fit">
+                                                En curso
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1"><a href="#" class="tw-text-color-title"><img src="/media/svgs/download-azul-60.svg" alt="download-azul-60" class="tw-w-[20px] tw-inline-block tw-mr-2.5"> Descargar</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
+                                            235892146
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            26/05/2022
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1b">
+                                            Impuestos complejos IRPF
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1 tw-pr-[45px]">
+                                            <div class="tw-w-full tw-bg-azul-10 tw-rounded-full tw-h-2.5">
+                                                <div class="tw-bg-azul-40 tw-h-2.5 tw-rounded-full" style="width: 45%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            <div class="tw-px-[10px] tw-py-[2px] font-me tw-bg-rosa-10 tw-text-red tw-rounded-md tw-w-fit">
+                                                En curso
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1"><a href="#" class="tw-text-color-title"><img src="/media/svgs/download-azul-60.svg" alt="download-azul-60" class="tw-w-[20px] tw-inline-block tw-mr-2.5"> Descargar</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
+                                            235892146
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            26/05/2022
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1b">
+                                            Impuestos complejos IRPF
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1 tw-pr-[45px]">
+                                            <div class="tw-w-full tw-bg-naranja-20 tw-rounded-full tw-h-2.5">
+                                                <div class="tw-bg-naranja-60 tw-h-2.5 tw-rounded-full" style="width: 75%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            <div class="tw-px-[10px] tw-py-[2px] font-me tw-bg-rosa-10 tw-text-red tw-rounded-md tw-w-fit">
+                                                En curso
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1"><a href="#" class="tw-text-color-title"><img src="/media/svgs/download-azul-60.svg" alt="download-azul-60" class="tw-w-[20px] tw-inline-block tw-mr-2.5"> Descargar</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
+                                            235892146
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            26/05/2022
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1b">
+                                            Impuestos complejos IRPF
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1 tw-pr-[45px]">
+                                            <div class="tw-w-full tw-bg-amarillo-20 tw-rounded-full tw-h-2.5">
+                                                <div class="tw-bg-amarillo-60 tw-h-2.5 tw-rounded-full" style="width: 100%"></div>
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1">
+                                            <div class="tw-px-[10px] tw-py-[2px] font-me tw-bg-verde-20 tw-text-verde-60 tw-rounded-md tw-w-fit">
+                                                En curso
+                                            </div>
+                                        </td>
+                                        <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t1"><a href="#" class="tw-text-color-title"><img src="/media/svgs/download-azul-60.svg" alt="download-azul-60" class="tw-w-[20px] tw-inline-block tw-mr-2.5"> Descargar</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div
+                                class="tw-flex tw-items-center tw-justify-between tw-border-t tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-3sm:tw-px-6 tw-pt-5">
+                                <div class="tw-flex tw-flex-1 tw-justify-between">
+                                    <div>
+                                        <p class="t1">
+                                            Mostrando 10 de 60 resultados
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tw-hiddensm:tw-flexsm:tw-flex-1sm:tw-items-centersm:tw-justify-between">
+
+                                    <div>
+                                        <nav class="tw-isolate tw-inline-flex tw--space-x-px tw-rounded-md tw-shadow-sm"
+                                            aria-label="Pagination">
+                                            <a href="#"
+                                                class="tw-relative tw-inline-flex tw-items-center tw-rounded-l-md tw-border tw-border-neutral-40 tw-bg-white tw-px-2 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 hover:tw-bg-gray-50 tw-focus:z-20">
+                                                <span class="tw-sr-only">Previous</span>
+                                                <!-- Heroicon name: mini/chevron-left -->
+                                                <svg class="tw-h-5 tw-w-5" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd"
+                                                        d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </a>
+                                            <!-- Current: "z-10 bg-indigo-50 border-indigo-500 text-indigo-600", Default: "bg-white border-neutral-40 text-azul-60 hover:tw-bg-gray-50" -->
+                                            <a href="#" aria-current="page"
+                                                class="tw-relative tw-z-10 tw-inline-flex tw-items-center tw-border tw-border-azul-60 tw-bg-indigo-50 tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 tw-focus:z-20">1</a>
+                                            <a href="#"
+                                                class="tw-relative tw-inline-flex tw-items-center tw-border tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 hover:tw-bg-gray-50 tw-focus:z-20">2</a>
+                                            <a href="#"
+                                                class="tw-relative tw-hidden tw-items-center tw-border tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 hover:tw-bg-gray-50 tw-focus:z-20 tw-md:inline-flex">3</a>
+                                            <span
+                                                class="tw-relative tw-inline-flex tw-items-center tw-border tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-gray-700">...</span>
+                                            <a href="#"
+                                                class="tw-relative tw-hidden tw-items-center tw-border tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 hover:tw-bg-gray-50 tw-focus:z-20 tw-md:inline-flex">8</a>
+                                            <a href="#"
+                                                class="tw-relative tw-inline-flex tw-items-center tw-border tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 hover:tw-bg-gray-50 tw-focus:z-20">9</a>
+                                            <a href="#"
+                                                class="tw-relative tw-inline-flex tw-items-center tw-border tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 hover:tw-bg-gray-50 tw-focus:z-20">10</a>
+                                            <a href="#"
+                                                class="tw-relative tw-inline-flex tw-items-center tw-rounded-r-md tw-border tw-border-neutral-40 tw-bg-white tw-px-2 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 hover:tw-bg-gray-50 tw-focus:z-20">
+                                                <span class="tw-sr-only">Next</span>
+                                                <!-- Heroicon name: mini/chevron-right -->
+                                                <svg class="tw-h-5 tw-w-5" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                    <path fill-rule="evenodd"
+                                                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </a>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <!-- END empty results -->
+                        <!-- END table -->
                     </div>
                     <!-- END results container -->
                 </div>

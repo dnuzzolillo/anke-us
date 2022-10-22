@@ -2,7 +2,7 @@ var posthtml = require('posthtml');
 var posthtmlPrefixClass = require('posthtml-prefix-class');
 var fs = require('fs');
 
-fs.readdirSync('./pages').forEach(file => {
+fs.readdirSync('./test').forEach(file => {
 
     posthtml()
         .use(posthtmlPrefixClass({
@@ -10,11 +10,11 @@ fs.readdirSync('./pages').forEach(file => {
 
         }))
         .process(
-            fs.readFileSync('./pages/' + file)
+            fs.readFileSync('./test/' + file)
         )
         .then(function (output) {
             console.log(output.html);
-            fs.writeFileSync('./pages/' + file, output.html)
+            fs.writeFileSync('./test/' + file, output.html)
         });
 });
 
