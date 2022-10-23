@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- END import fonts -->
-    <title>Clientes Lista</title>
+    <title>Contratos lista</title>
 </head>
 
 <body>
@@ -138,7 +138,7 @@
         <!-- END left panel -->
         <!-- START main section -->
         <div class="tw-main-section tw-h-[100vh] tw-overflow-auto tw-w-full">
-            <div class="tw-sticky tw-top-0 tw-bg-white tw-w-full tw-px-[25px] tw-py-[30px] tw-main-top tw-flex-between">
+            <div class="tw-sticky tw-top-0 tw-bg-white tw-w-full tw-px-[25px] tw-py-[30px] tw-main-top tw-flex-between tw-z-10">
                 <div class="tw-flex tw-w-fit tw-items-center">
                     <img src="/media/svgs/search-neutral-80.svg" class="tw-w-[22px]">
                     <input type="text"
@@ -153,29 +153,10 @@
                 <div class=" tw-py-[25px] tw-px-[30px] tw-bg-white tw-rounded-[10px] tw-mt-8">
                     <!-- table header -->
                     <div class="tw-flex tw-justify-between tw-items-center">
-
                         <div class="tw-title !tw-font-extrabold">
-                            Listado de clientes
+                            Contratos
                         </div>
-
-                        <div class="tw-flex tw-space-x-[18px]">
-                            <div>
-                                <!-- search input -->
-                                <div class="tw-relative tw-rounded-md tw-shadow-sm">
-                                    <div
-                                        class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-left-0 tw-flex tw-items-center tw-pl-3">
-                                        <img src="/media/svgs/search-neutral-80.svg" alt="search-neutral-80">
-                                    </div>
-                                    <input type="text" name="search" id="search" placeholder="Buscar"
-                                        class="tw-block tw-w-full tw-rounded-md tw-border-neutral-40 tw-pl-10 tw-focus:border-azul-80 tw-focus:ring-azul-80 tw-text-xs">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tw-hr tw-my-5"></div>
-                     <!--opciones tabla-->
-                    <div class="tw-flex tw-justify-between">
-                        <div class="tw-flex tw-w-8/12 tw-justify-between">
+                        <div class="tw-flex tw-w-9/12 tw-justify-between">
                             <button class="tw-button-secondary tw-composed-button">
                                 <span class="tw-mr-1">Exportar a PDF</span>
                                 <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/pdf.svg"
@@ -187,18 +168,8 @@
                                     alt="export">
                             </button>
                             <button class="tw-button-secondary tw-composed-button">
-                                <span class="tw-mr-1">Cambiar asesor</span>
-                                <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/fi_user_basico.svg"
-                                    alt="export">
-                            </button>
-                            <button class="tw-button-secondary tw-composed-button">
                                 <span class="tw-mr-1">Enviar email</span>
                                 <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/email_basico.svg"
-                                    alt="export">
-                            </button>
-                            <button class="tw-button-secondary tw-composed-button">
-                                <span class="tw-mr-1">Enviar sms</span>
-                                <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/sms.svg"
                                     alt="export">
                             </button>
                             <select id="location" name="location" class="tw-form-control tw-w-3/12">
@@ -206,12 +177,21 @@
                                 <option>Activos</option>
                                 <option>Inactivos</option>
                             </select>
-                        </div>
-                        <div class="tw-flex">
-                            <button class="tw-button-primary">Nuevo siniestro</button>
+                            <!-- search input -->
+                            <div class="tw-relative tw-rounded-md tw-shadow-sm">
+                                <div
+                                    class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-left-0 tw-flex tw-items-center tw-pl-3">
+                                    <img src="/media/svgs/search-neutral-80.svg" alt="search-neutral-80">
+                                </div>
+                                <input type="text" name="search" id="search" placeholder="Buscar"
+                                    class="tw-block tw-w-full tw-rounded-md tw-border-neutral-40 tw-pl-10 tw-focus:border-azul-80 tw-focus:ring-azul-80 tw-text-xs">
+                            </div>
+                            <div class="tw-flex">
+                                <button class="tw-button-primary">Ajustes de tabla</button>
+                            </div>
                         </div>
                     </div>
-                    <!--opciones tabla-->
+                    <div class="tw-hr tw-my-5"></div>
                     <div class="tw-px-[20px]">
                         <div class="tw-mt-8 tw-flex tw-flex-col">
                             <div class="tw--my-2 tw--mx-4 tw-overflow-x-autosm:tw--mx-6 tw-lg:-mx-8">
@@ -225,54 +205,43 @@
                                                         class="tw-min-w-[48px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-pl-6 tw-text-2xs tw-font-semibold tw-text-neutral-60">
                                                         <input id="accept-personal-info" name="accept-personal-info" type="checkbox" class="tw-form-control">
                                                     </th>
-                                                    <th scope="col" class="tw-min-w-[34px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-pl-6 tw-text-2xs tw-font-semibold tw-text-neutral-60">
-                                                        
-                                                    </th>
                                                     <th scope="col"
-                                                        class="tw-min-w-[165px] tw-w-[40%] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
-                                                        Nombre completo
+                                                        class="tw-max-w-[130px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
+                                                        Producto
                                                     </th>
-                                                    <th scope="col"
-                                                        class="tw-min-w-[96px]  tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
-                                                        Nº DE DOC.</th>
+                                                    <th scope="col" class="tw-min-w-[120px]  tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
+                                                        ramo
+                                                    </th>
                                                     <th scope="col"
                                                         class="tw-min-w-[108px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
-                                                        teléfono</th>
+                                                        póliza</th>
                                                     <th scope="col"
                                                         class="tw-min-w-[96px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
-                                                        nif supl.
+                                                        Asesor
                                                     </th>
                                                     <th scope="col"
                                                         class="tw-min-w-[124px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
-                                                        email
+                                                        riesgo
                                                     </th>
                                                     <th scope="col"
                                                         class="tw-min-w-[69px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
-                                                        cp
+                                                        F. ALTA
                                                     </th>
                                                     <th scope="col"
-                                                        class="tw-min-w-[104px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
-                                                        provincia
+                                                        class="tw-min-w-[141px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
+                                                        F. RENOVACIÓN
                                                     </th>
                                                     <th scope="col"
                                                         class="tw-min-w-[121px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
-                                                        localidad
+                                                        PERIOSIDAD
                                                     </th>
                                                     <th scope="col"
                                                         class="tw-min-w-[102px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
-                                                        pais
+                                                        Nombre completo
                                                     </th>
                                                     <th scope="col"
                                                         class="tw-min-w-[118px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
-                                                        p. residencia
-                                                    </th>
-                                                    <th scope="col"
-                                                        class="tw-min-w-[108px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
-                                                        Fecha de nacimiento
-                                                    </th>
-                                                    <th scope="col"
-                                                        class="tw-min-w-[94px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
-                                                        tipo de persona
+                                                        email
                                                     </th>
                                                     <th scope="col"
                                                         class="tw-min-w-[40px] tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60">
@@ -286,30 +255,43 @@
                                                     <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
                                                         <input id="accept-personal-info" name="accept-personal-info" type="checkbox" class="tw-form-control">
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2"><img src="/media/svgs/circulo_verde.svg" alt=""></td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[130px] tw-whitespace-normal">
+                                                            2.0TD_2 PATM ESTABLE 15%
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[120px] tw-whitespace-normal">
+                                                            40-VIDA INDIVIDUAL
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">235896332</td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-text-ellipsis tw-overflow-hidden tw-max-w-[124px] tw-text-2xs tw-font-normal">
+                                                            Jane
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-max-w-[330px]">
+                                                        <p class="overscroll-auto">
+                                                            RENAULT MASTER - INDUSTRIAL LIGE - 5519FVH 00000000
+                                                        </p>
+                                                    </td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[105px] tw-whitespace-normal">
+                                                            24/08/2022
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[141px] tw-whitespace-normal">
+                                                            24/08/2022
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Mensual</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
                                                         <span class="tw-text-2xs tw-font-normal">Denver Smith</span>
                                                         <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">X0523821F</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">(+49) 89343 8014</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">00523821F</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                                        <div class="tw-text-ellipsis tw-overflow-hidden tw-max-w-[124px] tw-text-2xs tw-font-normal">
-                                                            dsmith@gmail.com
-                                                        </div>
-                                                    </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">25690</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Baleares</td>
-                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                                        <div class="tw-max-w-[121px] tw-whitespace-normal">
-                                                            Palma de Mallorca
-                                                        </div>
-                                                    </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">España</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Alemania</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">11/05/1956</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Física</td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">correo@correo.com</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
                                                         <button class="tw-bg-transparent tw-border-transparent">
                                                             <img src="/media/svgs/dots-vertical-basic.svg" alt="">
@@ -320,30 +302,43 @@
                                                     <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
                                                         <input id="accept-personal-info" name="accept-personal-info" type="checkbox" class="tw-form-control">
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2"><img src="/media/svgs/circulo_verde.svg" alt=""></td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[130px] tw-whitespace-normal">
+                                                            2.0TD_2 PATM ESTABLE 15%
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[120px] tw-whitespace-normal">
+                                                            40-VIDA INDIVIDUAL
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">235896332</td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-text-ellipsis tw-overflow-hidden tw-max-w-[124px] tw-text-2xs tw-font-normal">
+                                                            Jane
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-max-w-[330px]">
+                                                        <p class="overscroll-auto">
+                                                            RENAULT MASTER - INDUSTRIAL LIGE - 5519FVH 00000000
+                                                        </p>
+                                                    </td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[105px] tw-whitespace-normal">
+                                                            24/08/2022
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[141px] tw-whitespace-normal">
+                                                            24/08/2022
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Mensual</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
                                                         <span class="tw-text-2xs tw-font-normal">Denver Smith</span>
                                                         <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">X0523821F</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">(+49) 89343 8014</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">00523821F</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                                        <div class="tw-text-ellipsis tw-overflow-hidden tw-max-w-[124px] tw-text-2xs tw-font-normal">
-                                                            dsmith@gmail.com
-                                                        </div>
-                                                    </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">25690</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Baleares</td>
-                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                                        <div class="tw-max-w-[121px] tw-whitespace-normal">
-                                                            Palma de Mallorca
-                                                        </div>
-                                                    </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">España</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Alemania</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">11/05/1956</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Física</td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">correo@correo.com</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
                                                         <button class="tw-bg-transparent tw-border-transparent">
                                                             <img src="/media/svgs/dots-vertical-basic.svg" alt="">
@@ -354,30 +349,43 @@
                                                     <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
                                                         <input id="accept-personal-info" name="accept-personal-info" type="checkbox" class="tw-form-control">
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2"><img src="/media/svgs/circulo_verde.svg" alt=""></td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
-                                                        <span>Denver Smith</span>
-                                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[130px] tw-whitespace-normal">
+                                                            2.0TD_2 PATM ESTABLE 15%
+                                                        </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">X0523821F</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">(+49) 89343 8014</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">00523821F</td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[120px] tw-whitespace-normal">
+                                                            40-VIDA INDIVIDUAL
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">235896332</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
                                                         <div class="tw-text-ellipsis tw-overflow-hidden tw-max-w-[124px] tw-text-2xs tw-font-normal">
-                                                            dsmith@gmail.com
+                                                            Jane
                                                         </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">25690</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Baleares</td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-max-w-[330px]">
+                                                        <p class="overscroll-auto">
+                                                            RENAULT MASTER - INDUSTRIAL LIGE - 5519FVH 00000000
+                                                        </p>
+                                                    </td>
                                                     <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                                        <div class="tw-max-w-[121px] tw-whitespace-normal">
-                                                            Palma de Mallorca
+                                                        <div class="tw-max-w-[105px] tw-whitespace-normal">
+                                                            24/08/2022
                                                         </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">España</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Alemania</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">11/05/1956</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Física</td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[141px] tw-whitespace-normal">
+                                                            24/08/2022
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Mensual</td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
+                                                        <span class="tw-text-2xs tw-font-normal">Denver Smith</span>
+                                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">correo@correo.com</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
                                                         <button class="tw-bg-transparent tw-border-transparent">
                                                             <img src="/media/svgs/dots-vertical-basic.svg" alt="">
@@ -388,30 +396,43 @@
                                                     <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
                                                         <input id="accept-personal-info" name="accept-personal-info" type="checkbox" class="tw-form-control">
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2"><img src="/media/svgs/circulo_verde.svg" alt=""></td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
-                                                        <span>Denver Smith</span>
-                                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[130px] tw-whitespace-normal">
+                                                            2.0TD_2 PATM ESTABLE 15%
+                                                        </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">X0523821F</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">(+49) 89343 8014</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">00523821F</td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[120px] tw-whitespace-normal">
+                                                            40-VIDA INDIVIDUAL
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">235896332</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
                                                         <div class="tw-text-ellipsis tw-overflow-hidden tw-max-w-[124px] tw-text-2xs tw-font-normal">
-                                                            dsmith@gmail.com
+                                                            Jane
                                                         </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">25690</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Baleares</td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-max-w-[330px]">
+                                                        <p class="overscroll-auto">
+                                                            RENAULT MASTER - INDUSTRIAL LIGE - 5519FVH 00000000
+                                                        </p>
+                                                    </td>
                                                     <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                                        <div class="tw-max-w-[121px] tw-whitespace-normal">
-                                                            Palma de Mallorca
+                                                        <div class="tw-max-w-[105px] tw-whitespace-normal">
+                                                            24/08/2022
                                                         </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">España</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Alemania</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">11/05/1956</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Física</td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[141px] tw-whitespace-normal">
+                                                            24/08/2022
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Mensual</td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
+                                                        <span class="tw-text-2xs tw-font-normal">Denver Smith</span>
+                                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">correo@correo.com</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
                                                         <button class="tw-bg-transparent tw-border-transparent">
                                                             <img src="/media/svgs/dots-vertical-basic.svg" alt="">
@@ -422,30 +443,43 @@
                                                     <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
                                                         <input id="accept-personal-info" name="accept-personal-info" type="checkbox" class="tw-form-control">
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2"><img src="/media/svgs/circulo_verde.svg" alt=""></td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
-                                                        <span>Denver Smith</span>
-                                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[130px] tw-whitespace-normal">
+                                                            2.0TD_2 PATM ESTABLE 15%
+                                                        </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">X0523821F</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">(+49) 89343 8014</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">00523821F</td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[120px] tw-whitespace-normal">
+                                                            40-VIDA INDIVIDUAL
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">235896332</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
                                                         <div class="tw-text-ellipsis tw-overflow-hidden tw-max-w-[124px] tw-text-2xs tw-font-normal">
-                                                            dsmith@gmail.com
+                                                            Jane
                                                         </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">25690</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Baleares</td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-max-w-[330px]">
+                                                        <p class="overscroll-auto">
+                                                            RENAULT MASTER - INDUSTRIAL LIGE - 5519FVH 00000000
+                                                        </p>
+                                                    </td>
                                                     <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                                        <div class="tw-max-w-[121px] tw-whitespace-normal">
-                                                            Palma de Mallorca
+                                                        <div class="tw-max-w-[105px] tw-whitespace-normal">
+                                                            24/08/2022
                                                         </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">España</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Alemania</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">11/05/1956</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Física</td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[141px] tw-whitespace-normal">
+                                                            24/08/2022
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Mensual</td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
+                                                        <span class="tw-text-2xs tw-font-normal">Denver Smith</span>
+                                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">correo@correo.com</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
                                                         <button class="tw-bg-transparent tw-border-transparent">
                                                             <img src="/media/svgs/dots-vertical-basic.svg" alt="">
@@ -456,30 +490,43 @@
                                                     <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
                                                         <input id="accept-personal-info" name="accept-personal-info" type="checkbox" class="tw-form-control">
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2"><img src="/media/svgs/circulo_verde.svg" alt=""></td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
-                                                        <span>Denver Smith</span>
-                                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[130px] tw-whitespace-normal">
+                                                            2.0TD_2 PATM ESTABLE 15%
+                                                        </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">00523821F</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">(+49) 89343 8014</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">00523821F</td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[120px] tw-whitespace-normal">
+                                                            40-VIDA INDIVIDUAL
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">235896332</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
                                                         <div class="tw-text-ellipsis tw-overflow-hidden tw-max-w-[124px] tw-text-2xs tw-font-normal">
-                                                            dsmith@gmail.com
+                                                            Jane
                                                         </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">25690</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Baleares</td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-max-w-[330px]">
+                                                        <p class="overscroll-auto">
+                                                            RENAULT MASTER - INDUSTRIAL LIGE - 5519FVH 00000000
+                                                        </p>
+                                                    </td>
                                                     <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                                        <div class="tw-max-w-[121px] tw-whitespace-normal">
-                                                            Palma de Mallorca
+                                                        <div class="tw-max-w-[105px] tw-whitespace-normal">
+                                                            24/08/2022
                                                         </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">España</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Alemania</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">11/05/1956</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Física</td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[141px] tw-whitespace-normal">
+                                                            24/08/2022
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Mensual</td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
+                                                        <span class="tw-text-2xs tw-font-normal">Denver Smith</span>
+                                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">correo@correo.com</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
                                                         <button class="tw-bg-transparent tw-border-transparent">
                                                             <img src="/media/svgs/dots-vertical-basic.svg" alt="">
@@ -490,64 +537,43 @@
                                                     <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
                                                         <input id="accept-personal-info" name="accept-personal-info" type="checkbox" class="tw-form-control">
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2"><img src="/media/svgs/circulo_verde.svg" alt=""></td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
-                                                        <span>Denver Smith</span>
-                                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[130px] tw-whitespace-normal">
+                                                            2.0TD_2 PATM ESTABLE 15%
+                                                        </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">00523821F</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">(+49) 89343 8014</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">00523821F</td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[120px] tw-whitespace-normal">
+                                                            40-VIDA INDIVIDUAL
+                                                        </div>
+                                                    </td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">235896332</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
                                                         <div class="tw-text-ellipsis tw-overflow-hidden tw-max-w-[124px] tw-text-2xs tw-font-normal">
-                                                            dsmith@gmail.com
+                                                            Jane
                                                         </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">25690</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Baleares</td>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-max-w-[330px]">
+                                                        <p class="overscroll-auto">
+                                                            RENAULT MASTER - INDUSTRIAL LIGE - 5519FVH 00000000
+                                                        </p>
+                                                    </td>
                                                     <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                                        <div class="tw-max-w-[121px] tw-whitespace-normal">
-                                                            Palma de Mallorca
+                                                        <div class="tw-max-w-[105px] tw-whitespace-normal">
+                                                            24/08/2022
                                                         </div>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Alemania</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Alemania</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">11/05/1956</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Física</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
-                                                        <button class="tw-bg-transparent tw-border-transparent">
-                                                            <img src="/media/svgs/dots-vertical-basic.svg" alt="">
-                                                        </button>
+                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
+                                                        <div class="tw-max-w-[141px] tw-whitespace-normal">
+                                                            24/08/2022
+                                                        </div>
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class=" tw-whitespace-nowrap tw-pr-3 tw-pl-6 tw-py-4 t2">
-                                                        <input id="accept-personal-info" name="accept-personal-info" type="checkbox" class="tw-form-control">
-                                                    </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2"><img src="/media/svgs/circulo_verde.svg" alt=""></td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Mensual</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
-                                                        <span>Denver Smith</span>
+                                                        <span class="tw-text-2xs tw-font-normal">Denver Smith</span>
                                                         <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
                                                     </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">00523821F</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">(+49) 89343 8014</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">00523821F</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                                        <div class="tw-text-ellipsis tw-overflow-hidden tw-max-w-[124px] tw-text-2xs tw-font-normal">
-                                                            dsmith@gmail.com
-                                                        </div>
-                                                    </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">25690</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">Baleares</td>
-                                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                                        <div class="tw-max-w-[121px] tw-whitespace-normal">
-                                                            Palma de Mallorca
-                                                        </div>
-                                                    </td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">España</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Alemania</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">11/05/1956</td>
-                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">Física</td>
+                                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">correo@correo.com</td>
                                                     <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
                                                         <button class="tw-bg-transparent tw-border-transparent">
                                                             <img src="/media/svgs/dots-vertical-basic.svg" alt="">
@@ -614,6 +640,7 @@
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
