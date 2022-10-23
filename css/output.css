@@ -2307,6 +2307,10 @@ select {
   overflow-y: auto;
 }
 
+.tw-overflow-y-scroll {
+  overflow-y: scroll;
+}
+
 .tw-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
