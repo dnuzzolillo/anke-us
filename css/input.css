@@ -346,7 +346,7 @@ label.tw-toggle::after{
     @apply tw-font-bold tw-text-2xs;
 }
 .t1l {
-    @apply  tw-text-xs  tw-text-neutral-60;
+    @apply  tw-text-2xs  tw-text-neutral-60;
 }
 .t2 {
     @apply tw-font-normal tw-text-xs;
