@@ -1707,6 +1707,10 @@ select {
   width: 15&;
 }
 
+.tw-w-9\/12 {
+  width: 75%;
+}
+
 .tw-min-w-\[327px\] {
   min-width: 327px;
 }
@@ -1815,6 +1819,14 @@ select {
   min-width: 154px;
 }
 
+.tw-min-w-\[120px\] {
+  min-width: 120px;
+}
+
+.tw-min-w-\[141px\] {
+  min-width: 141px;
+}
+
 .tw-max-w-\[363px\] {
   max-width: 363px;
 }
@@ -1873,6 +1885,18 @@ select {
 
 .tw-max-w-\[150px\] {
   max-width: 150px;
+}
+
+.tw-max-w-\[120px\] {
+  max-width: 120px;
+}
+
+.tw-max-w-\[105px\] {
+  max-width: 105px;
+}
+
+.tw-max-w-\[141px\] {
+  max-width: 141px;
 }
 
 .tw-flex-auto {
@@ -2365,6 +2389,10 @@ select {
 
 .tw-overflow-y-auto {
   overflow-y: auto;
+}
+
+.tw-overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .tw-truncate {
