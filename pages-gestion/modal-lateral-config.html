@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- START import output css -->
+    <link rel="stylesheet" href="/css/output.css">
+    <!-- END import output css -->
+    <!-- START import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- END import fonts -->
+    <title>Anke Gestión</title>
+</head>
+
+<body>
+    <!-- START config -->
+    <input type="checkbox" name="user-menu-trigger" id="user-menu-trigger" class="tw-css-trigger" checked>
+    <div class="tw-backdrop tw-overlay-container tw-css-trigger-target tw-bg-white">
+        <div class="tw-w-[415px] tw-h-[100vh] tw-pt-[20px] tw-pb-[20px] tw-flex-col tw-items-between tw-bg-white tw-right-[0px] tw-absolute tw-flex">
+            <div class="tw-text-color-title tw-font-bold tw-px-[20px] tw-flex-between">
+                Configuración
+                <label for="user-menu-trigger" class="tw-cursor-pointer">
+                    <img src="/media/svgs/x.svg" >
+                </label>
+            </div>
+            <!-- START config list -->
+            <div class="tw-flex tw-flex-col tw-space-y-3 tw-pt-2 tw-h-full overflow-y-scroll">
+                <!-- config general -->
+                <div class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-salud-20">
+                            <img src="/media/svgs/blue-cog.svg" alt="chat-azul-60.svg">
+                        </div>
+                        <div class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>General</span>
+                        </div>
+                    </div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg">
+                </div>
+                <!-- oficina alert -->
+                <div class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-amarillo-20">
+                            <img src="/media/svgs/yellow-office.svg" alt="megafono-amarillo-60.svg">
+                        </div>
+                        <div class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Oficinas</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Campañas check -->
+                <div class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-verde-20">
+                            <img src="/media/svgs/green-mkt.svg" alt="capañas">
+                        </div>
+                        <div class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Campañas</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sub Agentes users -->
+                <div class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-rosa-20">
+                            <img src="/media/svgs/red-agents.svg" alt="users-red.svg">
+                        </div>
+                        <div class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Sub Agentes</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Compañias general -->
+                <div class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-salud-20">
+                            <img src="/media/svgs/blue-company.svg" alt="chat-azul-60.svg">
+                        </div>
+                        <div class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Compañias</span>
+                        </div>
+                    </div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg">
+                </div>
+                <!-- Clientes general -->
+                <div class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-salud-20">
+                            <img src="/media/svgs/red-users.svg" alt="chat-azul-60.svg">
+                        </div>
+                        <div class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Clientes</span>
+                        </div>
+                    </div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg">
+                </div>
+                <!-- Contratos general -->
+                <div class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-salud-20">
+                            <img src="/media/svgs/green-contratos.svg" alt="chat-azul-60.svg">
+                        </div>
+                        <div class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Contratos</span>
+                        </div>
+                    </div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg">
+                </div>
+                <!-- Siniestros general -->
+                <div class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-salud-20">
+                            <img src="/media/svgs/yellow-siniestros.svg" alt="chat-azul-60.svg">
+                        </div>
+                        <div class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Siniestros</span>
+                        </div>
+                    </div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg">
+                </div>
+                <!-- Recibos general -->
+                <div class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-salud-20">
+                            <img src="/media/svgs/blue-recibos.svg" alt="chat-azul-60.svg">
+                        </div>
+                        <div class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Recibos</span>
+                        </div>
+                    </div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg">
+                </div>
+                <!-- Ofertas  general -->
+                <div class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-salud-20">
+                            <img src="/media/svgs/green-ofertas.svg" alt="chat-azul-60.svg">
+                        </div>
+                        <div class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Ofertas </span>
+                        </div>
+                    </div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg">
+                </div>
+                <!-- Productos general -->
+                <div class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-salud-20">
+                            <img src="/media/svgs/yellow-mkt.svg" alt="chat-azul-60.svg">
+                        </div>
+                        <div class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Productos</span>
+                        </div>
+                    </div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg">
+                </div>
+                <!-- Facturación general -->
+                <div class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-salud-20">
+                            <img src="/media/svgs/green-facturacion.svg" alt="chat-azul-60.svg">
+                        </div>
+                        <div class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Facturación</span>
+                        </div>
+                    </div>
+                    <img src="/media/svgs/chevron-right-neutral-80.svg">
+                </div>
+                <!-- Impresión general -->
+                <div class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-salud-20">
+                            <img src="/media/svgs/blue-impresion.svg" alt="chat-azul-60.svg">
+                        </div>
+                        <div class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Impresión</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END config -->
+        </div>
+    </div>
+    <!-- END config -->
+</body>
+
+</html>
