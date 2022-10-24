@@ -374,5 +374,20 @@ label.tw-toggle::after{
 .green-text {
     color: #00B050 !important;
 }
+/* TABS--> */
+
+.tab {
+    @apply tw-border-transparent tw-text-neutral-60 tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-px-1 tw-border-b-2 tw-font-medium tw-text-xs;
+}
+
+.tab:hover {
+    @apply tw-text-gray-700 tw-border-neutral-40;
+}
+
+.tab.selected {
+    @apply tw-border-red tw-text-azul-60 tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-px-1 tw-border-b-2 tw-font-medium tw-text-xs;
+}
+
+/* <-- TABS */
 /* EMPTY--> */
 /* <-- EMPTY */
