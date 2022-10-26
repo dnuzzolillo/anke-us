@@ -28,7 +28,7 @@ html {
 .tw-option:hover {
     @apply tw-bg-neutral-20;
 }
- 
+
 .tw-container {
     @apply tw-w-[1600px] tw-max-w-[100%] tw-mx-auto;
     z-index: 10;
@@ -63,6 +63,7 @@ html {
     display: table;
     @apply tw-h-0 tw-border-t-[2px] tw-border-t-white tw-w-[40px] tw-mt-1;
 }
+
 .tw-title {
     @apply tw-text-azul-60 tw-text-md tw-text-color-title tw-font-bold tw-w-fit;
 }
@@ -73,6 +74,7 @@ html {
     @apply tw-h-0 tw-border-t-[2px] tw-border-t-azul-60 tw-w-[100px] tw-mt-1;
     max-width: 50%;
 }
+
 .tw-title-center::after {
     content: '';
     display: table;
@@ -95,7 +97,7 @@ html {
         padding-right: 20px;
         padding-left: 20px;
     }
-    
+
 }
 
 .tw-hr {
@@ -156,6 +158,7 @@ html {
 .tw-radio-option .tw-check img {
     width: 13px;
 }
+
 .tw-radio-option .tw-check {
     border-radius: 50%;
     border: 2px solid #000000;
@@ -166,16 +169,19 @@ html {
     height: 25px;
 }
 
-.tw-css-trigger:checked + .tw-radio-option .tw-check {
+.tw-css-trigger:checked+.tw-radio-option .tw-check {
     border: 2px solid #00008F;
 }
-.tw-css-trigger + .tw-radio-option .tw-check .tw-i-2 {
+
+.tw-css-trigger+.tw-radio-option .tw-check .tw-i-2 {
     display: none;
 }
-.tw-css-trigger:checked + .tw-radio-option .tw-check .tw-i-1 {
+
+.tw-css-trigger:checked+.tw-radio-option .tw-check .tw-i-1 {
     display: none;
 }
-.tw-css-trigger:checked + .tw-radio-option .tw-check .tw-i-2 {
+
+.tw-css-trigger:checked+.tw-radio-option .tw-check .tw-i-2 {
     display: block;
 }
 
@@ -193,13 +199,15 @@ html {
     display: inherit;
 }
 
-.tw-css-trigger:not(:checked) + .tw-css-trigger-target {
+.tw-css-trigger:not(:checked)+.tw-css-trigger-target {
     display: none !important;
 }
-.tw-css-trigger:not(:checked) + .tw-css-trigger-target-radio {
+
+.tw-css-trigger:not(:checked)+.tw-css-trigger-target-radio {
     display: none !important;
 }
-.tw-css-trigger:checked + .tw-css-trigger-target-radio + .tw-css-trigger-target-radio {
+
+.tw-css-trigger:checked+.tw-css-trigger-target-radio+.tw-css-trigger-target-radio {
     display: none !important;
 }
 
@@ -230,16 +238,17 @@ label.tw-toggle {
     @apply tw-bg-neutral-30 tw-relative tw-inline-flex tw-h-6 tw-w-11 tw-flex-shrink-0 tw-cursor-pointer tw-rounded-full tw-border-2 tw-border-transparent tw-transition-colors tw-duration-200 tw-ease-in-out;
 }
 
-label.tw-toggle::after{
+label.tw-toggle::after {
     display: inline-block;
     content: '';
     @apply tw-translate-x-0 tw-pointer-events-none tw-inline-block tw-h-5 tw-w-5 tw-transform tw-rounded-full tw-bg-white tw-shadow tw-ring-0 tw-transition tw-duration-200 tw-ease-in-out;
 }
 
-.tw-css-trigger:checked + label.tw-toggle {
+.tw-css-trigger:checked+label.tw-toggle {
     @apply tw-bg-azul-60;
 }
-.tw-css-trigger:checked + label.tw-toggle::after {
+
+.tw-css-trigger:checked+label.tw-toggle::after {
     @apply tw-translate-x-5;
 }
 
@@ -317,9 +326,6 @@ label.tw-toggle::after{
 }
 
 /* <-- USER MENU */
-
-
-
 /* MAIN GESTION--> */
 
 .tw-main-top {
@@ -336,27 +342,39 @@ label.tw-toggle::after{
 .t1 {
     @apply tw-font-normal tw-text-2xs;
 }
+
 .t1m {
     @apply tw-font-medium tw-text-2xs;
 }
+
 .t1s {
     @apply tw-font-semibold tw-text-2xs;
 }
+
 .t1b {
     @apply tw-font-bold tw-text-2xs;
 }
-.t1l {
-    @apply  tw-text-2xs  tw-text-neutral-60;
+
+.t1blue {
+    @apply tw-font-bold tw-text-2xs tw-text-azul-60;
 }
+
+.t1l {
+    @apply tw-text-2xs tw-text-neutral-60;
+}
+
 .t2 {
     @apply tw-font-normal tw-text-xs;
 }
+
 .t2s {
     @apply tw-font-semibold tw-text-xs;
 }
+
 .t2b {
     @apply tw-font-bold tw-text-xs;
 }
+
 .t2blue {
     @apply tw-font-bold tw-text-xs tw-text-azul-60;
 }
@@ -374,6 +392,7 @@ label.tw-toggle::after{
 .green-text {
     color: #00B050 !important;
 }
+
 /* TABS--> */
 
 .tab {
@@ -389,5 +408,23 @@ label.tw-toggle::after{
 }
 
 /* <-- TABS */
+/* STEPS--> */
+
+.step {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: #DEDEDE;
+}
+
+.step.active {
+
+    border: solid 3px #BFBFE3;
+    background-color: #00008F;
+
+}
+
+/* <-- STEPS */
+
 /* EMPTY--> */
 /* <-- EMPTY */
