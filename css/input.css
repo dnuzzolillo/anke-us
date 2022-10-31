@@ -418,13 +418,31 @@ label.tw-toggle::after {
 }
 
 .step.active {
-
     border: solid 3px #BFBFE3;
     background-color: #00008F;
+}
 
+.step.done {
+    background-color: #00008F;
 }
 
 /* <-- STEPS */
-
 /* EMPTY--> */
 /* <-- EMPTY */
+
+
+.upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 26px 26px;
+    gap: 4px;
+
+    width: 670px;
+    height: 144px;
+
+    /* gray/300 */
+
+    border: 2px dashed #D1D5DB;
+    border-radius: 6px;
+}

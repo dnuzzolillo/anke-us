@@ -244,7 +244,7 @@
             </div>
             <!-- START main section body -->
             <div class="tw-px-[40px] tw-px-[25px]">
-                <div class="tw-main-section-h tw-bg-white tw-rounded-[10px] tw-p-[30px] tw-2xl:h-auto tw-my-5">
+                <div class="tw-main-section-h tw-bg-white tw-rounded-[10px] tw-p-[30px] tw-2xl:h-auto tw-my-5 tw-relative tw-pb-[80px]">
                     <!-- START nvo cliente header -->
                     <div class="tw-flex-between">
                         <div class="tw-flex tw-items-center">
@@ -257,177 +257,36 @@
                     </div>
                     <div class="tw-flex tw-items-center tw-mt-5">
                         <span class="t1 tw-mr-3">
-                            Paso 1 de 6 :
+                            Paso 3 de 5 :
                         </span>
-                        <img src="/media/svgs/user-azul.svg" class="tw-mr-2">
-                        <span class="t1blue">Datos generales</span>
+                        <img src="/media/svgs/folder-azul.svg" class="tw-mr-2">
+                        <span class="t1blue">Suplementarios</span>
                         <div class="tw-flex tw-items-center tw-space-x-4 tw-ml-5">
+                            <div class="step done"></div>
+                            <div class="step done"></div>
                             <div class="step active"></div>
-                            <div class="step"></div>
-                            <div class="step"></div>
+                            
                             <div class="step"></div>
                             <div class="step"></div>
                         </div>
                     </div>
                     <div class="tw-hr tw-mb-4 tw-mt-3"></div>
                     <!-- END nvo cliente header -->
-                    <div class="tw-flex-between">
-                        <div class="tw-flex">
-                            <div class="tw-flex tw-my-2 tw-items-center tw-space-x-5">
-                                <img src="/media/pngs/n-user.png" class="tw-rounded-full tw-w-[70px] tw-h-[70px]">
-                                <button class="tw-button-secondary tw-h-fit !tw-ml-2">Cargar foto</button>
-
-                                <div class="tw-flex tw-mt-1 tw-items-center">
-                                    <div class="tw-flex tw-items-center tw-mb-4">
-                                        <input checked id="u-1" type="radio" value="" name="default-radio"
-                                            class="tw-w-4 tw-h-4 tw-text-azul-60 tw-bg-neutral-10 tw-border-neutral-60 focus:ring-azul-60 focus:tw-ring-2">
-                                        <label for="u-1" class="tw-ml-2 t2 !tw-font-medium tw-font-medium">Persona
-                                            Fisica</label>
-                                    </div>
-                                    <div class="tw-flex tw-items-center tw-mb-4 tw-ml-4">
-                                        <input id="u-2" type="radio" value="" name="default-radio"
-                                            class="tw-w-4 tw-h-4 tw-text-azul-60 tw-bg-neutral-10 tw-border-neutral-60 focus:ring-azul-60 focus:tw-ring-2">
-                                        <label for="u-2" class="tw-ml-2 t2 !tw-font-medium tw-font-medium">Persona
-                                            Jurídica</label>
-                                    </div>
-                                </div>
-
+                    <div class="tw-my-7 tw-flex-center tw-flex-col">
+                        <div class=" tw-max-w-[850px] tw-text-lg tw-font-medium tw-text-center">
+                            Añadir documentos relacionados con el cliente como por ejemplo: DNI, Pasaporte, Licencia de conducir etc.
+                        </div>
+                        <div class="upload-box tw-mt-16 tw-space-y-2">
+                            <img src="/media/svgs/add-image.svg">
+                            <div class="t1 !tw-font-medium tw-max-w-[250px] tw-text-center">
+                                <label for="file1" class="tw-inline tw-text-color-title tw-cursor-pointer">Upload a file</label>
+                                or drag and drop PNG, JPG, GIF up to 10MB
+                                <input type="file" class="tw-hidden" id="file1">
                             </div>
-                        </div>
-                        <div class="tw-flex">
-                            <div class="tw-flex tw-items-center tw-mb-4 tw-ml-4">
-                                <input id="u-2" type="radio" value="" name="default-radio"
-                                    class="tw-w-4 tw-h-4 tw-text-azul-60 tw-bg-neutral-10 tw-border-neutral-60 focus:ring-azul-60 focus:tw-ring-2">
-                                <label for="u-2" class="tw-ml-2 t2 tw-text-red !tw-font-bold">Fallecido</label>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="t2blue !tw-font-medium tw-my-5">
-                        Sub Agente
-                    </div> -->
-                    <!-- START form grid -->
-                    <div class="tw-grid tw-grid-cols-[1fr_1fr_1fr_1fr] tw-gap-x-4 tw-gap-y-3">
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Tipo</label>
-                            <select class="tw-form-control"></select>
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Número de documento</label>
-                            <input type="text" class="tw-form-control">
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">NIF Suplementario</label>
-                            <input type="text" class="tw-form-control">
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Profesión</label>
-                            <input type="text" class="tw-form-control">
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Nombre</label>
-                            <input type="text" class="tw-form-control">
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Apellidos</label>
-                            <input type="text" class="tw-form-control">
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Sexo</label>
-                            <select class="tw-form-control"></select>
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Pais de residencia</label>
-                            <select class="tw-form-control"></select>
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Fecha de nacimiento</label>
-                            <input type="date" class="tw-form-control">
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Perfil</label>
-                            <select class="tw-form-control"></select>
                         </div>
                     </div>
                     <!-- END form grid -->
-                     <div class="t2blue !tw-font-bold tw-my-5">
-                        Datos de contacto y localización
-                    </div>
-                    <!-- START form grid -->
-                    <div class="tw-grid tw-grid-cols-[1fr_1fr_1fr_1fr] tw-gap-x-4 tw-gap-y-3 tw-items-center">
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Número de teléfono</label>
-                            <div class="tw-flex tw-space-x-2">
-                                <select class="tw-form-control">
-                                    <option value="">+34</option>
-                                </select>
-                                <input type="text" class="tw-form-control">
-                            </div>
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Número de teléfono movil</label>
-                            <div class="tw-flex tw-space-x-2">
-                                <select class="tw-form-control">
-                                    <option value="">+34</option>
-                                </select>
-                                <input type="text" class="tw-form-control">
-                            </div>
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">FAX</label>
-                            <input type="text" class="tw-form-control">
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Email 1</label>
-                            <input type="text" class="tw-form-control">
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Email 2</label>
-                            <input type="text" class="tw-form-control">
-                        </div>
-                        <div class="tw-form-group tw-flex !tw-flex-row tw-mt-5 tw-ml-4">
-                            <label class="t1m tw-mb-1">Sin email</label>
-                            <input type="checkbox" class="tw-form-control tw-ml-3">
-                        </div>
-
-                    </div>
-                    <!-- END form grid -->
-                    <!-- START form grid -->
-                    <div class="tw-grid tw-grid-cols-[1fr_1fr_1fr_1fr] tw-gap-x-4 tw-gap-y-3">
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Código Postal</label>
-                            <input type="text" class="tw-form-control">
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Provincia</label>
-                            <select class="tw-form-control">
-                            </select>
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Municipio</label>
-                            <select class="tw-form-control">
-                            </select>
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Zona</label>
-                            <select class="tw-form-control">
-                            </select>
-                        </div>
-                        <div class="tw-form-group tw-col-span-3">
-                            <label class="t1m tw-mb-1">Dirección</label>
-                            <input type="text" class="tw-form-control">
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Localidad</label>
-                            <input type="text" class="tw-form-control">
-                        </div>
-                        <div class="tw-form-group">
-                            <label class="t1m tw-mb-1">Pais</label>
-                            <input type="text" class="tw-form-control">
-                        </div>
-
-                    </div>
-                    <!-- END form grid -->
-                    <div class="tw-flex tw-justify-end tw-mt-5">
+                    <div class="tw-flex tw-justify-end tw-mt-5 tw-absolute tw-bottom-5 tw-right-5 ">
                         <button class="tw-button-primary">Guardar y continuar</button>
                     </div>
                 </div>
