@@ -395,6 +395,10 @@ label.tw-toggle::after {
 
 /* TABS--> */
 
+.tabs {
+    @apply tw--mb-px tw-flex tw-space-x-[16px];
+}
+
 .tab {
     @apply tw-border-transparent tw-text-neutral-60 tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-px-1 tw-border-b-2 tw-font-medium tw-text-xs;
 }
@@ -445,4 +449,52 @@ label.tw-toggle::after {
 
     border: 2px dashed #D1D5DB;
     border-radius: 6px;
+}
+
+.standard-c-1 {
+    @apply tw-bg-white tw-rounded-[10px] tw-p-[30px] tw-my-5 tw-relative tw-pb-[80px];
+}
+
+.table1 {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    @apply tw-min-w-full tw-divide-y tw-divide-neutral-40;
+}
+
+.table1 thead {
+
+    @apply tw-bg-neutral-10;
+}
+
+.table1 thead tr th {
+    @apply tw-uppercase tw-px-3 tw-py-3.5 tw-text-left tw-text-2xs tw-font-semibold tw-text-neutral-60;
+}
+
+.table1 tbody {
+    @apply tw-divide-y tw-divide-neutral-40 tw-bg-white;
+}
+
+.table1 tbody td {
+    @apply tw-whitespace-nowrap tw-px-4 tw-py-4 t2;
+}
+
+.edit {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+
+    /* indigo/600 */
+
+    color: #4F46E5;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1920px, initial-scale=1.0">
+    <!-- START import output css -->
+    <link rel="stylesheet" href="/css/output.css">
+    <!-- END import output css -->
+    <!-- START import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- END import fonts -->
+    <title>Anke Gestión</title>
+</head>
+
+<body class="tw-overflow-hidden">
+    <!-- START notifications -->
+    <input type="checkbox" name="user-menu-trigger" id="user-menu-trigger" class="tw-css-trigger">
+    <div class="tw-backdrop tw-overlay-container tw-css-trigger-target tw-bg-white">
+        <div
+            class="tw-w-[415px] tw-main-section-h tw-pt-[20px] tw-pb-[20px] tw-flex-col tw-items-between tw-bg-white tw-right-[0px] tw-absolute tw-flex">
+            <div class="tw-text-color-title tw-font-bold tw-px-[20px] tw-flex-between">
+                Benachrichtigungen
+                <label for="user-menu-trigger" class="tw-cursor-pointer">
+                    <img src="/media/svgs/x.svg">
+                </label>
+            </div>
+            <!-- START tabs -->
+            <div class="tw-mt-2">
+                <div class="tw-border-b tw-border-neutral-40 tw-px-[20px]">
+                    <nav class="tw--mb-px tw-flex tw-space-x-[16px]" aria-label="Tabs">
+                        <a href="#"
+                            class="tw-border-azul-60 tw-text-azul-60 tw-group tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-border-b-2 tw-font-medium tw-text-2xs">
+                            <span> Nuevo</span>
+                        </a>
+
+                        <a href="#"
+                            class="tw-border-transparent tw-text-neutral-60 hover:tw-text-gray-700 hover:tw-border-neutral-40 tw-group tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-border-b-2 tw-font-medium tw-text-2xs">
+                            <span>Todas</span>
+                        </a>
+
+                        <a href="#"
+                            class="tw-border-transparent tw-text-neutral-60 hover:tw-text-gray-700 hover:tw-border-neutral-40 tw-group tw-inline-flex tw-items-center tw-pt-4 tw-pb-1.5 tw-border-b-2 tw-font-medium tw-text-2xs"
+                            aria-current="page">
+                            <span>Chat</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <!-- END tabs -->
+            <!-- START notification list -->
+            <div class="tw-flex tw-flex-col tw-space-y-3 tw-pt-2 tw-h-full">
+                <!-- notification chat -->
+                <div
+                    class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div
+                            class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-salud-20">
+                            <img src="/media/svgs/chat-azul-60.svg" alt="chat-azul-60.svg" class="tw-w-[15px]">
+                        </div>
+                        <div
+                            class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Lorem ipsum dolor sit amet</span>
+                        </div>
+                    </div>
+                    <img src="/media/svgs/dots.svg">
+                </div>
+                <!-- notification alert -->
+                <div
+                    class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div
+                            class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-amarillo-20">
+                            <img src="/media/svgs/megafono-amarillo-60.svg" alt="megafono-amarillo-60.svg"
+                                class="tw-w-[15px]">
+                        </div>
+                        <div
+                            class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Lorem ipsum dolor sit amet</span>
+                        </div>
+                    </div>
+                    <img src="/media/svgs/dots.svg">
+                </div>
+                <!-- notification check -->
+                <div
+                    class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div
+                            class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-verde-20">
+                            <img src="/media/svgs/note-check-verde-20.svg" alt="note-check-verde-20.svg"
+                                class="tw-w-[15px]">
+                        </div>
+                        <div
+                            class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Lorem ipsum dolor sit amet</span>
+                        </div>
+                    </div>
+                    <img src="/media/svgs/dots.svg">
+                </div>
+                <!-- notification users -->
+                <div
+                    class="tw-flex-between tw-px-[20px] tw-border-b tw-border-neutral-40 tw-py-[15px] tw-w-full tw-space-x-4">
+                    <div class="tw-grid tw-grid-cols-[30px_1fr] tw-items-center ">
+                        <div
+                            class="tw-w-[30px] tw-h-[30px] tw-flex tw-justify-center tw-items-center tw-rounded-lg tw-bg-rosa-20">
+                            <img src="/media/svgs/users-red.svg" alt="users-red.svg" class="tw-w-[15px]">
+                        </div>
+                        <div
+                            class="tw-flex-col tw-flex tw-justify-between tw-ml-[15px] tw-text-xs tw-font-semibold tw-text-color-default">
+                            <span>Lorem ipsum dolor sit amet</span>
+                        </div>
+                    </div>
+                    <img src="/media/svgs/dots.svg">
+                </div>
+            </div>
+            <!-- END notification list -->
+        </div>
+    </div>
+    <!-- END notifications -->
+    <div class="tw-gestion-main-wrapper tw-flex tw-h-[100vh] tw-w-[100vw] tw-overflow-hidden">
+        <!-- START left panel -->
+        <div
+            class="tw-h-screen tw-w-[220px] tw-bg-azul-100 tw-h-[100vh] tw-flex tw-flex-col tw-items-center tw-px-[8px] tw-py-[16px]">
+            <img src="/media/svgs/logo-dark.svg" alt="logo" class="tw-w-[100px]">
+            <div class="tw-flex tw-flex-col tw-space-y-2.5 tw-mt-[30px]">
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs tw-bg-azul-60">
+                    <img src="/media/svgs/stack-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Dashboard
+                </div>
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/file-error-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Incidencias
+                </div>
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/search-white.svg" class="tw-mr-[14px] tw-w-[20px]">
+                    Consultas Rápidas
+                </div>
+                <!-- menu item -->
+                <label for="trigger-operativos"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/briefcase-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Operativos
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-operativos">
+
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/document-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Navegador
+                </div>
+                <!-- menu item -->
+                <label for="trigger-comunicación"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/chat-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Comunicación
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-comunicación">
+
+                <!-- menu item -->
+                <label for="trigger-marketing"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/megafono-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Marketing
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-marketing">
+
+                <!-- menu item -->
+                <label for="trigger-financieros"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/book-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Financieros
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" checked class="tw-css-trigger" id="trigger-financieros">
+                <div class="tw-pl-7 tw-space-y-1.5 tw-css-trigger-target">
+                    <div class="tw-expand-item tw-text-white tw-font-semibold tw-text-2xs">Recibos</div>
+                    <div class="tw-expand-item tw-text-white tw-font-semibold tw-text-2xs">Sepa</div>
+                </div>
+                <!-- menu item -->
+                <label for="trigger-notificaciones"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/doc-warning-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Notificaciones
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-notificaciones">
+
+                <!-- menu item -->
+                <label for="trigger-facturación"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/bill-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Facturación
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-facturación">
+
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/import-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Importación
+                </div>
+            </div>
+            <!-- configuracion -->
+            <div
+                class="tw-absolute tw-bottom-[30px] tw-mx-auto tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                <img src="/media/svgs/gear-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                Configuración
+            </div>
+        </div>
+        <!-- END left panel -->
+        <!-- START main section -->
+        <div class=" tw-overflow-auto tw-w-full">
+            <div class="tw-sticky tw-top-0 tw-bg-white tw-w-full tw-px-[25px] tw-py-[30px] tw-main-top tw-flex-between">
+                <div class="tw-flex tw-w-fit tw-items-center">
+                    <img src="/media/svgs/search-neutral-80.svg" class="tw-w-[22px]">
+                    <input type="text"
+                        class="tw-form-control tw-no-border tw-ml-[22px] tw-text-color-light tw-font-medium !tw-text-md"
+                        placeholder="Buscar">
+                </div>
+                <img src="/media/svgs/bell-neutral-60.svg" class="tw-w-[23px]">
+            </div>
+            <!-- START main section body -->
+            <div class="tw-px-[40px] tw-px-[25px] tw-py-[20px]">
+                <!-- START content -->
+                <div class="tw-main-section-h tw-bg-white tw-rounded-[10px] tw-p-[30px] tw-2xl:h-auto">
+                    <div class="tw-flex-between">
+                        <div class="tw-flex tw-items-center">
+                            <img src="/media/svgs/chevron-left-azul-60.svg" class="tw-mr-5">
+                            <div class="tw-title !tw-font-extrabold !tw-text-lg">Oferta 000001 - Manacor</div>
+                        </div>
+                    </div>
+                    <div class="tw-flex tw-space-x-4 tw-mt-4">
+                        <button class="tw-button-secondary tw-space-x-3 tw-composed-button">
+                            <span class="tw-mr-1">Exportar a Word</span>
+                            <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/export.svg" alt="pdf">
+                        </button>
+                        <button class="tw-button-secondary tw-space-x-3 tw-composed-button">
+                            <span class="tw-mr-1">Imprimir ficha</span>
+                            <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/print.svg">
+                        </button>
+                        <button class="tw-button-secondary tw-space-x-3 tw-composed-button">
+                            <span class="tw-mr-1">Enviar por email</span>
+                            <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/email_basico.svg">
+                        </button>
+                        <button class="tw-button-secondary tw-space-x-3 tw-composed-button">
+                            <span class="tw-mr-1">Ver Notificación</span>
+                            <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/chat.svg">
+                        </button>
+                        <button class="tw-button-secondary tw-space-x-3 tw-composed-button">
+                            <span class="tw-mr-1">Crear Notificación</span>
+                            <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/plus-cricle-neutral-80.svg">
+                        </button>
+                    </div>
+                    <!-- START tabs -->
+                    <div class="tw-mt-2">
+                        <div class="tw-border-b tw-border-neutral-40">
+                            <nav class="tabs"
+                                aria-label="Tabs">
+                                <a href="#"
+                                    class="tab">
+                                    <img src="/media/svgs/user-neutral-60.svg" class="tw-mr-3">
+                                    <span>Datos generales</span>
+                                </a>
+                                <a href="#"
+                                    class="tab selected">
+                                    <img src="/media/svgs/globe-azul.svg" class="tw-mr-3">
+                                    <span>Traffic Acquisition</span>
+                                </a>
+                                <a href="#"
+                                    class="tab">
+                                    <img src="/media/svgs/folder-neutral-60.svg" class="tw-mr-3">
+                                    <span>Documentos</span>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- END tabs -->
+                    <!-- START content -->
+                    <div class=" tw-gap-x-[25px] tw-mt-5">
+                        <div class="tw-pr-6 tw-h-fit">
+                            <!-- START form fields -->
+                            <form>
+                                <div class="tw-flex tw-space-x-6 tw-items-center tw-mt-4">
+                                    <label class="tw-flex tw-items-center tw-space-x-3">
+                                        <input type="checkbox" class="tw-form-control">
+                                        <span class="t1 !tw-font-medium">Recomendación</span>
+                                    </label>
+                                    <div class="tw-form-group tw-w-[1000px] tw-max-w-full">
+                                        <label class="t1m tw-mb-1">Seleccione o escriba un cliente</label>
+                                        <select class="tw-form-control"></select>
+                                    </div>
+                                </div>
+                                <div class="tw-flex tw-space-x-6 tw-items-center tw-my-4">
+                                    <label class="tw-flex tw-items-center tw-space-x-3">
+                                        <input type="checkbox" class="tw-form-control">
+                                        <span class="t1 !tw-font-medium">Cliente actual</span>
+                                    </label>
+                                    <label class="tw-flex tw-items-center tw-space-x-3">
+                                        <input type="checkbox" class="tw-form-control">
+                                        <span class="t1 !tw-font-medium">Prensa</span>
+                                    </label>
+                                    <label class="tw-flex tw-items-center tw-space-x-3">
+                                        <input type="checkbox" class="tw-form-control">
+                                        <span class="t1 !tw-font-medium">Internet</span>
+                                    </label>
+                                    <label class="tw-flex tw-items-center tw-space-x-3">
+                                        <input type="checkbox" class="tw-form-control">
+                                        <span class="t1 !tw-font-medium">Newsletter</span>
+                                    </label>
+                                    <label class="tw-flex tw-items-center tw-space-x-3">
+                                        <input type="checkbox" class="tw-form-control">
+                                        <span class="t1 !tw-font-medium">Radio</span>
+                                    </label>
+                                    <label class="tw-flex tw-items-center tw-space-x-3">
+                                        <input type="checkbox" class="tw-form-control">
+                                        <span class="t1 !tw-font-medium">Visita oficina</span>
+                                    </label>
+                                    <label class="tw-flex tw-items-center tw-space-x-3">
+                                        <input type="checkbox" class="tw-form-control">
+                                        <span class="t1 !tw-font-medium">Leads AXA</span>
+                                    </label>
+                                    <label class="tw-flex tw-items-center tw-space-x-3">
+                                        <input type="checkbox" class="tw-form-control">
+                                        <span class="t1 !tw-font-medium">Leads FB</span>
+                                    </label>
+                                </div>
+                                <div class="tw-form-group tw-w-[1000px] tw-max-w-full tw-mt-5">
+                                    <label class="t1m tw-mb-1">Seleccione o escriba un origen</label>
+                                    <select class="tw-form-control"></select>
+                                </div>
+                                <div class="tw-form-group tw-w-[1000px] tw-max-w-full tw-mt-5">
+                                    <label class="t1m tw-mb-1">Seleccione o escriba una campaña</label>
+                                    <select class="tw-form-control"></select>
+                                </div>
+                                <div class="tw-form-group tw-w-[1000px] tw-max-w-full tw-mt-5">
+                                    <label class="t1m tw-mb-1">Seleccione o escriba un subagente</label>
+                                    <select class="tw-form-control"></select>
+                                </div>
+                            </form>
+                            <!-- END form fields -->
+                        </div>
+
+                    </div>
+                    <!-- END content -->
+                </div>
+                <!-- END content -->
+            </div>
+            <!-- END main section body -->
+        </div>
+        <!-- END main section -->
+    </div>
+</body>
+
+</html>
