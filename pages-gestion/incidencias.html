@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- START import output css -->
+    <link rel="stylesheet" href="/css/output.css">
+    <!-- END import output css -->
+    <!-- START import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- END import fonts -->
+    <title>Contratos lista</title>
+</head>
+
+<body>
+    <!-- START notifications -->
+    <input type="checkbox" name="user-menu-trigger" id="user-menu-trigger" class="tw-css-trigger">
+    <div class="tw-backdrop tw-overlay-container tw-css-trigger-target tw-bg-white">
+        <div
+            class="tw-w-[415px] tw-h-[100vh] tw-px-[30px] tw-pt-[40px] tw-pb-[20px] tw-flex-col tw-justify-between tw-items-between tw-bg-white tw-right-[0px] tw-absolute tw-flex">
+
+        </div>
+    </div>
+    <!-- END notifications -->
+    <div class="tw-gestion-main-wrapper tw-flex tw-h-[100vh] tw-w-[100vw] tw-overflow-hidden">
+        <!-- START left panel -->
+        <div
+            class="tw-h-screen tw-w-[220px] tw-bg-azul-100 tw-h-[100vh] tw-flex tw-flex-col tw-items-center tw-px-[8px] tw-py-[16px]">
+            <img src="/media/svgs/logo-dark.svg" alt="logo" class="tw-w-[100px]">
+            <div class="tw-flex tw-flex-col tw-space-y-2.5 tw-mt-[30px]">
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs tw-bg-azul-60">
+                    <img src="/media/svgs/stack-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Dashboard
+                </div>
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/file-error-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Incidencias
+                </div>
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/search-white.svg" class="tw-mr-[14px] tw-w-[20px]">
+                    Consultas Rápidas
+                </div>
+                <!-- menu item -->
+                <label for="trigger-operativos"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/briefcase-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Operativos
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-operativos">
+
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/document-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Navegador
+                </div>
+                <!-- menu item -->
+                <label for="trigger-comunicación"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/chat-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Comunicación
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-comunicación">
+
+                <!-- menu item -->
+                <label for="trigger-marketing"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/megafono-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Marketing
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-marketing">
+
+                <!-- menu item -->
+                <label for="trigger-financieros"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/book-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Financieros
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" checked class="tw-css-trigger" id="trigger-financieros">
+                <div class="tw-pl-7 tw-space-y-1.5 tw-css-trigger-target">
+                    <div class="tw-expand-item tw-text-white tw-font-semibold tw-text-2xs">Recibos</div>
+                    <div class="tw-expand-item tw-text-white tw-font-semibold tw-text-2xs">Sepa</div>
+                </div>
+                <!-- menu item -->
+                <label for="trigger-notificaciones"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/doc-warning-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Notificaciones
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-notificaciones">
+
+                <!-- menu item -->
+                <label for="trigger-facturación"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/bill-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Facturación
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-facturación">
+
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/import-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Importación
+                </div>
+            </div>
+            <!-- configuracion -->
+            <div
+                class="tw-absolute tw-bottom-[30px] tw-mx-auto tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                <img src="/media/svgs/gear-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                Configuración
+            </div>
+        </div>
+        <!-- END left panel -->
+        <!-- START main section -->
+        <div class="tw-main-section tw-h-[100vh] tw-overflow-auto tw-w-full">
+            <div
+                class="tw-sticky tw-top-0 tw-bg-white tw-w-full tw-px-[25px] tw-py-[30px] tw-main-top tw-flex-between tw-z-10">
+                <div class="tw-flex tw-w-fit tw-items-center">
+                    <img src="/media/svgs/search-neutral-80.svg" class="tw-w-[22px]">
+                    <input type="text"
+                        class="tw-form-control tw-no-border tw-ml-[22px] tw-text-color-light tw-font-medium !tw-text-md"
+                        placeholder="Buscar">
+                </div>
+                <img src="/media/svgs/bell-neutral-60.svg" class="tw-w-[23px]">
+            </div>
+            <!-- START main section body -->
+            <div class="tw-px-[40px] tw-px-[25px]">
+                <!-- START content -->
+                <div class=" tw-py-[25px] tw-px-[30px] tw-bg-white tw-rounded-[10px] tw-mt-8">
+                    <!-- table header -->
+                    <div class="tw-title !tw-font-extrabold">
+                        Incidencias
+                    </div>
+                    <div class="tw-flex tw-justify-between tw-items-center tw-mt-5">
+                        <div class="tw-flex tw-space-x-4">
+                            <button class="tw-button-secondary tw-composed-button">
+                                <span class="tw-mr-1">Exportar a PDF</span>
+                                <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/pdf.svg" alt="pdf">
+                            </button>
+                            <button class="tw-button-secondary tw-composed-button">
+                                <span class="tw-mr-1">Exportar a Word</span>
+                                <img class="tw-inline-block tw-w-[15px]" src="/media/svgs/export.svg" alt="export">
+                            </button>
+                            <!-- search input -->
+                            <div class="tw-relative tw-rounded-md tw-shadow-sm">
+                                <div
+                                    class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-left-0 tw-flex tw-items-center tw-pl-3">
+                                    <img src="/media/svgs/search-neutral-80.svg" alt="search-neutral-80">
+                                </div>
+                                <input type="text" name="search" id="search" placeholder="Buscar"
+                                    class="tw-block tw-w-full tw-rounded-md tw-border-neutral-40 tw-pl-10 tw-focus:border-azul-80 tw-focus:ring-azul-80 tw-text-xs">
+                            </div>
+                        </div>
+                        <div class="tw-flex tw-space-x-4">
+                            <button class="tw-button-primary">Buscar</button>
+                            <button class="tw-button-primary">Nueva Incidencia</button>
+                        </div>
+                    </div>
+                    <div class="tw-hr tw-my-5"></div>
+                    <div class="tw-px-[20px]">
+                        <!--  -->
+
+
+
+                        <table class="table1">
+                            <!--Header Tabla-->
+                            <thead class="tw-bg-neutral-10">
+                                <tr>
+                                    <th class="tw-w-[48px]">
+                                        <input type="checkbox" class="tw-form-control">
+                                    </th>
+                                    <th class="tw-w-[48px]"></th>
+                                    <th>fecha</th>
+                                    <th>F. archivado</th>
+                                    <th>Nombre completo</th>
+                                    <th>producto</th>
+                                    <th>siniestro</th>
+                                    <th>usuario</th>
+                                    <th>suplemento</th>
+                                    <th>COMENTARIOS</th>
+                                    <th class="tw-w-[48px]"></th>
+                                </tr>
+                            </thead>
+                            <!--Header Tabla-->
+                            <tbody class="tw-divide-y tw-divide-neutral-40 tw-bg-white">
+                                <tr>
+                                    <td><input type="checkbox" class="tw-form-control"></td>
+                                    <td><img src="/media/svgs/circle-verde.svg"></td>
+                                    <td>04/08/2021</td>
+                                    <td>04/08/2021</td>
+                                    <td class="!tw-py-2">
+                                        <div class="t1">Catalina Maffei</div>
+                                        <div class="t1l">+34 000 00 00</div>
+                                    </td>
+                                    <td>2.0TD_2 PATM ESTABLE 15%</td>
+                                    <td>2022/24</td>
+                                    <td>Jane</td>
+                                    <td align="center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td align="center"><img src="/media/svgs/comment-morado.svg"></td>
+                                    <td align="center"><img src="/media/svgs/kebab.svg"></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="tw-form-control"></td>
+                                    <td><img src="/media/svgs/circle-verde.svg"></td>
+                                    <td>04/08/2021</td>
+                                    <td>04/08/2021</td>
+                                    <td class="!tw-py-2">
+                                        <div class="t1">Catalina Maffei</div>
+                                        <div class="t1l">+34 000 00 00</div>
+                                    </td>
+                                    <td>2.0TD_2 PATM ESTABLE 15%</td>
+                                    <td>2022/24</td>
+                                    <td>Jane</td>
+                                    <td align="center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td align="center"><img src="/media/svgs/comment-morado.svg"></td>
+                                    <td align="center"><img src="/media/svgs/kebab.svg"></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="tw-form-control"></td>
+                                    <td><img src="/media/svgs/circle-verde.svg"></td>
+                                    <td>04/08/2021</td>
+                                    <td>04/08/2021</td>
+                                    <td class="!tw-py-2">
+                                        <div class="t1">Catalina Maffei</div>
+                                        <div class="t1l">+34 000 00 00</div>
+                                    </td>
+                                    <td>2.0TD_2 PATM ESTABLE 15%</td>
+                                    <td>2022/24</td>
+                                    <td>Jane</td>
+                                    <td align="center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td align="center"><img src="/media/svgs/comment-morado.svg"></td>
+                                    <td align="center"><img src="/media/svgs/kebab.svg"></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="tw-form-control"></td>
+                                    <td><img src="/media/svgs/circle-verde.svg"></td>
+                                    <td>04/08/2021</td>
+                                    <td>04/08/2021</td>
+                                    <td class="!tw-py-2">
+                                        <div class="t1">Catalina Maffei</div>
+                                        <div class="t1l">+34 000 00 00</div>
+                                    </td>
+                                    <td>2.0TD_2 PATM ESTABLE 15%</td>
+                                    <td>2022/24</td>
+                                    <td>Jane</td>
+                                    <td align="center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td align="center"><img src="/media/svgs/comment-morado.svg"></td>
+                                    <td align="center"><img src="/media/svgs/kebab.svg"></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="tw-form-control"></td>
+                                    <td><img src="/media/svgs/circle-verde.svg"></td>
+                                    <td>04/08/2021</td>
+                                    <td>04/08/2021</td>
+                                    <td class="!tw-py-2">
+                                        <div class="t1">Catalina Maffei</div>
+                                        <div class="t1l">+34 000 00 00</div>
+                                    </td>
+                                    <td>2.0TD_2 PATM ESTABLE 15%</td>
+                                    <td>2022/24</td>
+                                    <td>Jane</td>
+                                    <td align="center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td align="center"><img src="/media/svgs/comment-morado.svg"></td>
+                                    <td align="center"><img src="/media/svgs/kebab.svg"></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="tw-form-control"></td>
+                                    <td><img src="/media/svgs/circle-verde.svg"></td>
+                                    <td>04/08/2021</td>
+                                    <td>04/08/2021</td>
+                                    <td class="!tw-py-2">
+                                        <div class="t1">Catalina Maffei</div>
+                                        <div class="t1l">+34 000 00 00</div>
+                                    </td>
+                                    <td>2.0TD_2 PATM ESTABLE 15%</td>
+                                    <td>2022/24</td>
+                                    <td>Jane</td>
+                                    <td align="center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td align="center"><img src="/media/svgs/comment-morado.svg"></td>
+                                    <td align="center"><img src="/media/svgs/kebab.svg"></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="tw-form-control"></td>
+                                    <td><img src="/media/svgs/circle-verde.svg"></td>
+                                    <td>04/08/2021</td>
+                                    <td>04/08/2021</td>
+                                    <td class="!tw-py-2">
+                                        <div class="t1">Catalina Maffei</div>
+                                        <div class="t1l">+34 000 00 00</div>
+                                    </td>
+                                    <td>2.0TD_2 PATM ESTABLE 15%</td>
+                                    <td>2022/24</td>
+                                    <td>Jane</td>
+                                    <td align="center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td align="center"><img src="/media/svgs/comment-morado.svg"></td>
+                                    <td align="center"><img src="/media/svgs/kebab.svg"></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="tw-form-control"></td>
+                                    <td><img src="/media/svgs/circle-verde.svg"></td>
+                                    <td>04/08/2021</td>
+                                    <td>04/08/2021</td>
+                                    <td class="!tw-py-2">
+                                        <div class="t1">Catalina Maffei</div>
+                                        <div class="t1l">+34 000 00 00</div>
+                                    </td>
+                                    <td>2.0TD_2 PATM ESTABLE 15%</td>
+                                    <td>2022/24</td>
+                                    <td>Jane</td>
+                                    <td align="center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td align="center"><img src="/media/svgs/comment-morado.svg"></td>
+                                    <td align="center"><img src="/media/svgs/kebab.svg"></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="tw-form-control"></td>
+                                    <td><img src="/media/svgs/circle-verde.svg"></td>
+                                    <td>04/08/2021</td>
+                                    <td>04/08/2021</td>
+                                    <td class="!tw-py-2">
+                                        <div class="t1">Catalina Maffei</div>
+                                        <div class="t1l">+34 000 00 00</div>
+                                    </td>
+                                    <td>2.0TD_2 PATM ESTABLE 15%</td>
+                                    <td>2022/24</td>
+                                    <td>Jane</td>
+                                    <td align="center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td align="center"><img src="/media/svgs/comment-morado.svg"></td>
+                                    <td align="center"><img src="/media/svgs/kebab.svg"></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="tw-form-control"></td>
+                                    <td><img src="/media/svgs/circle-verde.svg"></td>
+                                    <td>04/08/2021</td>
+                                    <td>04/08/2021</td>
+                                    <td class="!tw-py-2">
+                                        <div class="t1">Catalina Maffei</div>
+                                        <div class="t1l">+34 000 00 00</div>
+                                    </td>
+                                    <td>2.0TD_2 PATM ESTABLE 15%</td>
+                                    <td>2022/24</td>
+                                    <td>Jane</td>
+                                    <td align="center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td align="center"><img src="/media/svgs/comment-morado.svg"></td>
+                                    <td align="center"><img src="/media/svgs/kebab.svg"></td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div
+                            class="tw-flex tw-items-center tw-justify-between tw-border-t tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-3sm:tw-px-6 tw-pt-5">
+                            <div class="tw-flex tw-flex-1 tw-justify-between">
+                                <div>
+                                    <p class="t1">
+                                        Mostrando 10 de 60 resultados
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tw-hiddensm:tw-flexsm:tw-flex-1sm:tw-items-centersm:tw-justify-between">
+
+                                <div>
+                                    <nav class="tw-isolate tw-inline-flex tw--space-x-px tw-rounded-md tw-shadow-sm"
+                                        aria-label="Pagination">
+                                        <a href="#"
+                                            class="tw-relative tw-inline-flex tw-items-center tw-rounded-l-md tw-border tw-border-neutral-40 tw-bg-white tw-px-2 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 hover:tw-bg-gray-50 tw-focus:z-20">
+                                            <span class="tw-sr-only">Previous</span>
+                                            <!-- Heroicon name: mini/chevron-left -->
+                                            <svg class="tw-h-5 tw-w-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </a>
+                                        <!-- Current: "z-10 bg-indigo-50 border-indigo-500 text-indigo-600", Default: "bg-white border-neutral-40 text-azul-60 hover:tw-bg-gray-50" -->
+                                        <a href="#" aria-current="page"
+                                            class="tw-relative tw-z-10 tw-inline-flex tw-items-center tw-border tw-border-azul-60 tw-bg-indigo-50 tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 tw-focus:z-20">1</a>
+                                        <a href="#"
+                                            class="tw-relative tw-inline-flex tw-items-center tw-border tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 hover:tw-bg-gray-50 tw-focus:z-20">2</a>
+                                        <a href="#"
+                                            class="tw-relative tw-hidden tw-items-center tw-border tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 hover:tw-bg-gray-50 tw-focus:z-20 tw-md:inline-flex">3</a>
+                                        <span
+                                            class="tw-relative tw-inline-flex tw-items-center tw-border tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-gray-700">...</span>
+                                        <a href="#"
+                                            class="tw-relative tw-hidden tw-items-center tw-border tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 hover:tw-bg-gray-50 tw-focus:z-20 tw-md:inline-flex">8</a>
+                                        <a href="#"
+                                            class="tw-relative tw-inline-flex tw-items-center tw-border tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 hover:tw-bg-gray-50 tw-focus:z-20">9</a>
+                                        <a href="#"
+                                            class="tw-relative tw-inline-flex tw-items-center tw-border tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 hover:tw-bg-gray-50 tw-focus:z-20">10</a>
+                                        <a href="#"
+                                            class="tw-relative tw-inline-flex tw-items-center tw-rounded-r-md tw-border tw-border-neutral-40 tw-bg-white tw-px-2 tw-py-2 tw-text-sm tw-font-medium tw-text-azul-60 hover:tw-bg-gray-50 tw-focus:z-20">
+                                            <span class="tw-sr-only">Next</span>
+                                            <!-- Heroicon name: mini/chevron-right -->
+                                            <svg class="tw-h-5 tw-w-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--  -->
+                </div>
+                <!-- END content -->
+            </div>
+            <!-- END main section body -->
+        </div>
+        <!-- END main section -->
+    </div>
+</body>
+
+</html>
