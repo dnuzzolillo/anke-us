@@ -942,19 +942,24 @@ select {
   margin-bottom: 1rem;
 }
 
-.\!tw-my-0 {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-}
-
 .tw-my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
 
+.\!tw-my-0 {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
 .tw-my-7 {
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
+}
+
+.tw-my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .tw-my-10 {
@@ -965,11 +970,6 @@ select {
 .tw--mx-8 {
   margin-left: -2rem;
   margin-right: -2rem;
-}
-
-.tw-my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .tw-mb-5 {
@@ -1252,6 +1252,10 @@ select {
   margin-left: 2rem;
 }
 
+.tw-mr-\[50px\] {
+  margin-right: 50px;
+}
+
 .tw-block {
   display: block;
 }
@@ -1440,6 +1444,10 @@ select {
 
 .tw-max-h-full {
   max-height: 100%;
+}
+
+.tw-max-h-\[876px\] {
+  max-height: 876px;
 }
 
 .tw-min-h-\[200px\] {
@@ -2082,12 +2090,20 @@ select {
   grid-template-columns: 45px 1fr;
 }
 
-.tw-grid-cols-\[1fr_1fr_1fr\] {
-  grid-template-columns: 1fr 1fr 1fr;
+.tw-grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .tw-grid-cols-\[1fr_minmax\(200px\,_480px\)\] {
   grid-template-columns: 1fr minmax(200px, 480px);
+}
+
+.tw-grid-cols-\[1fr_auto\] {
+  grid-template-columns: 1fr auto;
+}
+
+.tw-grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .tw-grid-cols-\[minmax\(300px\,_30\%\)_1fr\] {
@@ -2122,8 +2138,8 @@ select {
   grid-template-rows: 1fr 1fr;
 }
 
-.tw-grid-rows-\[1fr_1fr_1fr\] {
-  grid-template-rows: 1fr 1fr 1fr;
+.tw-grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .\!tw-flex-row {
@@ -2542,6 +2558,10 @@ select {
 
 .tw-border-r {
   border-right-width: 1px;
+}
+
+.tw-border-l {
+  border-left-width: 1px;
 }
 
 .tw-border-neutral-40 {
@@ -3161,6 +3181,10 @@ select {
   padding-bottom: 80px;
 }
 
+.\!tw-pb-4 {
+  padding-bottom: 1rem !important;
+}
+
 .tw-pr-\[25px\] {
   padding-right: 25px;
 }
@@ -3380,6 +3404,11 @@ select {
 .tw-text-rosa-60 {
   --tw-text-opacity: 1;
   color: rgb(245 108 108 / var(--tw-text-opacity));
+}
+
+.\!tw-text-azul-60 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(0 0 143 / var(--tw-text-opacity)) !important;
 }
 
 .tw-placeholder-gray-400::-moz-placeholder {
@@ -4145,7 +4174,7 @@ label.tw-toggle::after {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 
 .table1 {

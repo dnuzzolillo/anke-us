@@ -452,7 +452,7 @@ label.tw-toggle::after {
 }
 
 .standard-c-1 {
-    @apply tw-bg-white tw-rounded-[10px] tw-p-[30px] tw-my-5 tw-relative tw-pb-[80px];
+    @apply tw-bg-white tw-rounded-[10px] tw-p-[30px] tw-my-5 tw-relative tw-pb-[20px];
 }
 
 .table1 {
