@@ -1192,6 +1192,10 @@ select {
   margin-top: 1rem;
 }
 
+.tw-mb-4 {
+  margin-bottom: 1rem;
+}
+
 .tw-mr-3 {
   margin-right: 0.75rem;
 }
@@ -1214,10 +1218,6 @@ select {
 
 .tw-mt-0\.5 {
   margin-top: 0.125rem;
-}
-
-.tw-mb-4 {
-  margin-bottom: 1rem;
 }
 
 .tw-mb-3 {
@@ -2110,16 +2110,20 @@ select {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.tw-grid-cols-\[1fr_minmax\(200px\,_480px\)\] {
-  grid-template-columns: 1fr minmax(200px, 480px);
+.tw-grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tw-grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .tw-grid-cols-\[1fr_auto\] {
   grid-template-columns: 1fr auto;
 }
 
-.tw-grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.tw-grid-cols-\[1fr_minmax\(200px\,_480px\)\] {
+  grid-template-columns: 1fr minmax(200px, 480px);
 }
 
 .tw-grid-cols-\[minmax\(300px\,_30\%\)_1fr\] {
@@ -2152,6 +2156,10 @@ select {
 
 .tw-grid-rows-\[1fr_1fr\] {
   grid-template-rows: 1fr 1fr;
+}
+
+.tw-grid-rows-\[minmax\(300px\,1fr\)_minmax\(300px\,1fr\)\] {
+  grid-template-rows: minmax(300px,1fr) minmax(300px,1fr);
 }
 
 .tw-grid-rows-3 {
@@ -2266,9 +2274,8 @@ select {
        column-gap: 1.25rem;
 }
 
-.tw-gap-x-\[25px\] {
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+.tw-gap-y-5 {
+  row-gap: 1.25rem;
 }
 
 .tw-gap-x-4 {
@@ -2280,18 +2287,19 @@ select {
   row-gap: 0.75rem;
 }
 
-.tw-gap-x-\[22px\] {
-  -moz-column-gap: 22px;
-       column-gap: 22px;
-}
-
-.tw-gap-y-5 {
-  row-gap: 1.25rem;
-}
-
 .tw-gap-x-7 {
   -moz-column-gap: 1.75rem;
        column-gap: 1.75rem;
+}
+
+.tw-gap-x-\[25px\] {
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+
+.tw-gap-x-\[22px\] {
+  -moz-column-gap: 22px;
+       column-gap: 22px;
 }
 
 .tw-space-x-16 > :not([hidden]) ~ :not([hidden]) {
@@ -3299,12 +3307,12 @@ select {
   font-weight: 400;
 }
 
-.\!tw-font-medium {
-  font-weight: 500 !important;
-}
-
 .\!tw-font-bold {
   font-weight: 700 !important;
+}
+
+.\!tw-font-medium {
+  font-weight: 500 !important;
 }
 
 .tw-uppercase {
@@ -4021,7 +4029,7 @@ label.tw-toggle::after {
 }
 
 .tw-main-section-h {
-  min-height: calc(100vh - 128px);
+  min-height: calc(100vh - 140px);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
