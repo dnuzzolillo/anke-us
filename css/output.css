@@ -2008,6 +2008,30 @@ select {
   max-width: 150px;
 }
 
+.tw-max-w-\[190px\] {
+  max-width: 190px;
+}
+
+.tw-max-w-\[103px\] {
+  max-width: 103px;
+}
+
+.tw-max-w-\[107px\] {
+  max-width: 107px;
+}
+
+.tw-max-w-\[115px\] {
+  max-width: 115px;
+}
+
+.tw-max-w-\[160px\] {
+  max-width: 160px;
+}
+
+.tw-max-w-\[40px\] {
+  max-width: 40px;
+}
+
 .tw-flex-auto {
   flex: 1 1 auto;
 }
