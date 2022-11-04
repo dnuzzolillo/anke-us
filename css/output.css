@@ -1188,12 +1188,12 @@ select {
   margin-right: 0.25rem;
 }
 
-.tw-mt-4 {
-  margin-top: 1rem;
-}
-
 .tw-mb-4 {
   margin-bottom: 1rem;
+}
+
+.tw-mt-4 {
+  margin-top: 1rem;
 }
 
 .tw-mr-3 {
@@ -1452,6 +1452,10 @@ select {
 
 .tw-max-h-\[876px\] {
   max-height: 876px;
+}
+
+.tw-max-h-\[840px\] {
+  max-height: 840px;
 }
 
 .tw-min-h-\[200px\] {
@@ -1732,6 +1736,10 @@ select {
   width: 200px !important;
 }
 
+.\!tw-w-full {
+  width: 100% !important;
+}
+
 .tw-w-9\/12 {
   width: 75%;
 }
@@ -1754,10 +1762,6 @@ select {
 
 .\!tw-w-\[40\%\] {
   width: 40% !important;
-}
-
-.\!tw-w-full {
-  width: 100% !important;
 }
 
 .tw-w-\[48px\] {
@@ -1816,8 +1820,8 @@ select {
   width: 20%;
 }
 
-.tw-w-1\/2 {
-  width: 50%;
+.tw-w-\[1549px\] {
+  width: 1549px;
 }
 
 .tw-min-w-\[327px\] {
@@ -1976,6 +1980,14 @@ select {
   max-width: 40px;
 }
 
+.tw-max-w-\[100px\] {
+  max-width: 100px;
+}
+
+.tw-max-w-\[80px\] {
+  max-width: 80px;
+}
+
 .tw-max-w-\[130px\] {
   max-width: 130px;
 }
@@ -2036,8 +2048,16 @@ select {
   max-width: 150px;
 }
 
-.tw-max-w-\[100px\] {
-  max-width: 100px;
+.tw-max-w-\[110px\] {
+  max-width: 110px;
+}
+
+.tw-max-w-\[200px\] {
+  max-width: 200px;
+}
+
+.tw-max-w-\[140px\] {
+  max-width: 140px;
 }
 
 .tw-flex-auto {
@@ -2466,6 +2486,12 @@ select {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.tw-space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .tw-space-x-\[16px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(16px * var(--tw-space-x-reverse));
@@ -2476,12 +2502,6 @@ select {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
-.tw-space-x-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .tw-space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -2534,6 +2554,10 @@ select {
 
 .tw-overflow-y-scroll {
   overflow-y: scroll;
+}
+
+.tw-overscroll-auto {
+  overscroll-behavior: auto;
 }
 
 .tw-truncate {
@@ -4307,6 +4331,10 @@ label.tw-toggle::after {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.table1 tbody td {
+  font-size: 14px;
 }
 
 .hover\:tw-border:hover {

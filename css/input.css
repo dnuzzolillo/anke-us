@@ -498,3 +498,7 @@ label.tw-toggle::after {
     order: 0;
     flex-grow: 0;
 }
+
+.table1 tbody td {
+    font-size: 14px;
+  }
