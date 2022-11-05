@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- END import fonts -->
-    <title>Configuraciones Sub agentes</title>
+    <title>Profesiones</title>
 </head>
 
 <body>
@@ -155,17 +155,10 @@
                     <!-- table header -->
                     <div class="tw-flex tw-justify-between">
                         <div class="tw-title !tw-font-extrabold">
-                            Sub Agentes
+                            Profesiones
                         </div>
                         <div class="tw-flex tw-mb-4">
                             <div class="tw-flex tw-space-x-3">
-                                <div class="tw-flex tw-justify-between tw-items-center">
-                                    <span class="tw-font-medium tw-text-2xs tw-xl:text-xs tw-w-[100px]">Solo Activos</span>
-                                    <div class="tw-flex tw-justify-center tw-items-center tw-xl:ml-20px"><input type="checkbox"
-                                        id="toggle11" class="tw-css-trigger"><label for="toggle11" class="tw-toggle" role="switch"
-                                         aria-checked="false"></label>
-                                        </div>
-                                </div>
                                 <button class="tw-button-secondary tw-whitespace-nowrap">
                                     Exportar a PDF 
                                     <img src="/media/svgs/pdf.svg"  class="tw-ml-3">
@@ -183,7 +176,7 @@
                                         class="tw-block tw-w-full tw-rounded-md tw-border-neutral-40 tw-pl-10 tw-focus:border-azul-80 tw-focus:ring-azul-80sm:tw-text-sm"
                                         placeholder="Buscar">
                                 </div>
-                                <button class="tw-button-primary tw-whitespace-nowrap">Nueva campaña</button>
+                                <button class="tw-button-primary tw-whitespace-nowrap">Nuevo</button>
                             </div>
                         </div>
                     </div>
@@ -193,17 +186,9 @@
                             <!--Header Tabla-->
                             <thead class="tw-bg-neutral-10">
                                 <tr>
-                                    <th>Nombre Completo</th>
-                                    <th class="tw-max-w-[190px]">NIF</th>
-                                    <th>CÓdigo</th>
-                                    <th>Razón</th>
-                                    <th>Domicilio</th>
-                                    <th>Localidad</th>
-                                    <th>Provincia</th>
-                                    <th>F. ALTA</th>
-                                    <th>F. BAJA</th>
-                                    <th>Nº de teléfono 2</th>
-                                    <th>email</th>
+                                    <th class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></th>
+                                    <th>Orden</th>
+                                    <th>Profesiones</th>
                                     <th></th>
                                     <th></th>
                                 </tr>
@@ -211,199 +196,113 @@
                             <!--Header Tabla-->
                             <tbody class="tw-divide-y tw-divide-neutral-40 tw-bg-white">
                                 <tr>
-                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
-                                        <span class="tw-text-2xs tw-font-normal">Juan Galindez</span>
-                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">ABOGADO (CON DESPLAZAMIENTO)</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
                                     </td>
-                                    <td class="t tw-text-2xs tw-max-w-[100px]">B7402000</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[80px]">000123</td>
-                                    <td class="t1 tw-text-2xs">AXA Gestión</td>
-                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                        <div class="tw-max-w-[140px] tw-whitespace-normal t1">
-                                            Calle Nuestra señora del carmen 1
-                                        </div>
-                                    </td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[100px]">Barcelona</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[100px]">Barcelona</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[110px]">30/04/2022</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[110px]">30/04/2022</td>
-                                    <td class="t1 tw-text-2xs">+34 000 00 00</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[200px]">correocorreo@correo.com</td>
-                                    <td class="t1">
-                                        <button class="tw-bg-transparent tw-text-azul-60"><img src="/media/svgs/u_comment-alt-notes.svg" alt=""></button>
-                                    </td>
-                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
-                                        <button class="tw-bg-transparent tw-border-transparent">
-                                            <img src="/media/svgs/dots-vertical-basic.svg" alt="">
-                                        </button>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
-                                        <span class="tw-text-2xs tw-font-normal">Juan Galindez</span>
-                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">ABOGADO (CON DESPLAZAMIENTO)</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
                                     </td>
-                                    <td class="t tw-text-2xs tw-max-w-[100px]">B7402000</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[80px]">000123</td>
-                                    <td class="t1 tw-text-2xs">AXA Gestión</td>
-                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                        <div class="tw-max-w-[140px] tw-whitespace-normal t1">
-                                            Calle Nuestra señora del carmen 1
-                                        </div>
-                                    </td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[100px]">Barcelona</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[100px]">Barcelona</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[110px]">30/04/2022</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[110px]">30/04/2022</td>
-                                    <td class="t1 tw-text-2xs">+34 000 00 00</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[200px]">correocorreo@correo.com</td>
-                                    <td class="t1">
-                                        <button class="tw-bg-transparent tw-text-azul-60"><img src="/media/svgs/u_comment-alt-notes.svg" alt=""></button>
-                                    </td>
-                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
-                                        <button class="tw-bg-transparent tw-border-transparent">
-                                            <img src="/media/svgs/dots-vertical-basic.svg" alt="">
-                                        </button>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
-                                        <span class="tw-text-2xs tw-font-normal">Juan Galindez</span>
-                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">ABOGADO (CON DESPLAZAMIENTO)</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
                                     </td>
-                                    <td class="t tw-text-2xs tw-max-w-[100px]">B7402000</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[80px]">000123</td>
-                                    <td class="t1 tw-text-2xs">AXA Gestión</td>
-                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                        <div class="tw-max-w-[140px] tw-whitespace-normal t1">
-                                            Calle Nuestra señora del carmen 1
-                                        </div>
-                                    </td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[100px]">Barcelona</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[100px]">Barcelona</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[110px]">30/04/2022</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[110px]">30/04/2022</td>
-                                    <td class="t1 tw-text-2xs">+34 000 00 00</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[200px]">correocorreo@correo.com</td>
-                                    <td class="t1">
-                                        <button class="tw-bg-transparent tw-text-azul-60"><img src="/media/svgs/u_comment-alt-notes.svg" alt=""></button>
-                                    </td>
-                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
-                                        <button class="tw-bg-transparent tw-border-transparent">
-                                            <img src="/media/svgs/dots-vertical-basic.svg" alt="">
-                                        </button>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
-                                        <span class="tw-text-2xs tw-font-normal">Juan Galindez</span>
-                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">ABOGADO (CON DESPLAZAMIENTO)</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
                                     </td>
-                                    <td class="t tw-text-2xs tw-max-w-[100px]">B7402000</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[80px]">000123</td>
-                                    <td class="t1 tw-text-2xs">AXA Gestión</td>
-                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                        <div class="tw-max-w-[140px] tw-whitespace-normal t1">
-                                            Calle Nuestra señora del carmen 1
-                                        </div>
-                                    </td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[100px]">Barcelona</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[100px]">Barcelona</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[110px]">30/04/2022</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[110px]">30/04/2022</td>
-                                    <td class="t1 tw-text-2xs">+34 000 00 00</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[200px]">correocorreo@correo.com</td>
-                                    <td class="t1">
-                                        <button class="tw-bg-transparent tw-text-azul-60"><img src="/media/svgs/u_comment-alt-notes.svg" alt=""></button>
-                                    </td>
-                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
-                                        <button class="tw-bg-transparent tw-border-transparent">
-                                            <img src="/media/svgs/dots-vertical-basic.svg" alt="">
-                                        </button>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
-                                        <span class="tw-text-2xs tw-font-normal">Juan Galindez</span>
-                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">ABOGADO (CON DESPLAZAMIENTO)</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
                                     </td>
-                                    <td class="t tw-text-2xs tw-max-w-[100px]">B7402000</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[80px]">000123</td>
-                                    <td class="t1 tw-text-2xs">AXA Gestión</td>
-                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                        <div class="tw-max-w-[140px] tw-whitespace-normal t1">
-                                            Calle Nuestra señora del carmen 1
-                                        </div>
-                                    </td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[100px]">Barcelona</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[100px]">Barcelona</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[110px]">30/04/2022</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[110px]">30/04/2022</td>
-                                    <td class="t1 tw-text-2xs">+34 000 00 00</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[200px]">correocorreo@correo.com</td>
-                                    <td class="t1">
-                                        <button class="tw-bg-transparent tw-text-azul-60"><img src="/media/svgs/u_comment-alt-notes.svg" alt=""></button>
-                                    </td>
-                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
-                                        <button class="tw-bg-transparent tw-border-transparent">
-                                            <img src="/media/svgs/dots-vertical-basic.svg" alt="">
-                                        </button>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
-                                        <span class="tw-text-2xs tw-font-normal">Juan Galindez</span>
-                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">ABOGADO (CON DESPLAZAMIENTO)</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
                                     </td>
-                                    <td class="t tw-text-2xs tw-max-w-[100px]">B7402000</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[80px]">000123</td>
-                                    <td class="t1 tw-text-2xs">AXA Gestión</td>
-                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                        <div class="tw-max-w-[140px] tw-whitespace-normal t1">
-                                            Calle Nuestra señora del carmen 1
-                                        </div>
-                                    </td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[100px]">Barcelona</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[100px]">Barcelona</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[110px]">30/04/2022</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[110px]">30/04/2022</td>
-                                    <td class="t1 tw-text-2xs">+34 000 00 00</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[200px]">correocorreo@correo.com</td>
-                                    <td class="t1">
-                                        <button class="tw-bg-transparent tw-text-azul-60"><img src="/media/svgs/u_comment-alt-notes.svg" alt=""></button>
-                                    </td>
-                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
-                                        <button class="tw-bg-transparent tw-border-transparent">
-                                            <img src="/media/svgs/dots-vertical-basic.svg" alt="">
-                                        </button>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 t2 tw-flex tw-flex-col">
-                                        <span class="tw-text-2xs tw-font-normal">Juan Galindez</span>
-                                        <span class="tw-text-color-light tw-text-2xs tw-font-normal">+34 000 00 00</span>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">ABOGADO (CON DESPLAZAMIENTO)</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
                                     </td>
-                                    <td class="t tw-text-2xs tw-max-w-[100px]">B7402000</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[80px]">000123</td>
-                                    <td class="t1 tw-text-2xs">AXA Gestión</td>
-                                    <td class="tw-px-3 tw-py-4 tw-text-2xs tw-font-normal">
-                                        <div class="tw-max-w-[140px] tw-whitespace-normal t1">
-                                            Calle Nuestra señora del carmen 1
-                                        </div>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
                                     </td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[100px]">Barcelona</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[100px]">Barcelona</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[110px]">30/04/2022</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[110px]">30/04/2022</td>
-                                    <td class="t1 tw-text-2xs">+34 000 00 00</td>
-                                    <td class="t1 tw-text-2xs tw-max-w-[200px]">correocorreo@correo.com</td>
-                                    <td class="t1">
-                                        <button class="tw-bg-transparent tw-text-azul-60"><img src="/media/svgs/u_comment-alt-notes.svg" alt=""></button>
+                                </tr>
+                                <tr>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">ABOGADO (CON DESPLAZAMIENTO)</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
                                     </td>
-                                    <td class="tw-whitespace-nowrap tw-px-3 tw-py-4 tw-text-2xs tw-font-normal tw-uppercase">
-                                        <button class="tw-bg-transparent tw-border-transparent">
-                                            <img src="/media/svgs/dots-vertical-basic.svg" alt="">
-                                        </button>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">ABOGADO (CON DESPLAZAMIENTO)</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
+                                    </td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">ABOGADO (CON DESPLAZAMIENTO)</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
+                                    </td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -463,8 +362,6 @@
                             </div>
                         </div>
                         </div>
-
-
                     </div>
                     <!--  -->
                 </div>

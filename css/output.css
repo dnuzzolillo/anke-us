@@ -1458,6 +1458,10 @@ select {
   max-height: 840px;
 }
 
+.tw-max-h-\[536px\] {
+  max-height: 536px;
+}
+
 .tw-min-h-\[200px\] {
   min-height: 200px;
 }
@@ -1824,6 +1828,10 @@ select {
   width: 1549px;
 }
 
+.tw-w-\[511px\] {
+  width: 511px;
+}
+
 .tw-min-w-\[327px\] {
   min-width: 327px;
 }
@@ -2188,6 +2196,10 @@ select {
 
 .tw-grid-cols-\[1fr_1fr_1fr_1fr\] {
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tw-grid-cols-\[1fr\] {
+  grid-template-columns: 1fr;
 }
 
 .tw-grid-rows-\[repeat\(1fr_1fr\)\] {
