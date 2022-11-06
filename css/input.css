@@ -494,6 +494,7 @@ label.tw-toggle::after {
     flex-grow: 0;
 }
 
+<<<<<<< HEAD
 .table2 .th{
     display: inline-flex;
     align-items: center;
@@ -550,3 +551,8 @@ label.tw-toggle::after {
 .table2 .expanded{
     border-bottom-style: dashed;
 }
+=======
+.table1 tbody td {
+    font-size: 14px;
+  }
+>>>>>>> 8b70d70a7db1bcac58fe01f4fe0255d6a29d14c3

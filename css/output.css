@@ -1211,16 +1211,17 @@ select {
   margin-right: 0.25rem;
 }
 
-.tw-mt-4 {
-  margin-top: 1rem;
-}
-
 .tw-mb-4 {
   margin-bottom: 1rem;
 }
 
+<<<<<<< HEAD
 .tw--mt-1 {
   margin-top: -0.25rem;
+=======
+.tw-mt-4 {
+  margin-top: 1rem;
+>>>>>>> 8b70d70a7db1bcac58fe01f4fe0255d6a29d14c3
 }
 
 .tw-mr-3 {
@@ -1483,6 +1484,14 @@ select {
 
 .tw-max-h-full {
   max-height: 100%;
+}
+
+.tw-max-h-\[536px\] {
+  max-height: 536px;
+}
+
+.tw-max-h-\[840px\] {
+  max-height: 840px;
 }
 
 .tw-max-h-\[876px\] {
@@ -1767,6 +1776,7 @@ select {
   width: 200px !important;
 }
 
+<<<<<<< HEAD
 .tw-w-\[290px\] {
   width: 290px;
 }
@@ -1797,6 +1807,10 @@ select {
 
 .tw-w-\[20\%\] {
   width: 20%;
+=======
+.\!tw-w-full {
+  width: 100% !important;
+>>>>>>> 8b70d70a7db1bcac58fe01f4fe0255d6a29d14c3
 }
 
 .tw-w-9\/12 {
@@ -1827,12 +1841,16 @@ select {
   width: 40% !important;
 }
 
-.\!tw-w-full {
-  width: 100% !important;
-}
-
 .tw-w-\[48px\] {
   width: 48px;
+}
+
+.tw-w-\[511px\] {
+  width: 511px;
+}
+
+.tw-w-\[1549px\] {
+  width: 1549px;
 }
 
 .tw-w-\[535px\] {
@@ -2051,14 +2069,44 @@ select {
   max-width: 121px;
 }
 
+<<<<<<< HEAD
 .tw-max-w-\[190px\] {
   max-width: 190px;
 }
 
+=======
+>>>>>>> 8b70d70a7db1bcac58fe01f4fe0255d6a29d14c3
 .tw-max-w-\[40px\] {
   max-width: 40px;
 }
 
+<<<<<<< HEAD
+=======
+.tw-max-w-\[190px\] {
+  max-width: 190px;
+}
+
+.tw-max-w-\[100px\] {
+  max-width: 100px;
+}
+
+.tw-max-w-\[80px\] {
+  max-width: 80px;
+}
+
+.tw-max-w-\[140px\] {
+  max-width: 140px;
+}
+
+.tw-max-w-\[110px\] {
+  max-width: 110px;
+}
+
+.tw-max-w-\[200px\] {
+  max-width: 200px;
+}
+
+>>>>>>> 8b70d70a7db1bcac58fe01f4fe0255d6a29d14c3
 .tw-max-w-\[130px\] {
   max-width: 130px;
 }
@@ -2247,6 +2295,10 @@ select {
 
 .tw-grid-cols-\[23px_1fr_8px\] {
   grid-template-columns: 23px 1fr 8px;
+}
+
+.tw-grid-cols-\[1fr\] {
+  grid-template-columns: 1fr;
 }
 
 .tw-grid-cols-\[1fr_1fr_1fr_1fr\] {
@@ -2562,6 +2614,12 @@ select {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.tw-space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .tw-space-x-\[16px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(16px * var(--tw-space-x-reverse));
@@ -2572,12 +2630,6 @@ select {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
-.tw-space-x-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .tw-space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -2630,6 +2682,10 @@ select {
 
 .tw-overflow-y-scroll {
   overflow-y: scroll;
+}
+
+.tw-overscroll-auto {
+  overscroll-behavior: auto;
 }
 
 .tw-truncate {
@@ -4481,6 +4537,7 @@ label.tw-toggle::after {
   flex-grow: 0;
 }
 
+<<<<<<< HEAD
 .table2 .th{
   display: inline-flex;
   align-items: center;
@@ -4537,6 +4594,10 @@ label.tw-toggle::after {
 
 .table2 .expanded{
   border-bottom-style: dashed;
+=======
+.table1 tbody td {
+  font-size: 14px;
+>>>>>>> 8b70d70a7db1bcac58fe01f4fe0255d6a29d14c3
 }
 
 .hover\:tw-border:hover {

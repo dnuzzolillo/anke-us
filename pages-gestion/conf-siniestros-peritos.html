@@ -15,11 +15,19 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- END import fonts -->
-    <title>Anke Gestión</title>
+    <title>Peritos</title>
 </head>
 
 <body>
-    
+    <!-- START notifications -->
+    <input type="checkbox" name="user-menu-trigger" id="user-menu-trigger" class="tw-css-trigger">
+    <div class="tw-backdrop tw-overlay-container tw-css-trigger-target tw-bg-white">
+        <div
+            class="tw-w-[415px] tw-h-[100vh] tw-px-[30px] tw-pt-[40px] tw-pb-[20px] tw-flex-col tw-justify-between tw-items-between tw-bg-white tw-right-[0px] tw-absolute tw-flex">
+
+        </div>
+    </div>
+    <!-- END notifications -->
     <div class="tw-gestion-main-wrapper tw-flex tw-h-[100vh] tw-w-[100vw] tw-overflow-hidden">
         <!-- START left panel -->
         <div
@@ -130,7 +138,8 @@
         <!-- END left panel -->
         <!-- START main section -->
         <div class="tw-main-section tw-h-[100vh] tw-overflow-auto tw-w-full">
-            <div class="tw-sticky tw-top-0 tw-bg-white tw-w-full tw-px-[25px] tw-py-[30px] tw-main-top tw-flex-between bs-barra">
+            <div
+                class="tw-sticky tw-top-0 tw-bg-white tw-w-full tw-px-[25px] tw-py-[30px] tw-main-top tw-flex-between tw-z-10">
                 <div class="tw-flex tw-w-fit tw-items-center">
                     <img src="/media/svgs/search-neutral-80.svg" class="tw-w-[22px]">
                     <input type="text"
@@ -141,240 +150,186 @@
             </div>
             <!-- START main section body -->
             <div class="tw-px-[40px] tw-px-[25px]">
-                <div class="standard-c-1">
-                    <div class="tw-title tw-mb-3">
-                        Siniestros
-                    </div>
-                    <div class="tw-flex tw-mb-4">
-                        <div class="tw-flex tw-space-x-3">
-                            <button class="tw-button-secondary tw-whitespace-nowrap">
-                                Exportar a PDF 
-                                <img src="/media/svgs/pdf.svg"  class="tw-ml-3">
-                            </button>
-                            <button class="tw-button-secondary tw-whitespace-nowrap">
-                                Imprimir 
-                                <img src="/media/svgs/print.svg"  class="tw-ml-3">
-                            </button>
-                            <button class="tw-button-secondary tw-whitespace-nowrap">
-                                Enviar por email 
-                                <img src="/media/svgs/email_basico.svg"  class="tw-ml-3">
-                            </button>
-                            <div class="tw-relative tw-rounded-md tw-shadow-sm tw-w-[60%] !tw-w-full 2xl:tw-w-fit">
-                                <div
-                                    class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-left-0 tw-flex tw-items-center tw-pl-3">
-                                    <img src="/media/svgs/search-neutral-80.svg" alt="search-neutral-80">
+                <!-- START content -->
+                <div class=" tw-py-[25px] tw-px-[30px] tw-bg-white tw-rounded-[10px] tw-mt-8">
+                    <!-- table header -->
+                    <div class="tw-flex tw-justify-between">
+                        <div class="tw-title !tw-font-extrabold">
+                            Peritos
+                        </div>
+                        <div class="tw-flex tw-mb-4">
+                            <div class="tw-flex tw-space-x-3">
+                                <button class="tw-button-secondary tw-whitespace-nowrap">
+                                    Exportar a PDF 
+                                    <img src="/media/svgs/pdf.svg"  class="tw-ml-3">
+                                </button>
+                                <button class="tw-button-secondary tw-whitespace-nowrap">
+                                    Imprimir 
+                                    <img src="/media/svgs/print.svg"  class="tw-ml-3">
+                                </button>
+                                <div class="tw-relative tw-rounded-md tw-shadow-sm tw-w-[60%] !tw-w-full 2xl:tw-w-fit">
+                                    <div
+                                        class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-left-0 tw-flex tw-items-center tw-pl-3">
+                                        <img src="/media/svgs/search-neutral-80.svg" alt="search-neutral-80">
+                                    </div>
+                                    <input type="text" name="search" id="search"
+                                        class="tw-block tw-w-full tw-rounded-md tw-border-neutral-40 tw-pl-10 tw-focus:border-azul-80 tw-focus:ring-azul-80sm:tw-text-sm"
+                                        placeholder="Buscar">
                                 </div>
-                                <input type="text" name="search" id="search"
-                                    class="tw-block tw-w-full tw-rounded-md tw-border-neutral-40 tw-pl-10 tw-focus:border-azul-80 tw-focus:ring-azul-80sm:tw-text-sm"
-                                    placeholder="Buscar">
+                                <button class="tw-button-primary tw-whitespace-nowrap">Nuevo</button>
                             </div>
-                            <button class="tw-button-primary tw-whitespace-nowrap">Nuevo cliente</button>
                         </div>
                     </div>
-                    <table class="table1">
-                        <thead>
-                            <tr>
-                                <th><input type="checkbox" class="tw-form-control"></th>
-                                <th>EXPAGENCIA</th>
-                                <th>EXPCIA</th>
-                                <th>F. SINIESTRO</th>
-                                <th>F. archivado</th>
-                                <th>Asesor</th>
-                                <th>Póliza</th>
-                                <th>producto</th>
-                                <th>ESTADO</th>
-                                <th>Nombre</th>
-                                <th>APELLIDO</th>
-                                <th>email</th>
-                                <th>Nº de teléfono</th>
-                                <th>Traducción</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><input type="checkbox" class="tw-form-control"></td>
-                                <td>2022/24</td>
-                                <td>97020565</td>
-                                <td>30/04/2021</td>
-                                <td>30/04/2021</td>
-                                <td>Jane</td>
-                                <td>235896332</td>
-                                <td>OPTIMA...</td>
-                                <td><div class="tw-bg-rosa-20 tw-rounded-full tw-px-2 t1s tw-text-red tw-text-center">EN TRAMITE</div></td>
-                                <td>Jane</td>
-                                <td>Haussman</td>
-                                <td>correo@corre...</td>
-                                <td>(303) 555-0105</td>
-                                <td>
-                                    <div class="tw-bg-amarillo-20 tw-rounded-md tw-p-1 tw-flex tw-items-center tw-space-x-3 tw-w-fit tw-mx-auto">
-                                        <img src="/media/svgs/check-book-amarillo.svg">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="tw-form-control"></td>
-                                <td>2022/24</td>
-                                <td>97020565</td>
-                                <td>30/04/2021</td>
-                                <td>30/04/2021</td>
-                                <td>Jane</td>
-                                <td>235896332</td>
-                                <td>OPTIMA...</td>
-                                <td><div class="tw-bg-verde-20 tw-rounded-full tw-px-2 t1s tw-text-verde-60 tw-text-center">EN TRAMITE</div></td>
-                                <td>Jane</td>
-                                <td>Haussman</td>
-                                <td>correo@corre...</td>
-                                <td>(303) 555-0105</td>
-                                <td>
-                                    <div class="tw-bg-amarillo-20 tw-rounded-md tw-p-1 tw-flex tw-items-center tw-space-x-3 tw-w-fit tw-mx-auto">
-                                        <img src="/media/svgs/check-book-amarillo.svg">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="tw-form-control"></td>
-                                <td>2022/24</td>
-                                <td>97020565</td>
-                                <td>30/04/2021</td>
-                                <td>30/04/2021</td>
-                                <td>Jane</td>
-                                <td>235896332</td>
-                                <td>OPTIMA...</td>
-                                <td></td>
-                                <td>Jane</td>
-                                <td>Haussman</td>
-                                <td>correo@corre...</td>
-                                <td>(303) 555-0105</td>
-                                <td>
-                                    <div class="tw-bg-amarillo-20 tw-rounded-md tw-p-1 tw-flex tw-items-center tw-space-x-3 tw-w-fit tw-mx-auto">
-                                        <img src="/media/svgs/check-book-amarillo.svg">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="tw-form-control"></td>
-                                <td>2022/24</td>
-                                <td>97020565</td>
-                                <td>30/04/2021</td>
-                                <td>30/04/2021</td>
-                                <td>Jane</td>
-                                <td>235896332</td>
-                                <td>OPTIMA...</td>
-                                <td><div class="tw-bg-rosa-20 tw-rounded-full tw-px-2 t1s tw-text-red tw-text-center">EN TRAMITE</div></td>
-                                <td>Jane</td>
-                                <td>Haussman</td>
-                                <td>correo@corre...</td>
-                                <td>(303) 555-0105</td>
-                                <td>
-                                    <div class="tw-bg-amarillo-20 tw-rounded-md tw-p-1 tw-flex tw-items-center tw-space-x-3 tw-w-fit tw-mx-auto">
-                                        <img src="/media/svgs/check-book-amarillo.svg">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="tw-form-control"></td>
-                                <td>2022/24</td>
-                                <td>97020565</td>
-                                <td>30/04/2021</td>
-                                <td>30/04/2021</td>
-                                <td>Jane</td>
-                                <td>235896332</td>
-                                <td>OPTIMA...</td>
-                                <td><div class="tw-bg-verde-20 tw-rounded-full tw-px-2 t1s tw-text-verde-60 tw-text-center">EN TRAMITE</div></td>
-                                <td>Jane</td>
-                                <td>Haussman</td>
-                                <td>correo@corre...</td>
-                                <td>(303) 555-0105</td>
-                                <td>
-                                    <div class="tw-bg-amarillo-20 tw-rounded-md tw-p-1 tw-flex tw-items-center tw-space-x-3 tw-w-fit tw-mx-auto">
-                                        <img src="/media/svgs/check-book-amarillo.svg">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="tw-form-control"></td>
-                                <td>2022/24</td>
-                                <td>97020565</td>
-                                <td>30/04/2021</td>
-                                <td>30/04/2021</td>
-                                <td>Jane</td>
-                                <td>235896332</td>
-                                <td>OPTIMA...</td>
-                                <td></td>
-                                <td>Jane</td>
-                                <td>Haussman</td>
-                                <td>correo@corre...</td>
-                                <td>(303) 555-0105</td>
-                                <td>
-                                    <div class="tw-bg-amarillo-20 tw-rounded-md tw-p-1 tw-flex tw-items-center tw-space-x-3 tw-w-fit tw-mx-auto">
-                                        <img src="/media/svgs/check-book-amarillo.svg">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="tw-form-control"></td>
-                                <td>2022/24</td>
-                                <td>97020565</td>
-                                <td>30/04/2021</td>
-                                <td>30/04/2021</td>
-                                <td>Jane</td>
-                                <td>235896332</td>
-                                <td>OPTIMA...</td>
-                                <td><div class="tw-bg-rosa-20 tw-rounded-full tw-px-2 t1s tw-text-red tw-text-center">EN TRAMITE</div></td>
-                                <td>Jane</td>
-                                <td>Haussman</td>
-                                <td>correo@corre...</td>
-                                <td>(303) 555-0105</td>
-                                <td>
-                                    <div class="tw-bg-amarillo-20 tw-rounded-md tw-p-1 tw-flex tw-items-center tw-space-x-3 tw-w-fit tw-mx-auto">
-                                        <img src="/media/svgs/check-book-amarillo.svg">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="tw-form-control"></td>
-                                <td>2022/24</td>
-                                <td>97020565</td>
-                                <td>30/04/2021</td>
-                                <td>30/04/2021</td>
-                                <td>Jane</td>
-                                <td>235896332</td>
-                                <td>OPTIMA...</td>
-                                <td><div class="tw-bg-verde-20 tw-rounded-full tw-px-2 t1s tw-text-verde-60 tw-text-center">EN TRAMITE</div></td>
-                                <td>Jane</td>
-                                <td>Haussman</td>
-                                <td>correo@corre...</td>
-                                <td>(303) 555-0105</td>
-                                <td>
-                                    <div class="tw-bg-amarillo-20 tw-rounded-md tw-p-1 tw-flex tw-items-center tw-space-x-3 tw-w-fit tw-mx-auto">
-                                        <img src="/media/svgs/check-book-amarillo.svg">
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="tw-form-control"></td>
-                                <td>2022/24</td>
-                                <td>97020565</td>
-                                <td>30/04/2021</td>
-                                <td>30/04/2021</td>
-                                <td>Jane</td>
-                                <td>235896332</td>
-                                <td>OPTIMA...</td>
-                                <td></td>
-                                <td>Jane</td>
-                                <td>Haussman</td>
-                                <td>correo@corre...</td>
-                                <td>(303) 555-0105</td>
-                                <td>
-                                    <div class="tw-bg-amarillo-20 tw-rounded-md tw-p-1 tw-flex tw-items-center tw-space-x-3 tw-w-fit tw-mx-auto">
-                                        <img src="/media/svgs/check-book-amarillo.svg">
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- START paginacion -->
-                    <div
+                    <div class="tw-hr tw-my-5"></div>
+                    <div>
+                        <table class="table1">
+                            <!--Header Tabla-->
+                            <thead class="tw-bg-neutral-10">
+                                <tr>
+                                    <th class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></th>
+                                    <th>Orden</th>
+                                    <th>Nombre completo</th>
+                                    <th>Teléfono</th>
+                                    <th>Email</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <!--Header Tabla-->
+                            <tbody class="tw-divide-y tw-divide-neutral-40 tw-bg-white">
+                                <tr>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">Veronica Moroto (ARRUFO)</td>
+                                    <td class="t1">+34 000 00 00</td>
+                                    <td class="t1">correocorreo@correo.com</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
+                                    </td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">Veronica Moroto (ARRUFO)</td>
+                                    <td class="t1">+34 000 00 00</td>
+                                    <td class="t1">correocorreo@correo.com</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
+                                    </td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">Veronica Moroto (ARRUFO)</td>
+                                    <td class="t1">+34 000 00 00</td>
+                                    <td class="t1">correocorreo@correo.com</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
+                                    </td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">Veronica Moroto (ARRUFO)</td>
+                                    <td class="t1">+34 000 00 00</td>
+                                    <td class="t1">correocorreo@correo.com</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
+                                    </td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">Veronica Moroto (ARRUFO)</td>
+                                    <td class="t1">+34 000 00 00</td>
+                                    <td class="t1">correocorreo@correo.com</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
+                                    </td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">Veronica Moroto (ARRUFO)</td>
+                                    <td class="t1">+34 000 00 00</td>
+                                    <td class="t1">correocorreo@correo.com</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
+                                    </td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">Veronica Moroto (ARRUFO)</td>
+                                    <td class="t1">+34 000 00 00</td>
+                                    <td class="t1">correocorreo@correo.com</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
+                                    </td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">Veronica Moroto (ARRUFO)</td>
+                                    <td class="t1">+34 000 00 00</td>
+                                    <td class="t1">correocorreo@correo.com</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
+                                    </td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">Veronica Moroto (ARRUFO)</td>
+                                    <td class="t1">+34 000 00 00</td>
+                                    <td class="t1">correocorreo@correo.com</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
+                                    </td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tw-flex tw-justify-center"><input type="checkbox" class="tw-form-control"></td>
+                                    <td class="t1">1</td>
+                                    <td class="t1">Veronica Moroto (ARRUFO)</td>
+                                    <td class="t1">+34 000 00 00</td>
+                                    <td class="t1">correocorreo@correo.com</td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
+                                    </td>
+                                    <td class="t1 tw-max-w-[40px]">
+                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div
                         class="tw-flex tw-items-center tw-justify-between tw-border-t tw-border-neutral-40 tw-bg-white tw-px-4 tw-py-3sm:tw-px-6 tw-pt-5">
                         <div class="tw-flex tw-flex-1 tw-justify-between">
                             <div>
@@ -428,9 +383,11 @@
                                 </nav>
                             </div>
                         </div>
+                        </div>
                     </div>
-                    <!-- END paginacion -->
+                    <!--  -->
                 </div>
+                <!-- END content -->
             </div>
             <!-- END main section body -->
         </div>

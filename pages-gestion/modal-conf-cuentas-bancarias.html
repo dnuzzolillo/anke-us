@@ -15,10 +15,10 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- END import fonts -->
-    <title>Configuraciones oficinas</title>
+    <title>Configuración general</title>
 </head>
 
-<body>
+<body >
     <!-- START notifications -->
     <input type="checkbox" name="user-menu-trigger" id="user-menu-trigger" class="tw-css-trigger">
     <div class="tw-backdrop tw-overlay-container tw-css-trigger-target tw-bg-white">
@@ -130,7 +130,7 @@
             </div>
             <!-- configuracion -->
             <div
-                class="tw-absolute tw-bottom-[30px] tw-mx-auto tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                class="tw-absolute tw-bottom-[30px] tw-mx-auto tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-sm hover:tw-bg-azul-60">
                 <img src="/media/svgs/gear-white.svg" class="tw-mr-[14px] tw-w-[18px]">
                 Configuración
             </div>
@@ -138,8 +138,7 @@
         <!-- END left panel -->
         <!-- START main section -->
         <div class="tw-main-section tw-h-[100vh] tw-overflow-auto tw-w-full">
-            <div
-                class="tw-sticky tw-top-0 tw-bg-white tw-w-full tw-px-[25px] tw-py-[30px] tw-main-top tw-flex-between tw-z-10">
+            <div class="tw-sticky tw-top-0 tw-bg-white tw-w-full tw-px-[25px] tw-py-[30px] tw-main-top tw-flex-between">
                 <div class="tw-flex tw-w-fit tw-items-center">
                     <img src="/media/svgs/search-neutral-80.svg" class="tw-w-[22px]">
                     <input type="text"
@@ -149,126 +148,54 @@
                 <img src="/media/svgs/bell-neutral-60.svg" class="tw-w-[23px]">
             </div>
             <!-- START main section body -->
-            <div class="tw-px-[40px] tw-px-[25px]">
-                <!-- START content -->
-                <div class=" tw-py-[25px] tw-px-[30px] tw-bg-white tw-rounded-[10px] tw-mt-8">
-                    <!-- table header -->
-                    <div class="tw-flex tw-justify-between">
-                        <div class="tw-title !tw-font-extrabold">
-                            Oficinas
-                        </div>
-                        <div class="tw-flex tw-mb-4">
-                            <div class="tw-flex tw-space-x-3">
-                                <button class="tw-button-secondary tw-whitespace-nowrap">
-                                    Exportar a PDF 
-                                    <img src="/media/svgs/pdf.svg"  class="tw-ml-3">
-                                </button>
-                                <button class="tw-button-secondary tw-whitespace-nowrap">
-                                    Imprimir 
-                                    <img src="/media/svgs/print.svg"  class="tw-ml-3">
-                                </button>
-                                <div class="tw-relative tw-rounded-md tw-shadow-sm tw-w-[60%] !tw-w-full 2xl:tw-w-fit">
-                                    <div
-                                        class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-left-0 tw-flex tw-items-center tw-pl-3">
-                                        <img src="/media/svgs/search-neutral-80.svg" alt="search-neutral-80">
-                                    </div>
-                                    <input type="text" name="search" id="search"
-                                        class="tw-block tw-w-full tw-rounded-md tw-border-neutral-40 tw-pl-10 tw-focus:border-azul-80 tw-focus:ring-azul-80sm:tw-text-sm"
-                                        placeholder="Buscar">
-                                </div>
-                                <button class="tw-button-primary tw-whitespace-nowrap">Nueva campaña</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tw-hr tw-my-5"></div>
-                    <div>
-                        <table class="table1">
-                            <!--Header Tabla-->
-                            <thead class="tw-bg-neutral-10">
-                                <tr>
-                                    <th>Nombre</th>
-                                    <th class="tw-max-w-[190px]">Email</th>
-                                    <th>ip</th>
-                                    <th>CÓDIGO</th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <!--Header Tabla-->
-                            <tbody class="tw-divide-y tw-divide-neutral-40 tw-bg-white">
-                                <tr>
-                                    <td class="t1">Llucmajor</td>
-                                    <td class="t1">correo@correocorreo.com</td>
-                                    <td class="t1">192.228.17.57</td>
-                                    <td class="t1">000000</td>
-                                    <td class="t1 tw-max-w-[40px]">
-                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
-                                    </td>
-                                    <td class="t1 tw-max-w-[40px]">
-                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="t1">Llucmajor</td>
-                                    <td class="t1">correo@correocorreo.com</td>
-                                    <td class="t1">192.228.17.57</td>
-                                    <td class="t1">000000</td>
-                                    <td class="t1 tw-max-w-[40px]">
-                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
-                                    </td>
-                                    <td class="t1 tw-max-w-[40px]">
-                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="t1">Llucmajor</td>
-                                    <td class="t1">correo@correocorreo.com</td>
-                                    <td class="t1">192.228.17.57</td>
-                                    <td class="t1">000000</td>
-                                    <td class="t1 tw-max-w-[40px]">
-                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
-                                    </td>
-                                    <td class="t1 tw-max-w-[40px]">
-                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="t1">Llucmajor</td>
-                                    <td class="t1">correo@correocorreo.com</td>
-                                    <td class="t1">192.228.17.57</td>
-                                    <td class="t1">000000</td>
-                                    <td class="t1 tw-max-w-[40px]">
-                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
-                                    </td>
-                                    <td class="t1 tw-max-w-[40px]">
-                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="t1">Llucmajor</td>
-                                    <td class="t1">correo@correocorreo.com</td>
-                                    <td class="t1">192.228.17.57</td>
-                                    <td class="t1">000000</td>
-                                    <td class="t1 tw-max-w-[40px]">
-                                        <button class="tw-bg-transparent tw-text-azul-60">Editar</button>
-                                    </td>
-                                    <td class="t1 tw-max-w-[40px]">
-                                        <button class="tw-bg-transparent tw-text-azul-60">Borrar</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-
-                    </div>
-                    <!--  -->
-                </div>
-                <!-- END content -->
-            </div>
+            <div class="tw-px-[40px] tw-px-[25px]"></div>
             <!-- END main section body -->
         </div>
         <!-- END main section -->
     </div>
+    <!-- START modal -->
+    <!-- <input type="checkbox" name="modal-asociar-modulo" id="modal-asociar-modulo" class="tw-css-trigger"> -->
+    <div class="tw-backdrop tw-overlay-container tw-flex tw-items-center tw-justify-center tw-css-trigger-target">
+        <div
+            class="tw-rounded-[10px] tw-p-[30px] tw-absolute tw-w-[511px] tw-max-w-full tw-h-fit tw-bg-white tw-max-h-[536px]">
+            <div class="tw-flex-between">
+                <div class="tw-title">Cuenta bancaria</div>
+
+                <label for="modal-asociar-modulo" class="tw-cursor-pointer">
+                    <img src="/media/svgs/x.svg" alt="x" class="tw-ml-5">
+                </label>
+
+            </div>
+            <div class="tw-grid tw-grid-cols-[1fr] tw-gap-x-4 tw-gap-y-3 tw-my-4">
+                <div class="tw-form-group">
+                    <label class="t1m tw-mb-1">Cuenta bancaria instrumental</label>
+                    <input type="text" class="tw-form-control" value="00000000000000000000">
+                </div>
+                <div class="tw-form-group">
+                    <label class="t1m tw-mb-1">Cod. Cobrador industrial</label>
+                    <input type="text" class="tw-form-control" value="197024">
+                </div>
+                <div class="tw-form-group">
+                    <label class="t1m tw-mb-1">Cód. Dev. Recibos instrumental</label>
+                    <input type="text" class="tw-form-control" value="20">
+                </div>
+                <div class="tw-form-group">
+                    <label class="t1m tw-mb-1">Cód. Cobrador recibos Alerta</label>
+                    <input type="text" class="tw-form-control" value="675951">
+                </div>
+            </div>
+            <!--Button-->
+            <div class="tw-flex tw-justify-end tw-mt-[40px]">
+                <div class="tw-h-fit tw-w-fit tw-flex tw-justify-end">
+                    <button class="tw-button-primary">
+                        Guardar cambios
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END modal -->
+
 </body>
 
 </html>
