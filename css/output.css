@@ -1269,6 +1269,10 @@ select {
   margin-right: 50px;
 }
 
+.tw-mb-\[9px\] {
+  margin-bottom: 9px;
+}
+
 .tw-block {
   display: block;
 }
@@ -1883,6 +1887,18 @@ select {
 
 .\!tw-w-\[220px\] {
   width: 220px !important;
+}
+
+.tw-w-2\/5 {
+  width: 40%;
+}
+
+.tw-w-4\/12 {
+  width: 33.333333%;
+}
+
+.tw-w-1\/5 {
+  width: 20%;
 }
 
 .tw-min-w-full {
