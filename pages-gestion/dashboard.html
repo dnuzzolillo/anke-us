@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- START import output css -->
+    <link rel="stylesheet" href="/css/output.css">
+    <!-- END import output css -->
+    <!-- START import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- END import fonts -->
+    <title>Anke Gestión</title>
+</head>
+
+<body>
+
+    <div class="tw-gestion-main-wrapper tw-flex tw-h-[100vh] tw-w-[100vw] tw-overflow-hidden">
+        <!-- START left panel -->
+        <div
+            class="tw-h-screen tw-w-[220px] tw-bg-azul-100 tw-h-[100vh] tw-flex tw-flex-col tw-items-center tw-px-[8px] tw-py-[16px]">
+            <img src="/media/svgs/logo-dark.svg" alt="logo" class="tw-w-[100px]">
+            <div class="tw-flex tw-flex-col tw-space-y-2.5 tw-mt-[30px]">
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs tw-bg-azul-60">
+                    <img src="/media/svgs/stack-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Dashboard
+                </div>
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/file-error-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Incidencias
+                </div>
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/search-white.svg" class="tw-mr-[14px] tw-w-[20px]">
+                    Consultas Rápidas
+                </div>
+                <!-- menu item -->
+                <label for="trigger-operativos"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/briefcase-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Operativos
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-operativos">
+
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/document-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Navegador
+                </div>
+                <!-- menu item -->
+                <label for="trigger-comunicación"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/chat-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Comunicación
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-comunicación">
+
+                <!-- menu item -->
+                <label for="trigger-marketing"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/megafono-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Marketing
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-marketing">
+
+                <!-- menu item -->
+                <label for="trigger-financieros"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/book-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Financieros
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" checked class="tw-css-trigger" id="trigger-financieros">
+                <div class="tw-pl-7 tw-space-y-1.5 tw-css-trigger-target">
+                    <div class="tw-expand-item tw-text-white tw-font-semibold tw-text-2xs">Recibos</div>
+                    <div class="tw-expand-item tw-text-white tw-font-semibold tw-text-2xs">Sepa</div>
+                </div>
+                <!-- menu item -->
+                <label for="trigger-notificaciones"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/doc-warning-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Notificaciones
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-notificaciones">
+
+                <!-- menu item -->
+                <label for="trigger-facturación"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/bill-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Facturación
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-facturación">
+
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/import-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Importación
+                </div>
+            </div>
+            <!-- configuracion -->
+            <div
+                class="tw-absolute tw-bottom-[30px] tw-mx-auto tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                <img src="/media/svgs/gear-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                Configuración
+            </div>
+        </div>
+        <!-- END left panel -->
+        <!-- START main section -->
+        <div class="tw-main-section tw-h-[100vh] tw-overflow-auto tw-w-full">
+            <div
+                class="tw-sticky tw-top-0 tw-bg-white tw-w-full tw-px-[25px] tw-py-[30px] tw-main-top tw-flex-between bs-barra">
+                <div class="tw-flex tw-w-fit tw-items-center">
+                    <img src="/media/svgs/search-neutral-80.svg" class="tw-w-[22px]">
+                    <input type="text"
+                        class="tw-form-control tw-no-border tw-ml-[22px] tw-text-color-light tw-font-medium !tw-text-md"
+                        placeholder="Buscar">
+                </div>
+                <img src="/media/svgs/bell-neutral-60.svg" class="tw-w-[23px]">
+            </div>
+            <!-- START main section body -->
+            <div class="tw-px-[40px] tw-py-[25px]">
+                <!-- START section 1 -->
+                <div class="tw-grid tw-grid-cols-4 tw-gap-x-10">
+                    <!-- item -->
+                    <div class="tw-p-5 tw-flex tw-space-x-4 tw-rounded-lg tw-bg-white">
+                        <div class="tw-w-[55px] tw-h-[55px] tw-rounded-md tw-bg-rosa-10 tw-p-2.5">
+                            <img src="/media/svgs/id-rojo.svg">
+                        </div>
+                        <div class="tw-flex tw-flex-col">
+                            <div class="tw-text-md tw-font-bold tw-text-red tw--mt-1">
+                                39
+                            </div>
+                            <div class="t2m tw-text-color-light tw-mt-2">Datos esperando por validar</div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="tw-p-5 tw-flex tw-space-x-4 tw-rounded-lg tw-bg-white">
+                        <div class="tw-w-[55px] tw-h-[55px] tw-rounded-md tw-bg-azul-10 tw-p-2.5">
+                            <img src="/media/svgs/file-edit-azul.svg">
+                        </div>
+                        <div class="tw-flex tw-flex-col">
+                            <div class="tw-text-md tw-font-bold tw-text-azul-60 tw--mt-1">
+                                528
+                            </div>
+                            <div class="t2m tw-text-color-light tw-mt-2">Suplementos pendientes</div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="tw-p-5 tw-flex tw-space-x-4 tw-rounded-lg tw-bg-white">
+                        <div class="tw-w-[55px] tw-h-[55px] tw-rounded-md tw-bg-verde-20 tw-p-2.5">
+                            <img src="/media/svgs/clipboard-check-verde.svg">
+                        </div>
+                        <div class="tw-flex tw-flex-col">
+                            <div class="tw-text-md tw-font-bold tw-text-verde-60 tw--mt-1">
+                                562
+                            </div>
+                            <div class="t2m tw-text-color-light tw-mt-2">Nuevos siniestros por procesar</div>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="tw-p-5 tw-flex tw-space-x-4 tw-rounded-lg tw-bg-white">
+                        <div class="tw-w-[55px] tw-h-[55px] tw-rounded-md tw-bg-naranja-20 tw-p-2.5">
+                            <img src="/media/svgs/file-search-naranja.svg">
+                        </div>
+                        <div class="tw-flex tw-flex-col">
+                            <div class="tw-text-md tw-font-bold tw-text-naranja-60 tw--mt-1">
+                                625
+                            </div>
+                            <div class="t2m tw-text-color-light tw-mt-2">Ofertas/Solicitudes por resolver</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END section 1 -->
+                <!-- START section 2 -->
+                <div class="tw-grid tw-grid-cols-3 tw-grid-rows-2 tw-mt-5 tw-gap-x-5 tw-gap-y-5">
+                    <div class="tw-p-2.5 tw-flex tw-space-x-4 tw-rounded-lg tw-bg-white tw-col-span-2 tw-row-span-2">
+                        <!-- START calendar -->
+                        <div
+                            class="tw-2xl-lg:h-0 tw-min-h-[623px] tw-2xl:min-h-[768px] tw-rounded-lg tw-overflow-hidden tw-border tw-border-gray-200">
+                            <div class="lg:tw-flex lg:tw-h-full lg:tw-flex-col">
+                                <div class="lg:tw-flex lg:tw-h-full lg:tw-flex-col">
+                                    <header
+                                        class="tw-flex tw-items-center tw-justify-between tw-border-b tw-border-gray-200 tw-py-4 tw-px-6 tw-bg-gray-50 tw-rounded-t-lg">
+                                        <h1 class="tw-text-sm tw-font-semibold tw-text-gray-900">
+                                            <time datetime="2022-01">January 2022</time>
+                                        </h1>
+                                    </header>
+                                    <div
+                                        class="tw-shadow tw-ring-1 tw-ring-black tw-ring-opacity-5 lg:tw-flex lg:tw-flex-auto lg:tw-flex-col">
+                                        <div
+                                            class="tw-grid tw-grid-cols-7 tw-gap-px tw-border-b tw-border-gray-300 tw-bg-gray-200 tw-text-center tw-text-xs tw-font-semibold tw-leading-6 tw-text-gray-700 lg:tw-flex-none">
+                                            <div class="tw-flex tw-justify-center tw-bg-white tw-py-2">
+                                                <span>M</span>
+                                                <span class="tw-sr-onlysm:tw-not-sr-only">on</span>
+                                            </div>
+                                            <div class="tw-flex tw-justify-center tw-bg-white tw-py-2">
+                                                <span>T</span>
+                                                <span class="tw-sr-onlysm:tw-not-sr-only">ue</span>
+                                            </div>
+                                            <div class="tw-flex tw-justify-center tw-bg-white tw-py-2">
+                                                <span>W</span>
+                                                <span class="tw-sr-onlysm:tw-not-sr-only">ed</span>
+                                            </div>
+                                            <div class="tw-flex tw-justify-center tw-bg-white tw-py-2">
+                                                <span>T</span>
+                                                <span class="tw-sr-onlysm:tw-not-sr-only">hu</span>
+                                            </div>
+                                            <div class="tw-flex tw-justify-center tw-bg-white tw-py-2">
+                                                <span>F</span>
+                                                <span class="tw-sr-onlysm:tw-not-sr-only">ri</span>
+                                            </div>
+                                            <div class="tw-flex tw-justify-center tw-bg-white tw-py-2">
+                                                <span>S</span>
+                                                <span class="tw-sr-onlysm:tw-not-sr-only">at</span>
+                                            </div>
+                                            <div class="tw-flex tw-justify-center tw-bg-white tw-py-2">
+                                                <span>S</span>
+                                                <span class="tw-sr-onlysm:tw-not-sr-only">un</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="tw-flex tw-bg-gray-200 tw-text-xs tw-leading-6 tw-text-gray-700 lg:tw-flex-auto">
+                                            <div
+                                                class="tw-hidden tw-w-full lg:tw-grid lg:tw-grid-cols-7 lg:tw-grid-rows-6 lg:tw-gap-px">
+                                                <!--
+                                Always include: "relative py-2 px-3"
+                                Is current month, include: "bg-white"
+                                Is not current month, include: "bg-gray-50 text-gray-500"
+                              -->
+                                                <div class="tw-relative tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500">
+                                                    <!--
+                                  Is today, include: "flex h-6 w-6 items-center justify-center rounded-full bg-indigo-600 font-semibold text-white"
+                                -->
+                                                    <time datetime="2021-12-27">27</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500">
+                                                    <time datetime="2021-12-28">28</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500">
+                                                    <time datetime="2021-12-29">29</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500">
+                                                    <time datetime="2021-12-30">30</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500">
+                                                    <time datetime="2021-12-31">31</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-01">1</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-01">2</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-03">3</time>
+                                                    <ol class="tw-mt-2">
+                                                        <li>
+                                                            <a href="#" class="tw-group tw-flex">
+                                                                <p
+                                                                    class="tw-flex-auto tw-truncate tw-font-medium tw-text-gray-900 tw-group-hover:tw-text-indigo-600">
+                                                                    Design review</p>
+                                                                <time datetime="2022-01-03T10:00"
+                                                                    class="tw-ml-3 tw-hidden tw-flex-none tw-text-gray-500 tw-group-hover:tw-text-indigo-600 tw-2xl:block">10AM</time>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="tw-group tw-flex">
+                                                                <p
+                                                                    class="tw-flex-auto tw-truncate tw-font-medium tw-text-gray-900 tw-group-hover:tw-text-indigo-600">
+                                                                    Sales meeting</p>
+                                                                <time datetime="2022-01-03T14:00"
+                                                                    class="tw-ml-3 tw-hidden tw-flex-none tw-text-gray-500 tw-group-hover:tw-text-indigo-600 tw-2xl:block">2PM</time>
+                                                            </a>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-04">4</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-05">5</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-06">6</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-07">7</time>
+                                                    <ol class="tw-mt-2">
+                                                        <li>
+                                                            <a href="#" class="tw-group tw-flex">
+                                                                <p
+                                                                    class="tw-flex-auto tw-truncate tw-font-medium tw-text-gray-900 tw-group-hover:tw-text-indigo-600">
+                                                                    Date night</p>
+                                                                <time datetime="2022-01-08T18:00"
+                                                                    class="tw-ml-3 tw-hidden tw-flex-none tw-text-gray-500 tw-group-hover:tw-text-indigo-600 tw-2xl:block">6PM</time>
+                                                            </a>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-08">8</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-09">9</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-10">10</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-11">11</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-12"
+                                                        class="tw-flex tw-h-6 tw-w-6 tw-items-center tw-justify-center tw-rounded-full tw-bg-indigo-600 tw-font-semibold tw-text-white">12</time>
+                                                    <ol class="tw-mt-2">
+                                                        <li>
+                                                            <a href="#" class="tw-group tw-flex">
+                                                                <p
+                                                                    class="tw-flex-auto tw-truncate tw-font-medium tw-text-gray-900 tw-group-hover:tw-text-indigo-600">
+                                                                    Sam's birthday party</p>
+                                                                <time datetime="2022-01-25T14:00"
+                                                                    class="tw-ml-3 tw-hidden tw-flex-none tw-text-gray-500 tw-group-hover:tw-text-indigo-600 tw-2xl:block">2PM</time>
+                                                            </a>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-13">13</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-14">14</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-15">15</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-16">16</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-17">17</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-18">18</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-19">19</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-20">20</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-21">21</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-22">22</time>
+                                                    <ol class="tw-mt-2">
+                                                        <li>
+                                                            <a href="#" class="tw-group tw-flex">
+                                                                <p
+                                                                    class="tw-flex-auto tw-truncate tw-font-medium tw-text-gray-900 tw-group-hover:tw-text-indigo-600">
+                                                                    Maple syrup museum</p>
+                                                                <time datetime="2022-01-22T15:00"
+                                                                    class="tw-ml-3 tw-hidden tw-flex-none tw-text-gray-500 tw-group-hover:tw-text-indigo-600 tw-2xl:block">3PM</time>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="tw-group tw-flex">
+                                                                <p
+                                                                    class="tw-flex-auto tw-truncate tw-font-medium tw-text-gray-900 tw-group-hover:tw-text-indigo-600">
+                                                                    Hockey game</p>
+                                                                <time datetime="2022-01-22T19:00"
+                                                                    class="tw-ml-3 tw-hidden tw-flex-none tw-text-gray-500 tw-group-hover:tw-text-indigo-600 tw-2xl:block">7PM</time>
+                                                            </a>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-23">23</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-24">24</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-25">25</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-26">26</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-27">27</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-28">28</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-29">29</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-30">30</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-white tw-py-2 tw-px-3">
+                                                    <time datetime="2022-01-31">31</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500">
+                                                    <time datetime="2022-02-01">1</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500">
+                                                    <time datetime="2022-02-02">2</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500">
+                                                    <time datetime="2022-02-03">3</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500">
+                                                    <time datetime="2022-02-04">4</time>
+                                                    <ol class="tw-mt-2">
+                                                        <li>
+                                                            <a href="#" class="tw-group tw-flex">
+                                                                <p
+                                                                    class="tw-flex-auto tw-truncate tw-font-medium tw-text-gray-900 tw-group-hover:tw-text-indigo-600">
+                                                                    Cinema with friends</p>
+                                                                <time datetime="2022-02-04T21:00"
+                                                                    class="tw-ml-3 tw-hidden tw-flex-none tw-text-gray-500 tw-group-hover:tw-text-indigo-600 tw-2xl:block">9PM</time>
+                                                            </a>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                                <div class="tw-relative tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500">
+                                                    <time datetime="2022-02-05">5</time>
+                                                </div>
+                                                <div class="tw-relative tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500">
+                                                    <time datetime="2022-02-06">6</time>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="tw-isolate tw-grid tw-w-full tw-grid-cols-7 tw-grid-rows-6 tw-gap-px lg:tw-hidden">
+                                                <!--
+                                Always include: "flex h-14 flex-col py-2 px-3 hover:tw-bg-gray-100 focus:z-10"
+                                Is current month, include: "bg-white"
+                                Is not current month, include: "bg-gray-50"
+                                Is selected or is today, include: "font-semibold"
+                                Is selected, include: "text-white"
+                                Is not selected and is today, include: "text-indigo-600"
+                                Is not selected and is current month, and is not today, include: "text-gray-900"
+                                Is not selected, is not current month, and is not today: "text-gray-500"
+                              -->
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <!--
+                                  Always include: "ml-auto"
+                                  Is selected, include: "flex h-6 w-6 items-center justify-center rounded-full"
+                                  Is selected and is today, include: "bg-indigo-600"
+                                  Is selected and is not today, include: "bg-gray-900"
+                                -->
+                                                    <time datetime="2021-12-27" class="tw-ml-auto">27</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2021-12-28" class="tw-ml-auto">28</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2021-12-29" class="tw-ml-auto">29</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2021-12-30" class="tw-ml-auto">30</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2021-12-31" class="tw-ml-auto">31</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-01" class="tw-ml-auto">1</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-02" class="tw-ml-auto">2</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-03" class="tw-ml-auto">3</time>
+                                                    <span class="tw-sr-only">2 events</span>
+                                                    <span class="tw--mx-0.5 tw-mt-auto tw-flex tw-flex-wrap-reverse">
+                                                        <span
+                                                            class="tw-mx-0.5 tw-mb-1 tw-h-1.5 tw-w-1.5 tw-rounded-full tw-bg-gray-400"></span>
+                                                        <span
+                                                            class="tw-mx-0.5 tw-mb-1 tw-h-1.5 tw-w-1.5 tw-rounded-full tw-bg-gray-400"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-04" class="tw-ml-auto">4</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-05" class="tw-ml-auto">5</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-06" class="tw-ml-auto">6</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-07" class="tw-ml-auto">7</time>
+                                                    <span class="tw-sr-only">1 event</span>
+                                                    <span class="tw--mx-0.5 tw-mt-auto tw-flex tw-flex-wrap-reverse">
+                                                        <span
+                                                            class="tw-mx-0.5 tw-mb-1 tw-h-1.5 tw-w-1.5 tw-rounded-full tw-bg-gray-400"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-08" class="tw-ml-auto">8</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-09" class="tw-ml-auto">9</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-10" class="tw-ml-auto">10</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-11" class="tw-ml-auto">11</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-font-semibold tw-text-indigo-600 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-12" class="tw-ml-auto">12</time>
+                                                    <span class="tw-sr-only">1 event</span>
+                                                    <span class="tw--mx-0.5 tw-mt-auto tw-flex tw-flex-wrap-reverse">
+                                                        <span
+                                                            class="tw-mx-0.5 tw-mb-1 tw-h-1.5 tw-w-1.5 tw-rounded-full tw-bg-gray-400"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-13" class="tw-ml-auto">13</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-14" class="tw-ml-auto">14</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-15" class="tw-ml-auto">15</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-16" class="tw-ml-auto">16</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-17" class="tw-ml-auto">17</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-18" class="tw-ml-auto">18</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-19" class="tw-ml-auto">19</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-20" class="tw-ml-auto">20</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-21" class="tw-ml-auto">21</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-font-semibold tw-text-white hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-22"
+                                                        class="tw-ml-auto tw-flex tw-h-6 tw-w-6 tw-items-center tw-justify-center tw-rounded-full tw-bg-gray-900">22</time>
+                                                    <span class="tw-sr-only">2 events</span>
+                                                    <span class="tw--mx-0.5 tw-mt-auto tw-flex tw-flex-wrap-reverse">
+                                                        <span
+                                                            class="tw-mx-0.5 tw-mb-1 tw-h-1.5 tw-w-1.5 tw-rounded-full tw-bg-gray-400"></span>
+                                                        <span
+                                                            class="tw-mx-0.5 tw-mb-1 tw-h-1.5 tw-w-1.5 tw-rounded-full tw-bg-gray-400"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-23" class="tw-ml-auto">23</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-24" class="tw-ml-auto">24</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-25" class="tw-ml-auto">25</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-26" class="tw-ml-auto">26</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-27" class="tw-ml-auto">27</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-28" class="tw-ml-auto">28</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-29" class="tw-ml-auto">29</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-30" class="tw-ml-auto">30</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-white tw-py-2 tw-px-3 tw-text-gray-900 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-01-31" class="tw-ml-auto">31</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-02-01" class="tw-ml-auto">1</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-02-02" class="tw-ml-auto">2</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-02-03" class="tw-ml-auto">3</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-02-04" class="tw-ml-auto">4</time>
+                                                    <span class="tw-sr-only">1 event</span>
+                                                    <span class="tw--mx-0.5 tw-mt-auto tw-flex tw-flex-wrap-reverse">
+                                                        <span
+                                                            class="tw-mx-0.5 tw-mb-1 tw-h-1.5 tw-w-1.5 tw-rounded-full tw-bg-gray-400"></span>
+                                                    </span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-02-05" class="tw-ml-auto">5</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                                <button type="button"
+                                                    class="tw-flex tw-h-14 tw-flex-col tw-bg-gray-50 tw-py-2 tw-px-3 tw-text-gray-500 hover:tw-bg-gray-100 tw-focus:z-10">
+                                                    <time datetime="2022-02-06" class="tw-ml-auto">6</time>
+                                                    <span class="tw-sr-only">0 events</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tw-py-10 tw-px-4sm:tw-px-6 lg:tw-hidden">
+                                        <ol
+                                            class="tw-divide-y tw-divide-gray-100 tw-overflow-hidden tw-rounded-lg tw-bg-white tw-text-sm tw-shadow tw-ring-1 tw-ring-black tw-ring-opacity-5">
+                                            <li
+                                                class="tw-group tw-flex tw-p-4 tw-pr-6 tw-focus-within:bg-gray-50 hover:tw-bg-gray-50">
+                                                <div class="tw-flex-auto">
+                                                    <p class="tw-font-semibold tw-text-gray-900">Maple syrup museum</p>
+                                                    <time datetime="2022-01-15T09:00"
+                                                        class="tw-mt-2 tw-flex tw-items-center tw-text-gray-700">
+                                                        <!-- Heroicon name: mini/clock -->
+                                                        <svg class="tw-mr-2 tw-h-5 tw-w-5 tw-text-gray-400"
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                            fill="currentColor" aria-hidden="true">
+                                                            <path fill-rule="evenodd"
+                                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z"
+                                                                clip-rule="evenodd"></path>
+                                                        </svg>
+                                                        3PM
+                                                    </time>
+                                                </div>
+                                                <a href="#"
+                                                    class="tw-ml-6 tw-flex-none tw-self-center tw-rounded-md tw-border tw-border-gray-300 tw-bg-white tw-py-2 tw-px-3 tw-font-semibold tw-text-gray-700 tw-opacity-0 tw-shadow-sm hover:tw-bg-gray-50 tw-focus:opacity-100 tw-group-hover:tw-opacity-100">Edit<span
+                                                        class="tw-sr-only">, Maple syrup museum</span></a>
+                                            </li>
+
+                                            <li
+                                                class="tw-group tw-flex tw-p-4 tw-pr-6 tw-focus-within:bg-gray-50 hover:tw-bg-gray-50">
+                                                <div class="tw-flex-auto">
+                                                    <p class="tw-font-semibold tw-text-gray-900">Hockey game</p>
+                                                    <time datetime="2022-01-22T19:00"
+                                                        class="tw-mt-2 tw-flex tw-items-center tw-text-gray-700">
+                                                        <!-- Heroicon name: mini/clock -->
+                                                        <svg class="tw-mr-2 tw-h-5 tw-w-5 tw-text-gray-400"
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                            fill="currentColor" aria-hidden="true">
+                                                            <path fill-rule="evenodd"
+                                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z"
+                                                                clip-rule="evenodd"></path>
+                                                        </svg>
+                                                        7PM
+                                                    </time>
+                                                </div>
+                                                <a href="#"
+                                                    class="tw-ml-6 tw-flex-none tw-self-center tw-rounded-md tw-border tw-border-gray-300 tw-bg-white tw-py-2 tw-px-3 tw-font-semibold tw-text-gray-700 tw-opacity-0 tw-shadow-sm hover:tw-bg-gray-50 tw-focus:opacity-100 tw-group-hover:tw-opacity-100">Edit<span
+                                                        class="tw-sr-only">, Hockey game</span></a>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- END calendar -->
+                    </div>
+                    <!-- section -->
+                    <div class="tw-p-5 tw-flex tw-flex-col tw-rounded-lg tw-bg-white tw-h-full tw-relative">
+                        <div class="tw-flex-between">
+                            <div class="tw-flex tw-items-center tw-space-x-3">
+                                <div class="tw-w-[30px] tw-h-[30px] tw-flex-center tw-rounded-md tw-bg-amarillo-20">
+                                    <img src="/media/svgs/speakerphone-amarillo.svg">
+                                </div>
+                                <div class="t2blue !tw-font-bold">Campañas activas</div>
+                            </div>
+                            <div class="tw-w-[30px] tw-h-[30px]">
+                                <div
+                                    class="t1s tw-text-amarillo-60 tw-bg-amarillo-20 tw-text-center tw-py-1.5 tw-rounded-md">
+                                    3</div>
+                            </div>
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-space-y-2.5 tw-mt-2.5 tw-overflow-y-auto tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-px-5"
+                            style="height: calc(100% - 60px);">
+                            <!-- item -->
+                            <div class="tw-flex-between tw-pb-2.5 tw-border-b tw-border-b-neutral-40">
+                                <div class="tw-flex tw-flex-col">
+                                    <div class="t1s">Campaña Anke Summer day</div>
+                                    <div class="t1 tw-mt-2.5">20% de dto + tarjeta cashback</div>
+                                </div>
+                                <img src="/media/svgs/chevron-right-neutral-80.svg" class="tw-w-[8px] tw-mr-2">
+                            </div>
+                            <!-- item -->
+                            <div class="tw-flex-between tw-pb-2.5 tw-border-b tw-border-b-neutral-40">
+                                <div class="tw-flex tw-flex-col">
+                                    <div class="t1s">Campaña Anke Summer day</div>
+                                    <div class="t1 tw-mt-2.5">20% de dto + tarjeta cashback</div>
+                                </div>
+                                <img src="/media/svgs/chevron-right-neutral-80.svg" class="tw-w-[8px] tw-mr-2">
+                            </div>
+                            <!-- item -->
+                            <div class="tw-flex-between tw-pb-2.5 tw-border-b tw-border-b-neutral-40">
+                                <div class="tw-flex tw-flex-col">
+                                    <div class="t1s">Campaña Anke Summer day</div>
+                                    <div class="t1 tw-mt-2.5">20% de dto + tarjeta cashback</div>
+                                </div>
+                                <img src="/media/svgs/chevron-right-neutral-80.svg" class="tw-w-[8px] tw-mr-2">
+                            </div>
+                            <!-- item -->
+                            <div class="tw-flex-between tw-pb-2.5 tw-border-b tw-border-b-neutral-40">
+                                <div class="tw-flex tw-flex-col">
+                                    <div class="t1s">Campaña Anke Summer day</div>
+                                    <div class="t1 tw-mt-2.5">20% de dto + tarjeta cashback</div>
+                                </div>
+                                <img src="/media/svgs/chevron-right-neutral-80.svg" class="tw-w-[8px] tw-mr-2">
+                            </div>
+                            <!-- item -->
+                            <div class="tw-flex-between tw-pb-2.5 tw-border-b tw-border-b-neutral-40">
+                                <div class="tw-flex tw-flex-col">
+                                    <div class="t1s">Campaña Anke Summer day</div>
+                                    <div class="t1 tw-mt-2.5">20% de dto + tarjeta cashback</div>
+                                </div>
+                                <img src="/media/svgs/chevron-right-neutral-80.svg" class="tw-w-[8px] tw-mr-2">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- section -->
+                    <div class="tw-p-5 tw-flex tw-flex-col tw-rounded-lg tw-bg-white tw-h-full tw-relative">
+                        <div class="tw-flex-between">
+                            <div class="tw-flex tw-items-center tw-space-x-3">
+                                <div class="tw-w-[30px] tw-h-[30px] tw-flex-center tw-rounded-md tw-bg-morado-20">
+                                    <img src="/media/svgs/notes-morado.svg">
+                                </div>
+                                <div class="t2blue !tw-font-bold">Campañas activas</div>
+                            </div>
+                            <div class="tw-flex tw-space-x-3">
+                                <div
+                                    class="t1s tw-text-morado-60 tw-bg-morado-20 tw-text-center tw-px-2 tw-py-0.5 tw-rounded-md">
+                                    356
+                                </div>
+                                <button class="tw-button-primary tw-h-[27px] tw-w-[27px] !tw-text-md !tw-px-0">+</button>
+                                <button class="tw-py-0.5 tw-border-azul-60 tw-border tw-rounded-md tw-bg-neutral-10 t1blue tw-px-3">Solo atrasadas</button>
+                            </div>
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-space-y-2.5 tw-mt-2.5 tw-overflow-y-auto tw-absolute tw-bottom-0 tw-left-0 tw-w-full tw-px-5"
+                            style="height: calc(100% - 60px);">
+                            <!-- item red -->
+                            <div class="tw-flex-between tw-pb-2.5 tw-border-b tw-border-b-neutral-40">
+                                <div class="tw-flex tw-flex-col">
+                                    <div class="tw-flex">
+                                        <img src="/media/svgs/clock-red.svg" class="tw-w-[12px] tw-mr-2">
+                                        <div class="t1s tw-text-red">Lorem ipsum dolor sit amet consectetur.</div>
+                                    </div>
+                                    <div class="t1 tw-mt-2.5 tw-text-red">26/08/2022 | Lorem ipsum dolor sit amet consectetur </div>
+                                </div>
+                                <img src="/media/svgs/chevron-right-red.svg" class="tw-w-[8px] tw-mr-2">
+                            </div>
+                            <!-- item -->
+                            <div class="tw-flex-between tw-pb-2.5 tw-border-b tw-border-b-neutral-40">
+                                <div class="tw-flex tw-flex-col">
+                                    <div class="t1s">Campaña Anke Summer day</div>
+                                    <div class="t1 tw-mt-2.5">20% de dto. Tarjeta NIE Y 25% De seguro de vida + Tarjeta cashback hasta 60€.</div>
+                                </div>
+                                <img src="/media/svgs/chevron-right-neutral-80.svg" class="tw-w-[8px] tw-mr-2">
+                            </div>
+                            <!-- item -->
+                            <div class="tw-flex-between tw-pb-2.5 tw-border-b tw-border-b-neutral-40">
+                                <div class="tw-flex tw-flex-col">
+                                    <div class="t1s">Campaña Anke Summer day</div>
+                                    <div class="t1 tw-mt-2.5">20% de dto. Tarjeta NIE Y 25% De seguro de vida + Tarjeta cashback hasta 60€.</div>
+                                </div>
+                                <img src="/media/svgs/chevron-right-neutral-80.svg" class="tw-w-[8px] tw-mr-2">
+                            </div>
+                            <!-- item -->
+                            <div class="tw-flex-between tw-pb-2.5 tw-border-b tw-border-b-neutral-40">
+                                <div class="tw-flex tw-flex-col">
+                                    <div class="t1s">Campaña Anke Summer day</div>
+                                    <div class="t1 tw-mt-2.5">20% de dto. Tarjeta NIE Y 25% De seguro de vida + Tarjeta cashback hasta 60€.</div>
+                                </div>
+                                <img src="/media/svgs/chevron-right-neutral-80.svg" class="tw-w-[8px] tw-mr-2">
+                            </div>
+                            <!-- item -->
+                            <div class="tw-flex-between tw-pb-2.5 tw-border-b tw-border-b-neutral-40">
+                                <div class="tw-flex tw-flex-col">
+                                    <div class="t1s">Campaña Anke Summer day</div>
+                                    <div class="t1 tw-mt-2.5">20% de dto. Tarjeta NIE Y 25% De seguro de vida + Tarjeta cashback hasta 60€.</div>
+                                </div>
+                                <img src="/media/svgs/chevron-right-neutral-80.svg" class="tw-w-[8px] tw-mr-2">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END section 2 -->
+
+                <div class="tw-p-5 tw-rounded-lg tw-bg-white tw-mt-5">
+                    <div class="t2blue !tw-font-bold tw-w-full">Mis seguimientos</div>
+                    <div class="tw-border-b tw-border-neutral-40 tw--mx-5 tw-px-2.5">
+                        <nav class="tw--mb-px tw-flex tw-space-x-4 tw-flex-wrap tw-overflo-x-auto"
+                            aria-label="Tabs">
+                            <a href="#" class="tab">Suplemento comercial</a>
+                            <a href="#" class="tab selected"> Ratio de conversión</a>
+                            <a href="#" class="tab">Ventas por ratio</a>
+                            <a href="#" class="tab">Tablas Ramos</a>
+                            <a href="#" class="tab">Tablas SFE</a>
+                            <a href="#" class="tab">Mis tramites</a>
+                        </nav>
+                    </div>
+                    <img src="/media/pngs/chart.png" class="tw-mt-5">
+                </div>
+            </div>
+            <!-- END main section body -->
+        </div>
+        <!-- END main section -->
+    </div>
+</body>
+
+</html>
