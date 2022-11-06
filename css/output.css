@@ -1260,6 +1260,14 @@ select {
   margin-right: 50px;
 }
 
+.tw-mb-\[9px\] {
+  margin-bottom: 9px;
+}
+
+.tw-mr-20 {
+  margin-right: 5rem;
+}
+
 .tw-block {
   display: block;
 }
@@ -1830,6 +1838,26 @@ select {
 
 .tw-w-\[20\%\] {
   width: 20%;
+}
+
+.tw-w-5\/12 {
+  width: 41.666667%;
+}
+
+.tw-w-2\/5 {
+  width: 40%;
+}
+
+.tw-w-1\/5 {
+  width: 20%;
+}
+
+.tw-w-1\/2 {
+  width: 50%;
+}
+
+.tw-w-4\/12 {
+  width: 33.333333%;
 }
 
 .tw-min-w-\[327px\] {
