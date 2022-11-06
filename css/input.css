@@ -375,6 +375,10 @@ label.tw-toggle::after {
     @apply tw-font-bold tw-text-xs;
 }
 
+.t2m {
+    @apply tw-font-medium tw-text-xs;
+}
+
 .t2blue {
     @apply tw-font-bold tw-text-xs tw-text-azul-60;
 }
@@ -484,17 +488,65 @@ label.tw-toggle::after {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    /* identical to box height, or 143% */
-
-
-    /* indigo/600 */
-
     color: #4F46E5;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+.table2 .th{
+    display: inline-flex;
+    align-items: center;
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    --tw-text-opacity: 1;
+    white-space: nowrap;
+    color: rgb(100 116 139 / var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(246 248 252 / var(--tw-bg-opacity));
+    border-bottom: solid 1px #dedede;
+    position: sticky;
+   top: 0;
+}
+
+.table2 .th:first-child {
+    border-top-left-radius: 6px;
+
+}
+.table2 .th:last-child {
+    border-top-right-radius: 6px;
+}
+
+.table2 .thead, .table2 .tr {
+   display: flex;
+   width: 100%;
+}
+
+.table2 .thead {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.table2 .td {
+    white-space: nowrap;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.table2 .tr {
+    border-bottom: solid 1px #dedede;
+}
+
+.table2 .expanded{
+    border-bottom-style: dashed;
 }
