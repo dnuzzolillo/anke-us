@@ -1487,6 +1487,10 @@ select {
   max-height: 876px;
 }
 
+.tw-max-h-\[900px\] {
+  max-height: 900px;
+}
+
 .tw-min-h-\[200px\] {
   min-height: 200px;
 }
@@ -1907,6 +1911,10 @@ select {
 
 .tw-w-\[37px\] {
   width: 37px;
+}
+
+.tw-w-\[45\%\] {
+  width: 45%;
 }
 
 .tw-min-w-\[327px\] {
