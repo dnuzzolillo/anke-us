@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- START import output css -->
+    <link rel="stylesheet" href="/css/output.css">
+    <!-- END import output css -->
+    <!-- START import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- END import fonts -->
+    <title>Anke Gestión</title>
+</head>
+
+<body >
+    <!-- START notifications -->
+    <input type="checkbox" name="user-menu-trigger" id="user-menu-trigger" class="tw-css-trigger">
+    <div class="tw-backdrop tw-overlay-container tw-css-trigger-target tw-bg-white">
+        <div
+            class="tw-w-[415px] tw-h-[100vh] tw-px-[30px] tw-pt-[40px] tw-pb-[20px] tw-flex-col tw-justify-between tw-items-between tw-bg-white tw-right-[0px] tw-absolute tw-flex">
+
+        </div>
+    </div>
+    <!-- END notifications -->
+    <div class="tw-gestion-main-wrapper tw-flex tw-h-[100vh] tw-w-[100vw] tw-overflow-hidden">
+        <!-- START left panel -->
+        <div
+            class="tw-h-screen tw-w-[220px] tw-bg-azul-100 tw-h-[100vh] tw-flex tw-flex-col tw-items-center tw-px-[8px] tw-py-[16px]">
+            <img src="/media/svgs/logo-dark.svg" alt="logo" class="tw-w-[100px]">
+            <div class="tw-flex tw-flex-col tw-space-y-2.5 tw-mt-[30px]">
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs tw-bg-azul-60">
+                    <img src="/media/svgs/stack-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Dashboard
+                </div>
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/file-error-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Incidencias
+                </div>
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/search-white.svg" class="tw-mr-[14px] tw-w-[20px]">
+                    Consultas Rápidas
+                </div>
+                <!-- menu item -->
+                <label for="trigger-operativos"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/briefcase-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Operativos
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-operativos">
+
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/document-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Navegador
+                </div>
+                <!-- menu item -->
+                <label for="trigger-comunicación"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/chat-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Comunicación
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-comunicación">
+
+                <!-- menu item -->
+                <label for="trigger-marketing"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/megafono-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Marketing
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-marketing">
+
+                <!-- menu item -->
+                <label for="trigger-financieros"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/book-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Financieros
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" checked class="tw-css-trigger" id="trigger-financieros">
+                <div class="tw-pl-7 tw-space-y-1.5 tw-css-trigger-target">
+                    <div class="tw-expand-item tw-text-white tw-font-semibold tw-text-2xs">Recibos</div>
+                    <div class="tw-expand-item tw-text-white tw-font-semibold tw-text-2xs">Sepa</div>
+                </div>
+                <!-- menu item -->
+                <label for="trigger-notificaciones"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/doc-warning-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Notificaciones
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-notificaciones">
+
+                <!-- menu item -->
+                <label for="trigger-facturación"
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/bill-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Facturación
+                    <div class="tw-absolute tw-right-[10px]"><img src="/media/svgs/chevron-down-white.svg"
+                            class="tw-my-auto tw-mt-2.5"></div>
+                </label>
+                <input type="checkbox" class="tw-css-trigger" id="trigger-facturación">
+
+                <!-- menu item -->
+                <div
+                    class="tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-relative tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                    <img src="/media/svgs/import-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                    Importación
+                </div>
+            </div>
+            <!-- configuracion -->
+            <div
+                class="tw-absolute tw-bottom-[30px] tw-mx-auto tw-px-[14px] tw-rounded-md tw-cursor-pointer tw-py-[8px] tw-flex tw-text-white tw-font-medium tw-text-2xs hover:tw-bg-azul-60">
+                <img src="/media/svgs/gear-white.svg" class="tw-mr-[14px] tw-w-[18px]">
+                Configuración
+            </div>
+        </div>
+        <!-- END left panel -->
+        <!-- START main section -->
+        <div class="tw-main-section tw-h-[100vh] tw-overflow-auto tw-w-full">
+            <div class="tw-sticky tw-top-0 tw-bg-white tw-w-full tw-px-[25px] tw-py-[30px] tw-main-top tw-flex-between">
+                <div class="tw-flex tw-w-fit tw-items-center">
+                    <img src="/media/svgs/search-neutral-80.svg" class="tw-w-[22px]">
+                    <input type="text"
+                        class="tw-form-control tw-no-border tw-ml-[22px] tw-text-color-light tw-font-medium !tw-text-md"
+                        placeholder="Buscar">
+                </div>
+                <img src="/media/svgs/bell-neutral-60.svg" class="tw-w-[23px]">
+            </div>
+            <!-- START main section body -->
+            <div class="tw-px-[40px] tw-px-[25px]"></div>
+            <!-- END main section body -->
+        </div>
+        <!-- END main section -->
+    </div>
+    <!-- START modal -->
+    <!-- <input type="checkbox" name="modal-asociar-modulo" id="modal-asociar-modulo" class="tw-css-trigger"> -->
+    <div class="tw-backdrop tw-overlay-container tw-flex tw-items-center tw-justify-center tw-css-trigger-target">
+        <div
+            class="tw-rounded-[10px] tw-absolute tw-overflow-hidden tw-w-[430px] tw-max-w-full tw-h-fit tw-bg-white tw-flex tw-items-center tw-flex-col">
+            <div class="tw-fint-bold tw-w-fit tw-flex tw-justify-center tw-items-end tw-font-bold tw-text-md tw-mt-8 tw-text-center tw-w-[400px]">
+                Aún te quedan 7 datos por verificar ¿Seguro que quieres terminar?
+            </div>
+            <div class="tw-flex-between tw-space-x-7 tw-mt-7 tw-pb-6">
+                <button class="tw-button-secondary">
+                    Continuar
+                </button>
+                <button class="tw-button-primary">
+                    Si, terminar
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- END modal -->
+
+</body>
+
+</html>

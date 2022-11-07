@@ -550,3 +550,8 @@ label.tw-toggle::after {
 .table2 .expanded{
     border-bottom-style: dashed;
 }
+
+
+.tw-css-trigger:checked + .radio-label {
+    @apply tw-bg-neutral-10 tw-border-azul-60;
+}
