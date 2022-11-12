@@ -1,20 +1,10 @@
-var posthtml = require('posthtml');
-var posthtmlPrefixClass = require('posthtml-prefix-class');
 var fs = require('fs');
 
-fs.readdirSync('./test').forEach(file => {
+fs.readdirSync('./pages-gestion').forEach(file => {
+    let fileContent = fs.readFileSync(`./pages-gestion/${file}`, 'utf8');
+    //add "gestion" class to the html element
+    fileContent = fileContent.replace('<html', '<html class="gestion"');
+    fs.writeFileSync(`./pages-gestion/${file}`, fileContent);
 
-    posthtml()
-        .use(posthtmlPrefixClass({
-            prefix: 'tw-',
-
-        }))
-        .process(
-            fs.readFileSync('./test/' + file)
-        )
-        .then(function (output) {
-            console.log(output.html);
-            fs.writeFileSync('./test/' + file, output.html)
-        });
 });
 

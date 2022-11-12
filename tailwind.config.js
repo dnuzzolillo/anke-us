@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./pages/**/*.{html,js}", "./pages-gestion/**/*.{html,js}"],
+  content: ["./pages/**/*.{html,js}", "./pages-gestion/**/*.{html,js}","./pages-app/**/*.{html,js}"],
   theme: {
     fontFamily: {
       sans: ['Montserrat', 'sans-serif']

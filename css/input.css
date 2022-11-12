@@ -4,7 +4,7 @@
 
 /* GLOBALS --> */
 
-html {
+html.gestion {
     @apply tw-text-neutral-80 tw-h-full tw-bg-neutral-10;
 }
 
